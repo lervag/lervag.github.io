@@ -7,28 +7,14 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /*
- * General: Body and container and stuff
+ * Body and container
  * */
 body {
   background-color: #eee;
-  font-family: "Times New Roman";
+  font-family: "Open Sans", sans-serif;
   text-align: justify;
-  line-height: 1.75;
-  word-spacing: 0.1em;
+  line-height: 1.25;
 }
-a                { color:#00509f; text-decoration:none;}
-a:visited        { color:#50509f}
-a:hover          { color:#018}
-a:visited:hover  { color:#018}
-p {
-  width: 95%;
-  text-indent: 0.5em;
-  padding :0.5em;
-  margin: 0em;
-}
-table.contact {float: right; border-spacing: 0px;}
-table.contact td             {width: 11em; padding:0px}
-table.contact td:first-child {width:  7em;}
 #container {
   background-color:#ffffff;
   -moz-border-radius: 20px 20px 0px 0px;
@@ -44,6 +30,27 @@ table.contact td:first-child {width:  7em;}
   padding: 0px;
   margin-top: 0em;
   margin-top: 1em;
+}
+
+/*
+ * General elements
+ * */
+a                { color:#00509f; text-decoration:none;}
+a:visited        { color:#50509f}
+a:hover          { color:#018}
+a:visited:hover  { color:#018}
+p {
+  width: 95%;
+  text-indent: 0.5em;
+  padding :0.5em;
+  margin: 0em;
+}
+
+/*
+ * Main
+ * */
+main {
+  padding: 0em 1em 1em 1em;
 }
 
 /*
