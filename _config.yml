@@ -1,0 +1,15 @@
+name: "Personal blog"
+description: "Personal blog"
+url: "lervag.github.io"
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
