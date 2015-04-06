@@ -14,77 +14,67 @@ body {
   font-family: "Open Sans", sans-serif;
   text-align: justify;
   line-height: 1.25;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 #container {
-  background-color:#ffffff;
-  -moz-border-radius: 20px 20px 0px 0px;
-  -webkit-border-radius: 20px 20px 0px 0px;
-  border-radius: 20px 20px 0px 0px;
-  border-style: solid;
-  border-color: #888;
-  border-width: 1px;
-  border-bottom-style: none;
-  position: absolute;
-  left: 12em;
-  width: 41em;
-  padding: 0px;
-  margin-top: 0em;
-  margin-top: 1em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 a                { color:#00509f; text-decoration:none;}
 a:visited        { color:#50509f}
 a:hover          { color:#018}
 a:visited:hover  { color:#018}
 p {
-  width: 95%;
   text-indent: 0.5em;
-  padding :0.5em;
-  margin: 0em;
+  padding-left: 0.5em;
 }
 
 /*
  * Header
  * */
 header {
-  padding: 0em 1em 1em 1em;
+  background-color: #aaaaaa;
+  height: 150px;
+  -moz-border-radius:    0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  border-radius:         0px 0px 10px 10px;
+}
+header #title {
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+  float: left;
+}
+header #contact {
+  text-align: right;
+  float: right;
+  padding-right: 1em;
 }
 header #profile {
-  position:absolute;
-  top: 0px;
-  left: -11em;
-  width: 10em;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: #888;
-  border-width: 1px;
+  float: right;
+  width: 150px;
+  -moz-border-radius:    0px 0px 10px 0px;
+  -webkit-border-radius: 0px 0px 10px 0px;
+  border-radius:         0px 0px 10px 0px;
 }
 
 /*
  * Main
  * */
 main {
-  height: 100%;
-  padding: 0em 1em 1em 1em;
-}
-main section {
-  padding: 0em 1em 0em 1em;
-}
-main ul {
-  width: 80%;
-  margin: 0em;
 }
 
 /*
  * Footer
  * */
 footer {
-  text-align: right;
-  padding: 0.2em 1em 0.2em 1em;
-  border-top: solid 1px #888;
+  background-color: #aaaaaa;
+  padding: 10px;
+  -moz-border-radius:    10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-radius:         10px 10px 0px 0px;
 }
 
 /*

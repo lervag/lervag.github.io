@@ -1,8 +1,6 @@
 ---
-title: Karl Yngve Lervåg
+title: Home
 ---
-
-PAGE IS UNDER CONSTRUCTION
 
 # Publications
 
