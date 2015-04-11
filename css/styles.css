@@ -19,8 +19,7 @@ body {
 }
 #container {
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
 }
 a                { color:#00509f; text-decoration:none;}
 a:visited        { color:#50509f}
@@ -36,122 +35,46 @@ p {
  * */
 header {
   background-color: #aaaaaa;
-  height: 150px;
+  padding: 5px 10px 5px 10px;
   -moz-border-radius:    0px 0px 10px 10px;
   -webkit-border-radius: 0px 0px 10px 10px;
   border-radius:         0px 0px 10px 10px;
 }
-header #title {
-  position: relative;
-  top: 100%;
-  transform: translateY(-100%);
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Menu
+ * */
+nav {
+  margin-left: 1em;
+  margin-right: 1em;
   float: left;
 }
-header #contact {
-  text-align: right;
-  float: right;
-  padding-right: 1em;
+nav a {
+  display: block;
 }
-header #profile {
-  float: right;
-  width: 150px;
-  -moz-border-radius:    0px 0px 10px 0px;
-  -webkit-border-radius: 0px 0px 10px 0px;
-  border-radius:         0px 0px 10px 0px;
+nav div {
+  margin-top: 1em;
 }
 
 /*
  * Main
  * */
 main {
-}
-
-/*
- * Footer
- * */
-footer {
-  background-color: #aaaaaa;
-  padding: 10px;
-  -moz-border-radius:    10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  border-radius:         10px 10px 0px 0px;
-}
-
-/*
- * Menu
- * */
-nav ul {
-  background-color:#eee;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-style: solid none solid none;
-  border-color: #888;
-  border-width: 1px;
-}
-nav ul li {
   float: left;
-  padding: 10px 0 10px 0;
-  position: relative;
+  max-width: 500px;
 }
-nav ul a {
-  color:#00509f;
-  float: left;
-  height: 25px;
-  padding: 0 25px;
-  text-transform: uppercase;
-  font: bold 12px/25px Arial, Helvetica;
-  text-decoration: none;
-}
-nav ul a:hover   { color:#111; }
-nav ul li:hover > ul { display: block; }
 
 /*
- * Sub-menu
+ * Various
  * */
-nav ul ul {
-  margin: 0;
-  padding: 0;
-  display: none;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  z-index: 99999;
-  background-color:#eee;
-  border-style: none solid solid solid;
-  border-color: #888;
-  border-width: 1px;
-  -moz-border-radius: 0px 0px 5px 5px;
-  border-radius: 0px 0px 5px 5px;
-}
-nav ul ul li {
-  float: none;
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-nav ul ul a {
-  padding: 1em;
-  height: auto;
-  line-height: 1;
-  display: block;
-  white-space: nowrap;
-  padding-left: 25px;
-  padding-right: 25px;
-  float: none;
-  text-transform: none;
-}
-nav ul ul li:last-child a {
-  -moz-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
-}
-nav ul ul a:hover { background: #aaa; }
-/* Clear floated elements */
-nav ul:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+img[alt=Profile] {
+  float: right;
+  width: 300px;
+  -moz-border-radius:    10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius:         10px 10px 10px 10px;
 }
