@@ -2,7 +2,7 @@
 title: Publications
 ---
 
-## Theses
+# Theses
 
 *Calculation of interface curvatures with the level-set method for two-phase
   flow simulations and a second-order diffuse-domain method for elliptic
@@ -21,7 +21,7 @@ Science and Technology (NTNU), Trondheim, June 2008.
 [Download from
 DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:348658)
 
-## Journal papers
+# Journal papers
 
 *Towards a second-order diffuse-domain approach for solving PDEs in complex
 geometries*  
@@ -43,7 +43,7 @@ K. Y. Lervåg, B. Müller, and S. T. Munkejord.
 Computers and Fluids, 84 (2013), 218--230.  
 [DOI](http://dx.doi.org/10.1016/j.compfluid.2013.06.004).
 
-## Conference papers
+# Conference papers
 
 *Curvature calculations for the level-set method*  
 K. Y. Lervåg and Å. Ervik.  
@@ -63,14 +63,14 @@ In: [Fifth European Conference on Computational Fluid Dynamics, ECCOMAS CFD
 2010](http://www.eccomas-cfd2010.org/). ISBN 978-989-96778-1-4.  
 [Preprint](/files/teigen10.pdf).
 
-## Presentations
+# Presentations
 
 *Towards a 2nd order diffuse-domain approach for two-phase flows in complex
   geometries*  
 K. Y. Lervåg, J. Lowengrub  
 In: "International Conference on Numerical Methods in Multiphase Flows"
 (ICNMMF) 2012, Penn State University, Pennsylvania, 12-14 June 2012.  
-([pdf](/files/lervag12.pdf)
+[pdf](/files/lervag12.pdf)
 
 *Calculation of droplets impinging on a plane surface: Accurate calculations of
   interfacial curvature with the level-set method*  
