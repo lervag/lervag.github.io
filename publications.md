@@ -23,13 +23,14 @@ DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:348658)
 
 # Journal papers
 
-*Towards a second-order diffuse-domain approach for solving PDEs in complex
-geometries*  
+*Analysis of the diffuse-domain method for solving PDEs in complex geometries*  
 K. Y. Lervåg and J. Lowengrub  
-Accepted for publishing in [Communications in Math.
+[Communications in Mathematical
 Sciences](http://intlpress.com/site/pub/pages/journals/items/cms/_home/_main),
-2014.  
-[arXiv](http://arxiv.org/abs/1407.7480).
+13, Issue 6 (2015), pp. 1473 -- 1500.
+[DOI](http://dx.doi.org/10.4310/CMS.2015.v13.n6.a6)  
+[ResearchGate](https://www.researchgate.net/publication/264312432_Analysis_of_the_diffuse-domain_method_for_solving_PDEs_in_complex_geometries)  
+[arXiv](http://arxiv.org/abs/1407.7480)
 
 *A robust method for calculating interface curvature and normal vectors using
   an extracted local level set*  
