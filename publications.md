@@ -13,6 +13,9 @@ Engineering Science and Technology, Norwegian University of Science and
 Technology (NTNU), Trondheim, July 2013.  ISBN: 978-82-471-4544-9
 / 978-82-471-4545-6 (electronic version).  Defended 2 September 2013.  
 [Download](/files/thesis.pdf).
+[Download from
+DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:649166)
+[DOI](http://dx.doi.org/10.13140/RG.2.1.4528.5283)
 
 *Simulation of two-phase flows with varying surface tension*  
 K. Y. Lervåg.  
@@ -20,6 +23,7 @@ Master's thesis, Department of Mathematical Sciences, Norwegian University of
 Science and Technology (NTNU), Trondheim, June 2008.  
 [Download from
 DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:348658)
+[DOI](http://dx.doi.org/10.13140/RG.2.1.4397.4569)
 
 # Journal papers
 
