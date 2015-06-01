@@ -28,7 +28,7 @@ DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:348658)
 # Journal papers
 
 *Analysis of the diffuse-domain method for solving PDEs in complex geometries*  
-K. Y. Lervåg and J. Lowengrub  
+K. Y. Lervåg and J. Lowengrub  .
 [Communications in Mathematical
 Sciences](http://intlpress.com/site/pub/pages/journals/items/cms/_home/_main),
 13, Issue 6 (2015), pp. 1473 -- 1500.
@@ -38,9 +38,11 @@ Sciences](http://intlpress.com/site/pub/pages/journals/items/cms/_home/_main),
 
 *A robust method for calculating interface curvature and normal vectors using
   an extracted local level set*  
-Å. Ervik, K. Y. Lervåg, and S. T. Munkejord  
-Journal of Computational Physics, 257, Part A (2014), 259--277.  
-[DOI](http://dx.doi.org/10.1016/j.jcp.2013.09.053).
+Å. Ervik, K. Y. Lervåg, and S. T. Munkejord.  
+Journal of Computational Physics, 257, Part A (2014), pp. 259--277.  
+[DOI](http://dx.doi.org/10.1016/j.jcp.2013.09.053)  
+[ResearchGate](https://www.researchgate.net/publication/260628426_A_robust_method_for_calculating_interface_curvature_and_normal_vectors_using_an_extracted_local_level_set|ResearchGate)  
+[arXiv](http://arxiv.org/abs/1405.0829)
 
 *Calculation of the interface curvature and normal vector with the level-set
   method*  
