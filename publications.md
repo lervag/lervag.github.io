@@ -12,9 +12,9 @@ PhD Thesis, Department of Energy and Process Engineering, Faculty of
 Engineering Science and Technology, Norwegian University of Science and
 Technology (NTNU), Trondheim, July 2013.  ISBN: 978-82-471-4544-9
 / 978-82-471-4545-6 (electronic version).  Defended 2 September 2013.  
-[Download](/files/thesis.pdf).
+[Download](/files/thesis.pdf)  
 [Download from
-DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:649166)
+DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:649166)  
 [DOI](http://dx.doi.org/10.13140/RG.2.1.4528.5283)
 
 *Simulation of two-phase flows with varying surface tension*  
@@ -22,7 +22,7 @@ K. Y. Lervåg.
 Master's thesis, Department of Mathematical Sciences, Norwegian University of
 Science and Technology (NTNU), Trondheim, June 2008.  
 [Download from
-DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:348658)
+DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:348658)  
 [DOI](http://dx.doi.org/10.13140/RG.2.1.4397.4569)
 
 # Journal papers
@@ -31,7 +31,7 @@ DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:348658)
 K. Y. Lervåg and J. Lowengrub  .
 [Communications in Mathematical
 Sciences](http://intlpress.com/site/pub/pages/journals/items/cms/_home/_main),
-13, Issue 6 (2015), pp. 1473 -- 1500.
+13, Issue 6 (2015), pp. 1473 -- 1500.  
 [DOI](http://dx.doi.org/10.4310/CMS.2015.v13.n6.a6)  
 [ResearchGate](https://www.researchgate.net/publication/264312432_Analysis_of_the_diffuse-domain_method_for_solving_PDEs_in_complex_geometries)  
 [arXiv](http://arxiv.org/abs/1407.7480)
