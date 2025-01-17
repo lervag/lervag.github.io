@@ -38,7 +38,9 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Setup theme
-        run: ./setup.sh
+        run: |
+          echo "Fetching PaperMod theme submodule"
+          git submodule update --init
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
