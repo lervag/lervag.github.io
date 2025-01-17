@@ -32,13 +32,15 @@ jobs:
         run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Fetch theme from git submodule
-        run: git submodule update --init
+      # - name: Fetch theme from git submodule
+      #   run: git submodule update --init
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
