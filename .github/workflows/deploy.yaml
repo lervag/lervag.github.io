@@ -37,10 +37,8 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Setup theme
-        run: |
-          echo "Fetching PaperMod theme submodule"
-          git submodule update --init
+      - name: Fetch theme from git submodule
+        run: git submodule update --init
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -49,9 +47,7 @@ jobs:
           TZ: Europe/Oslo
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          hugo \
-            --gc \
-            --minify \
+          hugo --gc --minify
           git branch -D static-pages || true
           git checkout -b static-pages
           git add -f public
