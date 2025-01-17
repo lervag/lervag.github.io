@@ -1,0 +1,88 @@
+name: "Personal blog"
+description: "Personal blog"
+url: "lervag.github.io"
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments
+
+relativeURLs: true
+languageCode: en-uk
+title: lervag's blog
+theme: PaperMod
+enableEmoji: true
+enableRobotsTXT: false
+
+params:
+  title: lervag's blog
+  author: Karl Yngve Lervåg
+  DateFormat: "2006-01-02"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  homeInfoParams:
+    title: "Hello world"
+    Content: |
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+      vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/lervag"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/karl-yngve-lervåg/"
+    - name: ResearchGate
+      url: "https://www.researchgate.net/profile/Karl_Yngve_Lervag"
+    - name: email
+      url: "mailto:karl.yngve+blog@gmail.com"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  editPost:
+    URL: "https://github.com/lervag/lervag.github.io/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+menu:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 10
+    - identifier: publications
+      name: publications
+      url: /publications/
+      weight: 20
+
+
+pygmentsUseClasses: true
+markup:
+goldmark:
+  renderer:
+    # This is in order to allow `<div>` in some markdown posts
+    unsafe: true
+highlight:
+  noClasses: false
+  anchorLineNos: true
+  codeFences: true
+  # guessSyntax: true
+  # lineNos: true
+  # style: monokai

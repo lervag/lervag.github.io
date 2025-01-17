@@ -1,5 +1,9 @@
 ---
 title: Publications
+slug: publications
+description: "List of publications"
+showToc: false
+ShowBreadCrumbs: false
 ---
 
 # Theses
@@ -12,7 +16,6 @@ PhD Thesis, Department of Energy and Process Engineering, Faculty of
 Engineering Science and Technology, Norwegian University of Science and
 Technology (NTNU), Trondheim, July 2013.  ISBN: 978-82-471-4544-9
 / 978-82-471-4545-6 (electronic version).  Defended 2 September 2013.  
-[Download](/files/thesis.pdf)  
 [Download from
 DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:649166)  
 [DOI](http://dx.doi.org/10.13140/RG.2.1.4528.5283)
@@ -56,19 +59,16 @@ Computers and Fluids, 84 (2013), 218--230.
 K. Y. Lervåg and Å. Ervik.  
 In: [ENUMATH 2011 proceedings volume](http://goo.gl/PcZrT),
 [Springer](http://goo.gl/rynzr). ISBN: 978-3642331336.  
-[Preprint](files/lervag_enumath2011.pdf).
 
 *Calculation of interface curvature with the level-set method*  
 K. Y. Lervåg.  
 In: [MekIT'11 - 6th National Conference on Computational
 Mechanics](http://www.ntnu.no/mekit11/mekit-11). ISBN 978-82-519-2798-7.  
-[Preprint](files/lervag_mekit2011.pdf).
 
 *Sharp interface simulations of surfactant-covered drops in electric fields*  
 K. E. Teigen, K. Y. Lervåg and S. T. Munkejord.  
 In: [Fifth European Conference on Computational Fluid Dynamics, ECCOMAS CFD
 2010](http://www.eccomas-cfd2010.org/). ISBN 978-989-96778-1-4.  
-[Preprint](/files/teigen10.pdf).
 
 # Presentations
 
@@ -77,7 +77,6 @@ In: [Fifth European Conference on Computational Fluid Dynamics, ECCOMAS CFD
 K. Y. Lervåg, J. Lowengrub  
 In: "International Conference on Numerical Methods in Multiphase Flows"
 (ICNMMF) 2012, Penn State University, Pennsylvania, 12-14 June 2012.  
-[pdf](/files/lervag12.pdf)
 
 *Calculation of droplets impinging on a plane surface: Accurate calculations of
   interfacial curvature with the level-set method*  
@@ -85,5 +84,4 @@ K. Y. Lervåg, K. E. Teigen and S. T. Munkejord.
 In: [First Trondheim Gas Technology
 Conference](http://www.sintef.no/Projectweb/Trondheim_GTS/), 21-22 October
 2009.  
-[Presentation](/files/lervag09.pdf).
 

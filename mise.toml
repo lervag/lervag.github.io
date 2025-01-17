@@ -1,0 +1,16 @@
+[tools]
+hugo = "latest"
+
+[tasks.dev]
+run = """
+hugo server --buildDrafts
+"""
+
+[tasks.initPaperMod]
+run = """
+mkdir -p themes
+git submodule update --init --recursive
+"""
+
+[tasks.updatePaperMod]
+run = "git submodule update --remote --merge"
