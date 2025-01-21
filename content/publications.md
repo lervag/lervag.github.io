@@ -6,27 +6,20 @@ showToc: false
 ShowBreadCrumbs: false
 ---
 
+Between 2008 and 2022 I worked as a researcher at [SINTEF Energy Research](https://www.sintef.no/en/sintef-energy/) in Trondheim.
+I did my PhD between 2010 and 2013 at [NTNU](https://www.ntnu.edu/).
+This is a list of publications from my career as a researcher.
+Most of these are also listed on my [ORCID](https://orcid.org/0000-0002-2554-0893).
+
 # Theses
 
-*Calculation of interface curvatures with the level-set method for two-phase
-  flow simulations and a second-order diffuse-domain method for elliptic
-  problems in complex geometries*  
-K. Y. Lervåg.  
-PhD Thesis, Department of Energy and Process Engineering, Faculty of
-Engineering Science and Technology, Norwegian University of Science and
-Technology (NTNU), Trondheim, July 2013.  ISBN: 978-82-471-4544-9
-/ 978-82-471-4545-6 (electronic version).  Defended 2 September 2013.  
-[Download from
-DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:649166)  
-[DOI](http://dx.doi.org/10.13140/RG.2.1.4528.5283)
+"_Calculation of interface curvatures with the level-set method for two-phase
+flow simulations and a second-order diffuse-domain method for elliptic
+problems in complex geometries_"  
+[PhD Thesis](http://dx.doi.org/10.13140/RG.2.1.4528.5283), NTNU, 2013
 
-*Simulation of two-phase flows with varying surface tension*  
-K. Y. Lervåg.  
-Master's thesis, Department of Mathematical Sciences, Norwegian University of
-Science and Technology (NTNU), Trondheim, June 2008.  
-[Download from
-DiVA](http://www.diva-portal.org/smash/record.jsf?searchId=2&pid=diva2:348658)  
-[DOI](http://dx.doi.org/10.13140/RG.2.1.4397.4569)
+"_Simulation of two-phase flows with varying surface tension_"  
+[Master's thesis](http://dx.doi.org/10.13140/RG.2.1.4397.4569), NTNU, 2008
 
 # Journal papers
 

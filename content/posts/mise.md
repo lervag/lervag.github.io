@@ -3,9 +3,7 @@ title: "The tools that I love: mise-en-place"
 author: Karl Yngve Lervåg
 date: 2025-01-21
 showToc: false
-build:
-  list: never
-  render: always
+draft: true
 ---
 
 > In this series, I will briefly talk about tools that I love and that I use often.
