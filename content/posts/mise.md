@@ -1,48 +1,58 @@
 ---
 title: "The tools that I love: mise-en-place"
 author: Karl Yngve Lervåg
-draft: true
+date: 2025-01-21
+showToc: false
+build:
+  list: never
+  render: always
 ---
 
 > In this series, I will briefly talk about tools that I love and that I use often.
 > I will keep things brief, as there is already a lot of good content that goes into more depth.
 
 [mise-en-place](https://mise.jdx.dev/), or `mise` for short, is a tool for setting up well-defined development environments.
-We specify which tools or dependencies we want in a file inside some project.
-Then, when I work on that project, `mise` ensures that I have the specified tools at the specified versions available.
+To use ut, I simply specify which tools or dependencies I want in a file named `mise.toml` inside a project.
+Then, when I work on that project, `mise` automatically ensures that I have the specified tools at the specified versions available.
 
-For example, let's say I am working on a project where I want Python 3.12 and Java 21.
-I could define a file `mise.toml` at the root directory of my project with this content:
+For example, let's say I am working on a project where I want Python 3.12, Java 21, Neovim 0.5[^1] and [Hurl](https://hurl.dev).
+I could define `mise.toml` at the root directory of my project with this content:
 
 ```toml
 [tools]
 java = '21.0'
 python = '3.12'
+neovim = '0.5'
+hurl = 'latest'
 ```
 
 `mise` will now ensure that I have these exact versions on my `PATH` whenever I work on that project.
-It is really _that_ simple.
+In my experience, it is beautiful in its simplicity, and it just works™!
 
----
+Here's a short list of reasons why it's on my "love" list:
 
-Around 2010 I learned about the concept of reproducible builds.
-I was a PhD candidate at the time, and I was learning to write good Makefiles and shell scripts (or at least what I deemed good at the time).
-With time, I noticed things like [Nix](https://nix.dev/) and [Guix](https://guix.gnu.org/) and took note.
-These things really intriguied me, but I never took the time to learn how to use either of them.
+* The _"it just works"_ factor is very high!
+* The documentation is great!
+* It is very easy to on-board friends and colleagues, as long as they use Linux or
+MacOS[^2].
+    I only need about 5-10 minutes to get people started.
+    And the good documentation is really helpful in this regard!
+* It is easy and convenient to use `mise` in pipelines in both GitLab and Github.
 
-Some years later, I learned about [`asdf`](https://asdf-vm.com/), "the Multiple Runtime Version Manager".
-I was hooked; it was easy to learn and immediately very useful.
-I also learned about [direnv](https://direnv.net/), and the two worked excellent together.
+## Addendum
 
-I still felt I should take the time to learn Nix or Guix, but the pull was less strong.
-With `asdf` and `direnv` I had projects set up with their specific tool and environment dependencies defined in two simple files: `.tool-versions` and `.envrc`.
-Even though I didn't get any colleagues to use this at the time, it was still very useful personally.
-I could have different versions readily available for different projects, and setting up new systems and computers became much easier.
+Before `mise` (and `rtx` as it was named in the early days), I used [`asdf`](https://asdf-vm.com/), "the Multiple Runtime Version Manager".
+I combined `asdf` with [direnv](https://direnv.net/), and the two worked excellent together.
+To my knowledge, `mise` started out as a sort of "rewrite" of `asdf`.
+It is compatible with the `.tool-versions` specification files used by `asdf`.
 
-Getting this to work well was simple.
-But not trivial; I remember having to understand the concept of shims.
-A few times, things didn't work as I expected, and I found it hard to debug properly.
-Still, it worked nicely and I used it with joy.
+Today, I think `mise` has grown into something much better and more robust.
+It easily replaces both `asdf` and `direnv`.
 
+I should also mention that I am aware of and quite intrigued by both [Nix](https://nix.dev/) and [Guix](https://guix.gnu.org/).
+However, both of these require me to learn much more before they become useful.
+I believe it would also be much harder to on-board colleagues and friends.
+As such, I find `mise` really hits the sweet spot with regard to its simplicity and convenience!
 
-
+[^1]: For no sane reason. Clearly, we want the [Neovim nightly release](https://github.com/neovim/neovim/releases)!
+[^2]: `mise` [does have some Windows support](https://mise.jdx.dev/faq.html#windows-support), but it's not as smooth.

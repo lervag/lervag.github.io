@@ -17,7 +17,7 @@ params:
   author: Karl Yngve Lervåg
   DateFormat: "2006-01-02"
   defaultTheme: auto
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
