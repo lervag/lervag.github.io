@@ -1,0 +1,8 @@
+name: blog
+
+on_project_start:
+  - (sleep 0.5 && xdg-open http://localhost:1313) &
+
+windows:
+  - dev: nvim
+  - hugo: hugo server
