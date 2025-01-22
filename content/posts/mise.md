@@ -32,10 +32,11 @@ Here's a short list of reasons why it's on my "love" list:
 
 - The _"it just works"_ factor is very high!
 - The [documentation](https://mise.jdx.dev/getting-started.html) is great!
+- The [IDE and editor integration](https://mise.jdx.dev/ide-integration.html) is great!
 - It is very easy to on-board friends and colleagues, as long as they use Linux or MacOS[^2].
   I only need about 5-10 minutes to get people started.
   And the good documentation is really helpful in this regard!
-- It is easy and convenient to use `mise` in pipelines in both GitLab and Github.
+- It is [easy and convenient to use `mise` in pipelines](https://mise.jdx.dev/continuous-integration.html) in both GitLab and Github.
 
 ## Addendum
 
