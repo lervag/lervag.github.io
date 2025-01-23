@@ -1,11 +1,7 @@
 ---
 title: 'The tools that I love: mise-en-place'
 author: Karl Yngve Lervåg
-date: 2025-01-22T00:00:00.000Z
-build:
-  list: never
-  publishResources: false
-  render: always
+date: 2025-01-23
 ---
 > In this series, I will briefly talk about tools that I love and that I use often.
 > I will keep things brief, as there is already a lot of good content that goes into more depth.
