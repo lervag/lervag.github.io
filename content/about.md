@@ -2,8 +2,8 @@
 title: About
 slug: about
 date: 2025-01-17
-showToc: false
 ShowBreadCrumbs: false
+ShowWordCount: false
 ---
 
 I am Karl.

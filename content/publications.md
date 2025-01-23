@@ -1,12 +1,12 @@
 ---
 title: Publications
 slug: publications
-description: "List of publications"
-showToc: false
 ShowBreadCrumbs: false
+hidemeta: true
+ShowShareButtons: false
 ---
 
-Between 2008 and 2022 I worked as a researcher at [SINTEF Energy Research](https://www.sintef.no/en/sintef-energy/) in Trondheim.
+Between 2008 and 2022 I worked as a researcher at [SINTEF Energy Research](https://www.sintef.no/en/sintef-energy/).
 I did my PhD between 2010 and 2013 at [NTNU](https://www.ntnu.edu/).
 This is a list of publications from my career as a researcher.
 Most of the publications are also listed on my [ORCID](https://orcid.org/0000-0002-2554-0893), on [ResearchGate](https://www.researchgate.net/profile/Karl_Yngve_Lervag), and at my [Google scholar account](https://scholar.google.com/citations?user=phAfEmsAAAAJ).
