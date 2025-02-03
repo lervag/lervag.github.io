@@ -19,3 +19,5 @@ The most notable ones are probably these:
 
 I currently work as a senior developer and tech lead at [Sikt](https://www.sikt.no).
 I've previously worked at [SINTEF Energy Research](https://www.sintef.no/en/sintef-energy/) as a researcher.
+As a researcher I worked with computational fluid dynamics.
+My main publications [are listed here](/publications).
