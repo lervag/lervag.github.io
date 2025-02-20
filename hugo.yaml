@@ -10,7 +10,7 @@ languageCode: en-uk
 title: lervag's blog
 theme: PaperMod
 enableEmoji: true
-enableRobotsTXT: false
+enableRobotsTXT: true
 
 params:
   title: lervag's blog
