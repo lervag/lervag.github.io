@@ -1,0 +1,11 @@
+.so-logo {
+  display: flex;
+  justify-content: right;
+  margin: 0 1em;
+
+  a { box-shadow: none; }
+
+  img {
+    margin: 0;
+  }
+}
