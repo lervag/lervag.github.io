@@ -88,7 +88,7 @@ Finally, a couple of closing remarks:
 - Working with Kubernetes environments and gitlab pipelines can be a hazzle.
   It was very useful to setup a local Kubernetes environment with [minikube](https://minikube.sigs.k8s.io/docs/) - this provided a much faster feedback loop.
 - Doing this work would have been hard without having access to relevant competence.
-  I would like to make an honourable mention of [Robin Kåveland](https://kaveland.no/), without whom this work would have been very hard!
+  I would like to make an honourable mention of [Robin Kåveland](https://kaveland.no/), who made this possible!
   I've learned a lot from working with you; thanks!
 
 [^1]: <https://sikt.no/tiltak/fremtidens-opptak>
