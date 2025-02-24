@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>lervag's blog</title><link>/</link><description>Recent content on lervag's blog</description><generator>Hugo -- 0.144.2</generator><language>en-uk</language><lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Load testing of "Søkerportalen"</title><link>/posts/loadtest/</link><pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate><guid>/posts/loadtest/</guid><description>&lt;figure class="so-logo">&lt;a href="https://www.samordnaopptak.no/">
+&lt;img loading="lazy" src="https://www.samordnaopptak.no/vrtx/dist/resources/images/logo.svg"
+alt="Samordna opptak"/> &lt;/a>
+&lt;/figure>
+&lt;p>The last couple of years I&amp;rsquo;ve been working in a team &lt;a href="https://sikt.no/en/home">at Sikt&lt;/a> on the admission services for Norwegian universities and colleges&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>.
+As part of this work, we&amp;rsquo;ve been performing load tests of &lt;a href="https://sok.samordnaopptak.no/">the applicant portal&lt;/a>.
+The first times my team and I did this, we followed a well-defined manual procedure that were executed two times each year.
+We figured it would be relatively easy to automate this and have the load tests run daily in our pipelines.&lt;/p></description></item><item><title>About</title><link>/about/</link><pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;p>Hi!
+I am Karl.
+This is my blog where I write about things that cross my mind.&lt;/p>
+&lt;p>I&amp;rsquo;m the main developer of &lt;a href="https://github.com/lervag/vimtex/">VimTeX&lt;/a>, a Vim and Neovim plugin for writing LaTeX documents.
+I&amp;rsquo;ve also published a few other open source projects, all of them available &lt;a href="https://github.com/lervag">on GitHub&lt;/a>.
+The most notable ones are probably these:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/lervag/wiki.vim/">wiki.vim&lt;/a>, a Vim and Neovim plugin for writing and maintaining a personal wiki.&lt;/li>
+&lt;li>&lt;a href="https://github.com/lervag/apy">apy&lt;/a>, a CLI tool for interacting with your local Anki database.&lt;/li>
+&lt;/ul>
+&lt;p>I currently work as a senior developer and tech lead at &lt;a href="https://www.sikt.no">Sikt&lt;/a>.
+I&amp;rsquo;ve previously worked at &lt;a href="https://www.sintef.no/en/sintef-energy/">SINTEF Energy Research&lt;/a> as a researcher.
+As a researcher I worked with computational fluid dynamics.
+My main publications &lt;a href="./publications">are listed here&lt;/a>.&lt;/p></description></item><item><title>The tools that I love: Anki</title><link>/posts/anki/</link><pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate><guid>/posts/anki/</guid><description>&lt;blockquote>
+&lt;p>In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://apps.ankiweb.net/">Anki&lt;/a> is a flash card tool to help with remembering things.
+In their own words:&lt;/p>
+&lt;blockquote>
+&lt;p>Anki is a program which makes remembering things easy.
+Because it&amp;rsquo;s a lot more efficient than traditional study methods, you can either greatly decrease your time spent studying, or greatly increase the amount you learn.&lt;/p></description></item><item><title>The tools that I love: mise-en-place</title><link>/posts/mise/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>/posts/mise/</guid><description>&lt;blockquote>
+&lt;p>In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.&lt;/p>&lt;/blockquote>
+&lt;p>&lt;a href="https://mise.jdx.dev/">mise-en-place&lt;/a>, or &lt;code>mise&lt;/code> for short, is a tool for setting up well-defined development environments.
+To use it, I simply specify which tools or dependencies I want in a file named &lt;code>mise.toml&lt;/code> inside a project.
+Then, when I work on that project, &lt;code>mise&lt;/code> automatically ensures that I have the specified tools at the specified versions available.&lt;/p></description></item><item><title>Publications</title><link>/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/publications/</guid><description>&lt;p>Between 2008 and 2022 I worked as a researcher at &lt;a href="https://www.sintef.no/en/sintef-energy/">SINTEF Energy Research&lt;/a>.
+I did my PhD between 2010 and 2013 at &lt;a href="https://www.ntnu.edu/">NTNU&lt;/a>.
+This is a list of publications from my career as a researcher.
+Most of the publications are also listed on my &lt;a href="https://orcid.org/0000-0002-2554-0893">ORCID&lt;/a>, on &lt;a href="https://www.researchgate.net/profile/Karl_Yngve_Lervag">ResearchGate&lt;/a>, and at my &lt;a href="https://scholar.google.com/citations?user=phAfEmsAAAAJ">Google scholar account&lt;/a>.&lt;/p>
+&lt;h1 id="journal-papers">Journal papers&lt;/h1>
+&lt;p>E. A. C. Panduro, F. Finotti, G. Largiller, K. Y. Lervåg,
+&lt;em>A review of the use of nanofluids as heat-transfer fluids for use in parabolic-trough collectors&lt;/em>,
+Applied Thermal Engineering, Volume 211, 2022.
+&lt;a href="https://dx.doi.org/10.1016/j.applthermaleng.2022.118346">Journal version&lt;/a>.&lt;/p></description></item></channel></rss>
