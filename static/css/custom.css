@@ -6,6 +6,13 @@
   a { box-shadow: none; }
 
   img {
+    padding: 0.2em 0em 0.2em 1em;
     margin: 0;
+  }
+}
+
+.dark .so-logo {
+  img {
+    background-color: var(--primary);
   }
 }
