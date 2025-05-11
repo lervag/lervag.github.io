@@ -53,8 +53,11 @@ Researchers are used to this, but in my experience, developers are often not tra
 
 ### Culture
 
-I've had the pleasure of working in a skilled, multi-disciplinary team where we have developed a very good and positive culture.
-So, what does this entail?
+At SINTEF, I worked in a highly skilled team with clever and kind co-workers.
+After the transition, I still have the pleasure of working in such a team.
+However, in the new team, we have developed a very good and positive culture.
+It's hard to put it in words how much value this brings to me.
+But in short, these are all traits that characterizes the culture of my current team:
 
 * I feel safe — I can express my thoughts more or less unfiltered.
 * I can be curious and spend time on investigating ideas.
@@ -66,12 +69,11 @@ So, what does this entail?
 * When things are unclear or frustrating, we are good at being constructive.
   Instead of staying in a frustrated state, we start investigating how we can best proceed.
 
-It's hard to put it in words how much value this brings to me.
-And I'm very glad to have experienced it!
+I think I'll have to elaborate more about my thoughts on culture in a later blog post.
+Now, to conclude this post, I'll just summarize and say I've found the transition to be a positive experience.
 
 [^1]: You can find my list of publications [here](/publications) if you are interested.
 [^2]: Such as a healthy work culture!
-  I think I'll write more about my thoughts on culture in a later blog post.
 [^3]: Clearly, I'm generalizing.
   Not all researchers are very good at writing or this type of problem solving.
   And not all developers are bad at it!
