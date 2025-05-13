@@ -4,6 +4,8 @@ author: Karl Yngve Lervåg
 date: 2025-05-08
 ---
 
+> Disclaimer: This post is also published [at the Sikt blog](https://blogg.sikt.no/my-transition-from-researcher-to-developer-337f83853f79).
+
 I began my research career at [SINTEF Energy Research](https://www.sintef.no/en/sintef-energy/) after finishing my Master's in numerical mathematics in 2008.
 My main area of research throughout my career was computational fluid dynamics (CFD)[^1].
 I finished my PhD in 2013, and I stayed at SINTEF working as a research scientist until March 2022.
@@ -65,7 +67,7 @@ But in short, these are all traits that characterizes the culture of my current 
 * I receive honest feedback on my actions and work.
 * We're allowed to have fun.
 * We are open and share our thoughts and ideas.
-* We respect each other's time and minimize unnecessary lengthy meetings
+* We respect each other's time and minimize unnecessary lengthy meetings.
 * When things are unclear or frustrating, we are good at being constructive.
   Instead of staying in a frustrated state, we start investigating how we can best proceed.
 
