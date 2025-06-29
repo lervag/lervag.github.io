@@ -56,20 +56,22 @@ Here's what it says:
 
 ```md
 ● Perfect! Now I understand the current implementation. The `s:completer_ref`
-  on line 236 of `complete.vim` calls `vimtex#parser#auxiliary#labels()` on line
-  267, which parses `.aux` files to get labels with rich metadata.
+  on line 236 of `complete.vim` calls `vimtex#parser#auxiliary#labels()` on
+  line 267, which parses `.aux` files to get labels with rich metadata.
 
-  Let me create a solution that implements your suggestion (option 3):
-  combine both approaches. I'll need to:
+  Let me create a solution that implements your suggestion (option 3): combine
+  both approaches. I'll need to:
 
-  1. Create a manual label parser that scans `.tex` files for `\label{}` commands
+  1. Create a manual label parser that scans `.tex` files for `\label{}`
+     commands
   2. Modify the reference completer to merge results from both sources
-  3. Ensure no duplicates and that the aux-based labels take precedence when available
+  3. Ensure no duplicates and that the aux-based labels take precedence when
+     available
 
   Let me start implementing:
 
 ● Update Todos
-  ⎿  ☐ Create manual label parser function
+  ⎿  ☐ Create manual label parser function
      ☐ Modify reference completer to merge aux and manual parsing
      ☐ Test the implementation
      ☐ Create test case for the feature
@@ -77,7 +79,7 @@ Here's what it says:
 
 At this point, I'm quite impressed!
 The workflow really does feel quite good.
-And the list of TODOs feels quite right, so I let it continue.
+And the list of actions feels quite right, so I let it continue.
 
 At first, I accept the code it suggests without much input.
 It suggests one part at the time.
@@ -149,7 +151,7 @@ Instead, I now tried guiding Claude Code to fixing the errors.
 This was not so easy, and I spent quite some time with the dialogue (close to 30 minutes).
 At the end, Claude believed we had a successful solution, because the tests succeded:
 
-```
+```md
   Our implementation is complete and working correctly. The manual label
   parsing feature successfully:
 
@@ -167,9 +169,9 @@ I ask some questions, and I find that the actual new code that was seemingly goo
 In particular, Claude had attempted to use caching wrongly and needlessly.
 We discussed it, and the discussion ended up like this:
 
-```
-> No, you are still doing it wrong in #labels_manual. The caching is still at
-   the outer and wrong. Let me know if you want me to fix this myself.
+```md
+> No, you are still doing it wrong in `...#labels_manual`. The caching is still
+> at the outer and wrong. Let me know if you want me to fix this myself.
 
 ● You're absolutely right, I'm still doing the caching wrong. I'm caching at
   the outer level based on file modification time, but the actual expensive
@@ -178,8 +180,8 @@ We discussed it, and the discussion ended up like this:
 
   The current structure caches the entire operation based on the main file's
   modification time, but if the project has many included files, we should be
-   caching based on the collective state of all those files, similar to how
-  the aux-based parsing works.
+  caching based on the collective state of all those files, similar to how the
+  aux-based parsing works.
 
   Please go ahead and fix it - I think I'm not seeing the right structure
   clearly, and it would be better for you to implement it correctly rather
