@@ -13,6 +13,32 @@ Specifically, I wanted to do two things:
 2. Have it help me resolve an issue.
 
 This is a short writeup of my experience.
+First, for reference, VimTeX is a Vim and Neovim plugin.
+It consists mostly of Vimscript, but also a few other things, as is shown in the output of `tokei`:
+
+```sh
+===============================================================================
+ Language            Files        Lines         Code     Comments       Blanks
+===============================================================================
+ Dockerfile              1           36           17           13            6
+ JSON                    3         1463         1463            0            0
+ Lua                    10         1482         1004          276          202
+ Makefile               63          906          608            3          295
+ Python                  4          141          108            3           30
+ TeX                   370        38981        34515          548         3918
+ Plain Text              1         7326            0         5878         1448
+ TOML                    2           35           34            0            1
+ VB6                     4          111           91            0           20
+ Vim script            395        31385        27083         1244         3058
+-------------------------------------------------------------------------------
+ Markdown                7         1274            0          991          283
+ |- Lua                  1            9            7            2            0
+ |- TeX                  1            3            3            0            0
+ (Total)                           1286           10          993          283
+===============================================================================
+ Total                 860        83140        64923         8956         9261
+===============================================================================
+```
 
 ## Part 1: Analysis and initial thoughts
 
