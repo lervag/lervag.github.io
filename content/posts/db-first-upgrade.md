@@ -41,7 +41,7 @@ Spoiler alert: I needed two tries.
 
 ### Dump of the old database
 
-I first tried performing a `pg_basebackup` against the old PostgreSQL server via port forwarding:
+I first tried performing a [`pg_basebackup`](https://www.postgresql.org/docs/current/app-pgbasebackup.html) against the old PostgreSQL server via port forwarding:
 
 ```sh
 # Port forward between local 5432 and remote
@@ -77,7 +77,7 @@ pg_ctl stop -D db-old
 
 ### Upgrading the database locally
 
-To upgrade the database locally, I did the following:
+To upgrade the database locally, I used [`pg_upgrade`](https://www.postgresql.org/docs/current/pgupgrade.html), like this:
 
 ```sh
 # Create a new DB that we will upgrade into
@@ -127,7 +127,7 @@ And we decided to try again with a clean slate.
 
 We created a new plan:
 
-1. Use `pg_dump` to obtain a logical backup.
+1. Use [`pg_dump`](https://www.postgresql.org/docs/current/app-pgdump.html) to obtain a logical backup.
    However, to restore from a `pg_dump`, it is necessary to create users and grant permissions before performing the restore.
 
    ```sh
