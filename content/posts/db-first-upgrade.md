@@ -170,5 +170,8 @@ The main insights I gained from this can be summarized as follows:
 
 Overall, these insights not only facilitated a successful upgrade but also equipped me with strategies for future infrastructure challenges.
 
+As a final remark, I should mention I just noticed [docker-pgautoupgrade](https://github.com/pgautoupgrade/docker-pgautoupgrade).
+It looks awesome, and I'll definitely look into it the next time I need to do a PostgreSQL upgrade!
+
 [^1]: See also [The tools that I love: mise-en-place](/posts/mise) for more reasons why I like `mise`!
 
