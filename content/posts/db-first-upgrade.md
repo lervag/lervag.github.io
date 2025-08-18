@@ -1,8 +1,7 @@
 ---
 title: The first time I upgraded a PostgresSQL database
 author: Karl Yngve Lervåg
-date: 2025-08-17T00:00:00.000Z
-draft: true
+date: 2025-08-18T00:00:00.000Z
 ---
 Upgrading a live PostgreSQL database in a Kubernetes environment can be a daunting task.
 Earlier this year, I faced this exact challenge: migrating an important PostgreSQL 15 database to version 16.
@@ -25,7 +24,7 @@ Now, the plan was simple:
 ## Preliminary Work
 
 To do this job, I needed both PostgreSQL 15, PostgreSQL 16, and [`kubectl`](https://kubernetes.io/docs/reference/kubectl/) installed on my system.
-Thus, having a tool like [mise](https://mise.jdx.dev/) really comes in handy, as it makes it very easy to retrieve tools on demand[^1].
+Thus, having a tool like [`mise`](https://mise.jdx.dev/) really comes in handy, as it makes it very easy to retrieve tools on demand[^1].
 For instance, to do some very quick initial testing, I did:
 
 ```sh
