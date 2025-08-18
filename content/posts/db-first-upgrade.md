@@ -1,7 +1,7 @@
 ---
 title: The first time I upgraded a PostgresSQL database
 author: Karl Yngve Lervåg
-date: 2025-08-18T00:00:00.000Z
+date: 2025-08-18T01:00:00.000Z
 ---
 Upgrading a live PostgreSQL database in a Kubernetes environment can be a daunting task.
 Earlier this year, I faced this exact challenge: migrating an important PostgreSQL 15 database to version 16.
