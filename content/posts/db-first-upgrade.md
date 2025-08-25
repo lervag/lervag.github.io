@@ -8,10 +8,7 @@ Earlier this year, I faced this exact challenge: migrating an important PostgreS
 As this was the first time I tackled an upgrade of this nature, I realized I would gain more from the experience by documenting it.
 Additionally, I hope to share insights that might help others navigate similar upgrades.
 
-**Context:** The database was a live instance running in our Kubernetes cloud, serving as a template for other environments.
-It was operating on PostgreSQL 15, and we needed to upgrade it to version 16.
-To accomplish this, I had to deepen my knowledge of both PostgreSQL and Kubernetes.
-Fortunately, I collaborated with a knowledgeable colleague who was already well-versed in these areas.
+Fortunately, I collaborated with a knowledgeable colleague who was already well-versed in both PostgreSQL database maintenance and Kubernetes.
 His support was invaluable—thanks [Robin](https://kaveland.no/)!
 
 Now, the plan was simple:
@@ -53,26 +50,33 @@ psql --host localhost --port 5432 --user postgres postgres
 pg_basebackup --host localhost --port 5432 --user postgres -D dump -Fp -Xs -P --checkpoint fast
 ```
 
-This failed with a "connection reset"-type error.
+As the docs explain, `pg_basebackup` is used to take a base backup of a running PostgreSQL database cluster.
+The backup is taken without affecting other clients of the database.
+It really feels like the natural tool here.
+
+However, the process failed with a "connection reset"-type error.
 It must be some issue with networking or buffering – it's a bit unclear.
 I don't remember the specifics of this failure, since I figured I could just copy the files manually.
 So, I next tried to copy the old database files with `kubectl`:
 
 ```sh
 kubectl cp my-service-db/my-db-pg15-0:/var/lib/postgresql/data/pgdata -c postgres db-old
-
-# Copied while PostgreSQL was running, so I need to remove the pid file
-rm db-old/postmaster.pid
 ```
 
-I tested that I could start a server with the files locally:
+I tested that I could start a server with the dumped files locally:
 
 ```sh
-# Test that the database dump works
 mise shell postgres@15.5
-pg_ctl start -D db-old
+pg_ctl start -D db-old # failed first time!
+
+rm db-old/postmaster.pid
+pg_ctl start -D db-old # now it worked
+
 pg_ctl stop -D db-old
 ```
+
+It worked, except that I found I had to remove the `postmaster.pid` file before running `pg_ctl start`.
+This was necessary because I had copied the files from a running database server in which the `postmaster.pid` is present, and PostgreSQL won't start if it is present.
 
 ### Upgrading the database locally
 
@@ -124,10 +128,14 @@ And we decided to try again with a clean slate.
 
 ### Now with pg_dump
 
-We created a new plan:
+The next idea was based on [`pg_dump`](https://www.postgresql.org/docs/current/app-pgdump.html), which is another utility for backing up a PostgreSQL database.
+According to the docs, it makes consistent backups even if the database is being used concurrently and it does not block other users.
+The main difference is that `pg_dump` only dumps a single database and it does not include global objects such as roles.
+Further, `pg_dump` extracts the database into an SQL script file, possible compressed and archived, while `pg_basebackup` creates a physical byte-for-byte backup of the entire database cluster's files.
 
-1. Use [`pg_dump`](https://www.postgresql.org/docs/current/app-pgdump.html) to obtain a logical backup.
-   However, to restore from a `pg_dump`, it is necessary to create users and grant permissions before performing the restore.
+So, we created a new plan:
+
+1. Use `pg_dump` to obtain a logical backup.
 
    ```sh
    kubectl port-forward service/my-db 5432
@@ -145,6 +153,8 @@ We created a new plan:
    GRANT CONNECT ON mydbname TO user2;
    ```
 
+   This is necessary, because as mentioned above, `pg_dump` does not include global objects such as roles.
+
 4. Restore from the dump.
 
    ```sh
@@ -158,13 +168,11 @@ It worked fine!
 
 ## Conclusions
 
-This experience was a valuable learning opportunity that helped expand my knowledge of both PostgreSQL and Kubernetes.
-Tackling such challenges not only enhances technical proficiency but also fosters a problem-solving mindset.
-
-The main insights I gained from this can be summarized as follows:
+All in all, I found this work to be interesting and I learned a lot from doing it.
+The main things I want to remember:
 
 - I should not create the new, updated database on a _different_ system from where it will be running.
-  Understanding the environment, such as library differences between systems, is crucial for a smooth upgrade.
+  Understanding the environment, such as library differences between systems, is crucial!
 - `pg_dump` proved more reliable in our scenario compared to `pg_basebackup`, especially when dealing with different system architectures.
 - Working alongside a knowledgeable colleague accelerated the learning process and helped navigate unexpected challenges.
 
