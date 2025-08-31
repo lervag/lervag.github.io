@@ -1,7 +1,7 @@
 ---
 title: 'The tools that I love: Tailscale'
 author: Karl Yngve Lervåg
-date: 2025-08-31T21:30:00.000Z
+date: 2025-08-31T00:00:00.000Z
 ---
 > In this series, I will briefly talk about tools that I love and that I use often.
 > I will keep things brief, as there is already a lot of good content that goes into more depth.
