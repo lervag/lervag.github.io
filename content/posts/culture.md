@@ -87,6 +87,11 @@ In the following, I'll highlight values, practices or habits that I think are cr
 - Offer feedback—including critical feedback.
 - Strive to deliver criticism in a factual and friendly manner.
 
+{{< figure
+  src="https://imgs.xkcd.com/comics/ten_thousand.png"
+  caption="We should strive to admit our ignorance. Source: [XKCD](https://xkcd.com/1053/)."
+>}}
+
 ### Work habits
 
 - Work openly and transparently.
@@ -108,6 +113,11 @@ In case you’ve read this far, here are three parting thoughts:
 - Decide what kind of culture you want to help create.
   Pin down the values and behaviors you care about.
 - Own your influence: Every choice you make either strengthens or reshapes the culture around you.
+
+Finally, here are some other posts on this topic that I've found interesting and inspirational:
+
+- [It's okay to have no idea what you're doing and try anyway](https://kaveland.no/posts/2025-04-26-no-idea/)
+- [Culture matters](https://danluu.com/culture/)
 
 [^1]:
     I believe text and documentation is a very powerful tool.
