@@ -71,7 +71,7 @@ But in short, these are all traits that characterizes the culture of my current 
 * When things are unclear or frustrating, we are good at being constructive.
   Instead of staying in a frustrated state, we start investigating how we can best proceed.
 
-I think I'll have to elaborate more about my thoughts on culture in a later blog post.
+I think I'll have to elaborate more about my thoughts on culture [in a later blog post](/posts/culture).
 Now, to conclude this post, I'll just summarize and say I've found the transition to be a positive experience.
 
 [^1]: You can find my list of publications [here](/publications) if you are interested.
