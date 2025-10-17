@@ -40,7 +40,7 @@ Here's a list of things that I _**love**_ about Vim:
 - **Speed** — Vim allows me to edit text and navigate _very quickly_.
   I can write a dedicated blog post on this topic alone, and a lot of people have.
   I think the famous StackOverflow post [Your problem with Vim is that you don't grok vi](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118) (from 2009 by Jim Dennis) does a good job at explaining how Vim can make a user fast.
-  And I love the speed, because being able to edit and navigate close to the speed of my thought helps me avoid loosing my train of thought.
+  And I love the speed, because being able to edit and navigate close to the speed of my thought helps me avoid losing my train of thought.
 - Vim is not an IDE and it does not hide complexities.
   For instance, I can't just open a project, build it and run the code with a clean Vim configuration.
   Modern IDEs often give you this.
