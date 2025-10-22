@@ -6,6 +6,13 @@ date: 2025-10-12
 > In this series, I will briefly talk about tools that I love and that I use often.
 > I will keep things brief, as there is already a lot of good content that goes into more depth.
 
+{{< figure
+  src="https://www.vim.org/images/vimlogo.svg"
+  link="https://www.vim.org/"
+  alt="Gatling report"
+  class="img-center"
+>}}
+
 There is probably no single tool that I love more than Vim.
 It is strange to think about how much it has ended up meaning for me.
 Vim has been a part of my entire career both as a student, researcher, and a developer.
@@ -17,6 +24,13 @@ Then I'll try to explain why I love it.
 Finally, I want to highlight some of the _phases_ I've been through as a Vim user.
 
 ## What is Vim and why do I love it
+
+{{< figure
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bram_Moolenaar_in_2007.jpg/500px-Bram_Moolenaar_in_2007.jpg"
+  link="https://en.wikipedia.org/wiki/Bram_Moolenaar"
+  caption="Bram Moolenaar — an actual legend!"
+  class="img-flow-right"
+>}}
 
 [Vim](https://www.vim.org/) is a text editor, that is, a program we use to write and edit text.
 This is essentially to most of what I do on a computer, be it programming, development, and writing in general.
