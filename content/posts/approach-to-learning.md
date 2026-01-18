@@ -5,28 +5,25 @@ date: 2026-01-17
 ---
 
 My friend Jakob wrote a very interesting and insightful post on competence and learning ([Whether you think you can, or think you can't](https://jakob.fun/blog/whether-you-think-you-can-or-think-you-cant)).
-He asked me to share my approach, so I'll summarize his points and add my thoughts.
-So, in my words, these are his main statements and points:
+In his post, he requested that I share some thoughts.
+I won't assume everyone reads his post, even though I recommend it, so here's a brief summary of his main points:
 
 - Software engineering is a field where constant learning is more or less a requirement throughout one's career.
 - As a consequence, software engineers should come to terms with "feeling stupid". There will always be new challenges with unknowns and situations where you won't immediately understand what you are doing.
 - He writes about how building competence and skill requires that you embrace the uncomfortable situations where you are in the dark place. Where you don't know what you are doing.
 - Next, he observes that it may be very useful to be equipped with what he calls _intellectual confidence_. That is, a confidence that one will be able to understand things even though one is currently in the dark.
 - I believe he correctly points out that this intellectual confidence is a feedback loop; a chicken and egg-problem.
-- He also mentions that there's another ingredient for building competence and to enhance the before-mentioned feedback loop: discipline. And then he goes on to implore me to write about discipline[^1].
+- He also mentions that there's another ingredient for building competence and to enhance the before-mentioned feedback loop: discipline. And then he goes on to implore me to write about discipline and on my approach to learning[^1].
 
-He finishes his post with this paragraph, which I find I am in total agreement with:
-
-> It’s okay to be clueless, to not know, and to not understand. Every single person who is good at anything, including all of the people you look up to, started out that way. Not understanding the things you work with is uncomfortable, and it’s supposed to be. The only sustainable way to mend that feeling of discomfort is to accept the fact that you don’t understand, and decide to do something about it. Don’t resign yourself to a life of not getting it. You should do better, and you can do better.
-
-Before I share my thoughts on my approach to learning and on discipline, I wanted to share some of my thoughts on intellectual confidence.
+There's a lot of interesting stuff here!
+But in this post I want to focus on two things: intellectual confidence, and of course, the requested thoughts on discipline and my approach to learning.
 
 ## Intellectual confidence
 
 I think the term _intellectual confidence_ is well put.
 I've always found myself quite confident in my ability to learn and understand something new.
 That is to say, I don't remember having to build this confidence.
-It might be genetic, or something I got during my upbringing through my parents, environments, or simply through sheer luck?
+It might be genetic, or something I got during my upbringing from my parents, environments, or simply through sheer luck?
 But I can easily say that this confidence has been very useful!
 Being confident makes it easy for me to enter into the unknown and dark places where I don't fully understand or know something.
 
@@ -53,7 +50,7 @@ And I think discipline is definitely part of this.
 Discipline is ["the self-control that is gained by requiring that rules or orders be obeyed, and the ability to keep working at something that is difficult"](https://en.wikipedia.org/wiki/Discipline).
 I do have some amount of self-control and discipline, especially when it comes to topics and areas that are interesting to me.
 
-But when it comes to how I approach learning new concepts, I think discipline is only a part of the technique.
+But when it comes to how I approach learning new concepts, I think discipline is only a part of the equation.
 Before I unpack that, I think it might be useful to first describe my approach[^2]:
 
 1. I'll try to write out clearly what my current goal is. Perhaps I'll write it in a shared issue description at work, or in my journal, or if it's hobby related I'll write it in a page in my personal wiki.
@@ -67,19 +64,25 @@ The work ended up being a blog post:
 [The first time I upgraded a PostgreSQL database](/posts/db-first-upgrade).
 In this case, the main motivation for writing the blog post was to improve my own learning.
 
-Now, I want to address two things in more depth:
+Now, let's unpack what I mean about discipline only being part of the technique.
+What I've described above is my approach to learning.
+It is a technique; and I think having good technique can be extremely useful!
+I want to go into that in some more depth.
+In particular, I want to focus on memory and writing, and on structure and process.
+But I also want to address another missing ingredient: ambition, or an inner drive or motivation.
 
-- Memory and writing. I can't possibly remember everything. And I find it is essential to write things in my own words to describe both what I'm trying to do, understand or learn, and to describe the solution/what I learned.
-- Structure and process. As you've seen, I have a pretty clear approach, but when do I apply it?
-
-### Memory and writing
+### Technique: Memory and writing
 
 My memory is at most average.
 That's fine, and until around grad school it wasn't really a problem.
 But when the topics I worked with became more complicated, I realized that I needed to "extend" my memory somehow.
 That is, to properly understand advanced topics, I need a way to handle large contexts, and I can't only rely on my memory for that.
 My solution has been to build and maintain a personal wiki or knowledge base where I collect all sorts of information; see [The tools that I love: My personal wiki](/posts/wiki.vim).
-This really has two very important benefits:
+
+My solution might not be what's best for you.
+That's OK.
+But I strongly advice on finding some way to take structured notes.
+Maintaining and using a personal wiki has three very important benefits for me:
 
 1. Writing about things I'm working on or thinking about is a very good way to understand things better in itself.
 2. Writing down things with links between topics and pages helps me build a personal model of how different concepts relate.
@@ -92,7 +95,10 @@ Every once in a while, remembering things because of Anki really ends up being u
 I won't go into more details, here, but for those interested:
 [The tools that I love: Anki](/posts/anki).
 
-### Structure and process
+### Technique: Structure and process
+
+I previously outlined my approach to learning, and I've mentioned how I maintain notes.
+The next part of my technique is the structure and process for when I apply my approach.
 
 I maintain a journal for work that I use to keep track of my most important tasks.
 This is very useful for me to prioritize which task to work on and to write down related and necessary context (e.g. links to GitHub issues).
@@ -107,13 +113,45 @@ For instance, I might write down the link to a blog post or article I want to re
 I pick up this page every once in a while to work through it and ensure it doesn't grow too large.
 But since this is on my spare time, I do it because I want to; and if there are things left from some earlier times that I'm no longer interested in, I can safely remove it.
 
+Finally, and also quite important:
+This technique has developed over time.
+And I think it is useful to sometimes reconsider it and look for ways to improve it.
+And I use my technique to do that as well!
+For instance, I might write in my hobby index if I notice something I should do differently.
+
+### Ambition and the desire to learn
+
+I promised to unpack how I believe discipline is only a part of the equation.
+In the above, I've outlined a second part: how I approach learning through techniques and a structured process.
+Discipline is necessary, and as I said, it feels easy for me to apply discipline when I'm learning things that are interesting to me.
+But I believe there is a third part: an internal desire or drive to understand, learn and to become good at what I do.
+
+I don't know where this ambition or inner desire to learn comes from.
+I think I've always liked to learn so there's always been some of this ambition inside of me.
+But I think it is crucial, because it is the fuel that drives me to pursuit personal growth.
+
+That is, ambition helps motivate me and fuels my drive to learn and grow as an engineer.
+At some point in my career, I realized that when I combined my ambition with some discipline and a good technique, there was little I could not accomplish.
+And interestingly, this feed into the positive feedback loop.
+When I feel like I'm reaching my ambitions, it is a very good feeling!
+
 ## Final remarks
 
-In this blog post I've tried to outline my approach for learning new things.
-It basically consists of:
+I want to look back once more on what Jakob wrote:
 
-1. having a process for how to notice and follow up on important knowledge gaps,
-2. use structured writing and research to address the knowledge gaps.
+> I believe a second ingredient is needed to get the most out of the positive feedback loop I’ve described: Discipline. Specifically, the discipline to actually apply this philosophy by taking the time to learn new concepts you come across.
+
+The first ingredient Jakob is pointing to is to understand the importance of being competent.
+I didn't discuss that here, and I won't, but is is an interesting claim that I agree with.
+He raises discipline as a second ingredient.
+And I want to raise two more ingredients:
+
+- Technique: use writing and tools to aid your learning. And strive to improve both your tools and technique over time.
+- Ambition, or inner drive: figure out what your internal drive is? Try to use this to fuel your path to becoming more competent.
+
+To end my post, I want to repeat some words from Jakob that I find I am in total agreement with:
+
+> It’s okay to be clueless, to not know, and to not understand. Every single person who is good at anything, including all of the people you look up to, started out that way. Not understanding the things you work with is uncomfortable, and it’s supposed to be. The only sustainable way to mend that feeling of discomfort is to accept the fact that you don’t understand, and decide to do something about it. Don’t resign yourself to a life of not getting it. You should do better, and you can do better.
 
 [^1]: I had to look up the word _implore_: "beg someone earnestly or desperately to do something".
 [^2]: I use more than a single approach. For instance, I'm also a fan of the [Feynman technique](https://en.wikipedia.org/wiki/Learning_by_teaching#Plastic_platypus_learning). And I might use a combination of approaches. But I believe what I'm writing here is what I most often tend to do.
