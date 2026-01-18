@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>lervag's blog</title><link>/</link><description>Recent content on lervag's blog</description><generator>Hugo -- 0.154.5</generator><language>en-uk</language><lastBuildDate>Sat, 17 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>How I approach learning new concepts</title><link>/posts/approach-to-learning/</link><pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><guid>/posts/approach-to-learning/</guid><description>&lt;p&gt;My friend Jakob wrote a very interesting and insightful post on competence and learning (&lt;a href="https://jakob.fun/blog/whether-you-think-you-can-or-think-you-cant"&gt;Whether you think you can, or think you can&amp;rsquo;t&lt;/a&gt;).
+In his post, he requested that I share some thoughts.
+I won&amp;rsquo;t assume everyone reads his post, even though I recommend it, so here&amp;rsquo;s a brief summary of his main points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Software engineering is a field where constant learning is more or less a requirement throughout one&amp;rsquo;s career.&lt;/li&gt;
+&lt;li&gt;As a consequence, software engineers should come to terms with &amp;ldquo;feeling stupid&amp;rdquo;. There will always be new challenges with unknowns and situations where you won&amp;rsquo;t immediately understand what you are doing.&lt;/li&gt;
+&lt;li&gt;He writes about how building competence and skill requires that you embrace the uncomfortable situations where you are in the dark place. Where you don&amp;rsquo;t know what you are doing.&lt;/li&gt;
+&lt;li&gt;Next, he observes that it may be very useful to be equipped with what he calls &lt;em&gt;intellectual confidence&lt;/em&gt;. That is, a confidence that one will be able to understand things even though one is currently in the dark.&lt;/li&gt;
+&lt;li&gt;I believe he correctly points out that this intellectual confidence is a feedback loop; a chicken and egg-problem.&lt;/li&gt;
+&lt;li&gt;He also mentions that there&amp;rsquo;s another ingredient for building competence and to enhance the before-mentioned feedback loop: discipline. And then he goes on to implore me to write about discipline and on my approach to learning&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&amp;rsquo;s a lot of interesting stuff here!
+But in this post I want to focus on two things: intellectual confidence, and of course, the requested thoughts on discipline and my approach to learning.&lt;/p&gt;</description><content:encoded><![CDATA[<p>My friend Jakob wrote a very interesting and insightful post on competence and learning (<a href="https://jakob.fun/blog/whether-you-think-you-can-or-think-you-cant">Whether you think you can, or think you can&rsquo;t</a>).
+In his post, he requested that I share some thoughts.
+I won&rsquo;t assume everyone reads his post, even though I recommend it, so here&rsquo;s a brief summary of his main points:</p>
+<ul>
+<li>Software engineering is a field where constant learning is more or less a requirement throughout one&rsquo;s career.</li>
+<li>As a consequence, software engineers should come to terms with &ldquo;feeling stupid&rdquo;. There will always be new challenges with unknowns and situations where you won&rsquo;t immediately understand what you are doing.</li>
+<li>He writes about how building competence and skill requires that you embrace the uncomfortable situations where you are in the dark place. Where you don&rsquo;t know what you are doing.</li>
+<li>Next, he observes that it may be very useful to be equipped with what he calls <em>intellectual confidence</em>. That is, a confidence that one will be able to understand things even though one is currently in the dark.</li>
+<li>I believe he correctly points out that this intellectual confidence is a feedback loop; a chicken and egg-problem.</li>
+<li>He also mentions that there&rsquo;s another ingredient for building competence and to enhance the before-mentioned feedback loop: discipline. And then he goes on to implore me to write about discipline and on my approach to learning<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</li>
+</ul>
+<p>There&rsquo;s a lot of interesting stuff here!
+But in this post I want to focus on two things: intellectual confidence, and of course, the requested thoughts on discipline and my approach to learning.</p>
+<h2 id="intellectual-confidence">Intellectual confidence</h2>
+<p>I think the term <em>intellectual confidence</em> is well put.
+I&rsquo;ve always found myself quite confident in my ability to learn and understand something new.
+That is to say, I don&rsquo;t remember having to build this confidence.
+It might be genetic, or something I got during my upbringing from my parents, environments, or simply through sheer luck?
+But I can easily say that this confidence has been very useful!
+Being confident makes it easy for me to enter into the unknown and dark places where I don&rsquo;t fully understand or know something.</p>
+<p>It is clear that this is a type of confidence that is not universal.
+So it raises the question of how to build this type of confidence.
+Here&rsquo;s one approach based on Jakob&rsquo;s post combined with my personal reflections:</p>
+<ol>
+<li>Take a step into the unknown: You have to step out of your comfort zone.</li>
+<li>It might help to consider the confidence as an attitude that you can equip. At first it may feel wrong, but I think there may be value in the adage &ldquo;fake it until you make it&rdquo;.</li>
+<li>Since there&rsquo;s a feedback loop, you should attempt to make it a positive feedback loop. You might step out of your comfort zone and fail, which may hurt. But then you should remember that <em>that&rsquo;s ok</em>! And try again! Utilize the wins to boost your confidence. There will be wins.</li>
+<li>When you step into the dark, you may need some discipline to stay the course or some routine/technique to navigate the waters.</li>
+</ol>
+<h2 id="discipline-and-learning">Discipline and learning</h2>
+<p>Jakob writes the following:</p>
+<blockquote>
+<p>While it’s good to understand the importance of being competent, I believe a second ingredient is needed to get the most out of the positive feedback loop I’ve described: Discipline. Specifically, the discipline to actually apply this philosophy by taking the time to learn new concepts you come across. In the short term, this will slow you down, and it will require you to be comfortable with facing your lack of knowledge all of the time, rather than just some of the time.</p>
+</blockquote>
+<blockquote>
+<p>This is something Karl Yngve, the previously mentioned scientist-turned-programmer, is excellent at. It really seems like it’s second nature to him, and I formally implore him to write a post on his own blog explaining how that came to be.</p>
+</blockquote>
+<p>What I take from this is that Jakob thinks I am good at taking the time to learn new concepts as I come across them.
+And I think he is probably right.
+And I think discipline is definitely part of this.
+Discipline is <a href="https://en.wikipedia.org/wiki/Discipline">&ldquo;the self-control that is gained by requiring that rules or orders be obeyed, and the ability to keep working at something that is difficult&rdquo;</a>.
+I do have some amount of self-control and discipline, especially when it comes to topics and areas that are interesting to me.</p>
+<p>But when it comes to how I approach learning new concepts, I think discipline is only a part of the equation.
+Before I unpack that, I think it might be useful to first describe my approach<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>:</p>
+<ol>
+<li>I&rsquo;ll try to write out clearly what my current goal is. Perhaps I&rsquo;ll write it in a shared issue description at work, or in my journal, or if it&rsquo;s hobby related I&rsquo;ll write it in a page in my personal wiki.</li>
+<li>I research the topic via colleagues, AI chats, web searches and references/documentation.</li>
+<li>Then I document my findings in my personal wiki or in shared docs.</li>
+<li>While writing things down, I often realize that some parts are useful to remember in the future, and I&rsquo;ll make new Anki notes to memorize it.</li>
+</ol>
+<p>As an example, when I needed to do an upgrade of a PostgreSQL server for the first time in my career, I wrote down what I was doing along the way.
+In this case, I had a very skilled colleague who helped me out, thus researching was mostly sparring with him.
+The work ended up being a blog post:
+<a href="/posts/db-first-upgrade">The first time I upgraded a PostgreSQL database</a>.
+In this case, the main motivation for writing the blog post was to improve my own learning.</p>
+<p>Now, let&rsquo;s unpack what I mean about discipline only being part of the technique.
+What I&rsquo;ve described above is my approach to learning.
+It is a technique; and I think having good technique can be extremely useful!
+I want to go into that in some more depth.
+In particular, I want to focus on memory and writing, and on structure and process.
+But I also want to address another missing ingredient: ambition, or an inner drive or motivation.</p>
+<h3 id="technique-memory-and-writing">Technique: Memory and writing</h3>
+<p>My memory is at most average.
+That&rsquo;s fine, and until around grad school it wasn&rsquo;t really a problem.
+But when the topics I worked with became more complicated, I realized that I needed to &ldquo;extend&rdquo; my memory somehow.
+That is, to properly understand advanced topics, I need a way to handle large contexts, and I can&rsquo;t only rely on my memory for that.
+My solution has been to build and maintain a personal wiki or knowledge base where I collect all sorts of information; see <a href="/posts/wiki.vim">The tools that I love: My personal wiki</a>.</p>
+<p>My solution might not be what&rsquo;s best for you.
+That&rsquo;s OK.
+But I strongly advice on finding some way to take structured notes.
+Maintaining and using a personal wiki has three very important benefits for me:</p>
+<ol>
+<li>Writing about things I&rsquo;m working on or thinking about is a very good way to understand things better in itself.</li>
+<li>Writing down things with links between topics and pages helps me build a personal model of how different concepts relate.</li>
+<li>Writing down things in a personal wiki makes it easy to find relevant information when I need it in the future.</li>
+</ol>
+<p>I&rsquo;ve also found it very useful to strengthen my memory on certain topics.
+For this I use Anki, which is a program that makes remembering things easy.
+With Anki, I&rsquo;ve memorized a lot of things that I find useful at work, including tips and tricks about Python, SQL, Scala, Linux and unix tools, algorithms, shortcuts for a lot of different tools, and so on.
+Every once in a while, remembering things because of Anki really ends up being useful!
+I won&rsquo;t go into more details, here, but for those interested:
+<a href="/posts/anki">The tools that I love: Anki</a>.</p>
+<h3 id="technique-structure-and-process">Technique: Structure and process</h3>
+<p>I previously outlined my approach to learning, and I&rsquo;ve mentioned how I maintain notes.
+The next part of my technique is the structure and process for when I apply my approach.</p>
+<p>I maintain a journal for work that I use to keep track of my most important tasks.
+This is very useful for me to prioritize which task to work on and to write down related and necessary context (e.g. links to GitHub issues).
+I also maintain a &ldquo;hobby index&rdquo;, that is, a dedicated page in my personal wiki where I write down things that I want to explore on my own time when I get the time.</p>
+<p>When I work on something, I regularly notice things where there&rsquo;s a gap in my knowledge.
+Whenever I do that, and if I think this is an interesting or important gap, I write it down.
+If it is clearly work related, <em>and if it is important for work</em>, I write it in my work journal and I&rsquo;ll dive deeper into it at work.</p>
+<p>If it is not properly work related, it goes into my hobby index.
+For instance, I might write down the link to a blog post or article I want to read or that someone shared with me.
+I pick up this page every once in a while to work through it and ensure it doesn&rsquo;t grow too large.
+But since this is on my spare time, I do it because I want to; and if there are things left from some earlier times that I&rsquo;m no longer interested in, I can safely remove it.</p>
+<p>Finally, and also quite important:
+This technique has developed over time.
+And I think it is useful to sometimes reconsider it and look for ways to improve it.
+And I use my technique to do that as well!
+For instance, I might write in my hobby index if I notice something I should do differently.</p>
+<h3 id="ambition-and-the-desire-to-learn">Ambition and the desire to learn</h3>
+<p>I promised to unpack how I believe discipline is only a part of the equation.
+In the above, I&rsquo;ve outlined a second part: how I approach learning through techniques and a structured process.
+Discipline is necessary, and as I said, it feels easy for me to apply discipline when I&rsquo;m learning things that are interesting to me.
+But I believe there is a third part: an internal desire or drive to understand, learn and to become good at what I do.</p>
+<p>I don&rsquo;t know where this ambition or inner desire to learn comes from.
+I think I&rsquo;ve always liked to learn so there&rsquo;s always been some of this ambition inside of me.
+But I think it is crucial, because it is the fuel that drives me to pursuit personal growth.</p>
+<p>That is, ambition helps motivate me and fuels my drive to learn and grow as an engineer.
+At some point in my career, I realized that when I combined my ambition with some discipline and a good technique, there was little I could not accomplish.
+And interestingly, this feed into the positive feedback loop.
+When I feel like I&rsquo;m reaching my ambitions, it is a very good feeling!</p>
+<h2 id="final-remarks">Final remarks</h2>
+<p>I want to look back once more on what Jakob wrote:</p>
+<blockquote>
+<p>I believe a second ingredient is needed to get the most out of the positive feedback loop I’ve described: Discipline. Specifically, the discipline to actually apply this philosophy by taking the time to learn new concepts you come across.</p>
+</blockquote>
+<p>The first ingredient Jakob is pointing to is to understand the importance of being competent.
+I didn&rsquo;t discuss that here, and I won&rsquo;t, but is is an interesting claim that I agree with.
+He raises discipline as a second ingredient.
+And I want to raise two more ingredients:</p>
+<ul>
+<li>Technique: use writing and tools to aid your learning. And strive to improve both your tools and technique over time.</li>
+<li>Ambition, or inner drive: figure out what your internal drive is? Try to use this to fuel your path to becoming more competent.</li>
+</ul>
+<p>To end my post, I want to repeat some words from Jakob that I find I am in total agreement with:</p>
+<blockquote>
+<p>It’s okay to be clueless, to not know, and to not understand. Every single person who is good at anything, including all of the people you look up to, started out that way. Not understanding the things you work with is uncomfortable, and it’s supposed to be. The only sustainable way to mend that feeling of discomfort is to accept the fact that you don’t understand, and decide to do something about it. Don’t resign yourself to a life of not getting it. You should do better, and you can do better.</p>
+</blockquote>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I had to look up the word <em>implore</em>: &ldquo;beg someone earnestly or desperately to do something&rdquo;.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I use more than a single approach. For instance, I&rsquo;m also a fan of the <a href="https://en.wikipedia.org/wiki/Learning_by_teaching#Plastic_platypus_learning">Feynman technique</a>. And I might use a combination of approaches. But I believe what I&rsquo;m writing here is what I most often tend to do.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>The tools that I love: Vim</title><link>/posts/how-i-vim/</link><pubDate>Sun, 12 Oct 2025 00:00:00 +0000</pubDate><guid>/posts/how-i-vim/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class="img-center"&gt;&lt;a href="https://www.vim.org/"&gt;
+&lt;img loading="lazy" src="https://www.vim.org/images/vimlogo.svg"
+alt="Gatling report"/&gt; &lt;/a&gt;
+&lt;/figure&gt;
+&lt;p&gt;There is probably no single tool that I love more than Vim.
+It is strange to think about how much it has ended up meaning for me.
+Vim has been a part of my entire career both as a student, researcher, and a developer.
+Needless to say, it is hard to sum up my thoughts and feelings about Vim in a short blog post.
+So I&amp;rsquo;ll allow it to be slightly longer than the average &amp;ldquo;The tools that I love&amp;rdquo;-posts.&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.</p>
+</blockquote>
+<figure class="img-center"><a href="https://www.vim.org/">
+    <img loading="lazy" src="https://www.vim.org/images/vimlogo.svg"
+         alt="Gatling report"/> </a>
+</figure>
+
+<p>There is probably no single tool that I love more than Vim.
+It is strange to think about how much it has ended up meaning for me.
+Vim has been a part of my entire career both as a student, researcher, and a developer.
+Needless to say, it is hard to sum up my thoughts and feelings about Vim in a short blog post.
+So I&rsquo;ll allow it to be slightly longer than the average &ldquo;The tools that I love&rdquo;-posts.</p>
+<p>I&rsquo;ll first write a little bit about what Vim is.
+Then I&rsquo;ll try to explain why I love it.
+Finally, I want to highlight some of the <em>phases</em> I&rsquo;ve been through as a Vim user.</p>
+<h2 id="what-is-vim-and-why-do-i-love-it">What is Vim and why do I love it</h2>
+<figure class="img-flow-right"><a href="https://en.wikipedia.org/wiki/Bram_Moolenaar">
+    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bram_Moolenaar_in_2007.jpg/500px-Bram_Moolenaar_in_2007.jpg"
+         alt="Bram Moolenaar — an actual legend!"/> </a><figcaption>
+            <p>Bram Moolenaar — an actual legend!</p>
+        </figcaption>
+</figure>
+
+<p><a href="https://www.vim.org/">Vim</a> is a text editor, that is, a program we use to write and edit text.
+This is essentially to most of what I do on a computer, be it programming, development, and writing in general.
+Vim was originally developed in 1988 by <a href="https://en.wikipedia.org/wiki/Bram_Moolenaar">Bram Moolenaar</a>, and he kept on improving and maintaining it until he unfortunately passed away in 2023.
+There is now a community effort for maintaining Vim, although the current main maintainer is <a href="https://github.com/chrisbra">Christian Brabandt</a>.
+I should also mention that in 2014, <a href="https://neovim.io/">Neovim</a> was created as a fork of Vim.
+It has a slightly different vision and goal, but is similar in spirit.
+In the context of this post, Vim and Neovim can be considered to be the same thing.</p>
+<p>Before I continue, I want to highlight a related post from 9 years ago (2016):
+<a href="http://howivim.com/2016/karl-yngve-lervag/">I did an interview on How I Vim</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+A lot of what I said in that interview is now outdated, for instance:</p>
+<ul>
+<li>I&rsquo;m no longer a research scientist.</li>
+<li>I use <a href="https://neovim.io/">Neovim</a> (since around 2018, I think).</li>
+<li>I&rsquo;ve rewritten <a href="https://github.com/lervag/dotnvim/">my config</a> more or less from scratch at least once since then.</li>
+<li>I now use <a href="https://wezfurlong.org/wezterm">wezterm</a> as my terminal emulator.</li>
+</ul>
+<p>Here&rsquo;s a list of things that I <em><strong>love</strong></em> about Vim:</p>
+<ul>
+<li><strong>Speed</strong> — Vim allows me to edit text and navigate <em>very quickly</em>.
+I can write a dedicated blog post on this topic alone, and a lot of people have.
+I think the famous StackOverflow post <a href="http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118">Your problem with Vim is that you don&rsquo;t grok vi</a> (from 2009 by Jim Dennis) does a good job at explaining how Vim can make a user fast.
+And I love the speed, because being able to edit and navigate close to the speed of my thought helps me avoid losing my train of thought.</li>
+<li>Vim is not an IDE and it does not hide complexities.
+For instance, I can&rsquo;t just open a project, build it and run the code with a clean Vim configuration.
+Modern IDEs often give you this.
+But I actually <em>like</em> how Vim forces me to learn and understand how things work.</li>
+<li>I can customize Vim to make it work as I want it to.
+I think the term <a href="https://www.youtube.com/watch?v=QMVIJhC9Veg">&ldquo;personalized development environment&rdquo; (PDE)</a> is very fitting!
+And for some strange reason, I <em>love</em> to customize and optimize my development environment, both vim and related tools.
+It&rsquo;s hard to explan it, but it&rsquo;s fun and it has become a hobby.</li>
+<li>Writing Vim plugins was probably my first programming &ldquo;achievement&rdquo;.
+That is, the first program I ever wrote where I found joy in <em>creating</em> something was probably a Vim plugin.
+I can remember the feeling of finishing something that worked and that had a real impact on my day-to-day development environment.
+And I love how Vim was able to give that to me!</li>
+</ul>
+<h2 id="my-vim-journey-as-a-series-of-phases">My Vim journey as a series of phases</h2>
+<p>I started using Vim in 2003 as an undergraduate.
+It was hard at first, but I liked the challenge and I liked how learning it made me faster at editing and working with text and code.
+I quickly fell in love, and I&rsquo;ve just kept using it since.
+This means I&rsquo;ve used Vim for about 22 years now.
+When I look back, I can reflect on having been through a series of phases<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>:</p>
+<ul>
+<li>
+<p><strong>The Vim zealot</strong> — I was a Vim zealot in the first few years.
+I would explain to anyone who would listen<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> why it is better than everything else.
+I would talk warmly of it and try to persuade others to use it.
+I tried to guide and advice students and interns I mentored into using Vim.
+But to be honest, during the first years I mostly learned the basics.</p>
+</li>
+<li>
+<p><strong>The elitist</strong> — After some years, I stopped actively trying to teach &ldquo;the gospel&rdquo;.
+I would still gladly help and assist anyone who was curious (I still do!).
+To help them, I wrote a simple starter configuration that I shared with anyone who was interested<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.
+I might characterize this as a phase of <em>elitism</em>.
+E.g., &ldquo;I don&rsquo;t need an IDE - I have a terminal and Vim. They are far superior to any IDE!&rdquo;
+Still, if I am to be kinder to myself, this was also a phase of mastery.
+I learned to write Vimscript at a high level, and it was during this phase I started to write and maintain my own plugins such as <a href="https://github.com/lervag/vimtex/">VimTeX</a>.
+However, I was not very open minded and was more arrogant than I should have been.</p>
+</li>
+<li>
+<p><strong>The curious</strong> — I&rsquo;m glad to say that this has changed.
+With age and experience I&rsquo;ve become more open minded, I&rsquo;ve even been curious about other tools.
+I tried to use Emacs for a few months, mostly because of <a href="https://orgmode.org/">org-mode</a>.
+However, I realized I was too invested in <a href="/posts/wiki.vim">my own tooling for note-talking</a> and kept to Vim<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.
+Still, I accepted that there are different strenghts and weaknesses in the large list of alternative editors and IDEs.
+I did still claim that Vim really <em>is</em> an excellent editor, though—and I still do!</p>
+</li>
+<li>
+<p><strong>The pragmatic</strong> — Today I consider myself a <em>pragmatic</em> Vim user.
+I prefer Vim whenever it is possible and if it does not make me less efficient.
+This does hold true in most cases, but I stretch for other tools once in a while.
+For instance, I would prefer Intellij if I work with Kotlin, because the open source tooling is not good enough there.
+I also would not mind to use another editor or IDE in a pair programming session if that would be easier for the other person(s).</p>
+</li>
+</ul>
+<p>My Vim journey, and the related Linux and shell journey, have been very useful for my education.
+Learning to use Vim, learning to <em>configure</em> Vim, and learning to develop programs with Vim and a terminal, has taught me a lot of the skills I depend on today:</p>
+<ul>
+<li>I can effortlessly navigate code and text at very high speeds.
+I believe this is super useful to maintain focus on my tasks across code bases.</li>
+<li>I can adjust my configuration at my own will and at relative ease and make Vim behave differently for particular tasks if and when it suits me.</li>
+<li>Vim has traditionally been very reliant on regular expressions, which is often very useful to know.</li>
+<li>Learning to configure and write plugins has introduced a ton of problems for myself.
+But as a consequence, I&rsquo;ve had to <em>fix</em> my problems time and time again.
+This has made me become quite fearless of a lot of types of challenges.</li>
+<li>I&rsquo;ve learned a lot about how Linux and unix works at a relatively low level.
+This is clearly tangential, but I do think it has been a consequence of the Vim journey as I&rsquo;ve ended up always having a terminal by my side.</li>
+</ul>
+<h2 id="final-remarks">Final remarks</h2>
+<p>If you read this far, then thanks for staying with me.
+For my final remarks, I want to highlight some of the older writings that are still interesting today:</p>
+<ul>
+<li><a href="http://moolenaar.net/habits.html">Seven habits of effective text editing</a>, Bram Moolenaar (RIP), 2000 - he clearly created a great editor.
+He also shared very interesting thoughts on learning the tools of the trade.
+This essay is interesting even if you don&rsquo;t use Vim.
+Remember to sharpen the saw!</li>
+<li><a href="https://rudism.com/vim-creep/">Vim Creep</a>, Rudis Muiznieks, 2011 - A nice inspiring story about Vim.</li>
+<li><a href="https://sanctum.geek.nz/arabesque/vim-koans/">Vim Kōans</a> - I&rsquo;m not sure if they actually bring wisdom, but I do find them somewhat amusing.</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>How I Vim is/was a <a href="http://howivim.com/about/">series of interview blog posts</a> by Kevin Litchfield about people who use Vim. I&rsquo;ve read several of the posts and I think they are very interesting.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I realize that the phases might also align with phases of maturity. From being young, immature, and brave, then growing into experience, wisdom, and skill.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Probably people who wouldn&rsquo;t listen as well. Sorry!&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>There was a repo once, but it has been long since deleted and forgotten.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>Somewhere around 2017 I converted to Neovim, but for the sake of this post I consider that to be Vim.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>Thoughts on culture</title><link>/posts/culture/</link><pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate><guid>/posts/culture/</guid><description>&lt;p&gt;In recent years, I&amp;rsquo;ve come to appreciate the importance of good culture at work.
+I&amp;rsquo;ve thought about it quite a lot, and in this post, I&amp;rsquo;ll try to digest some of my thoughts.&lt;/p&gt;
+&lt;p&gt;First: what &lt;em&gt;is&lt;/em&gt; culture?
+Let&amp;rsquo;s run with the following definition:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Culture is the shared set of values, beliefs, customs, and creations—both physical and intangible—that a group learns and hands down over time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Clearly, any workplace &lt;em&gt;has&lt;/em&gt; a culture.
+But:&lt;/p&gt;</description><content:encoded><![CDATA[<p>In recent years, I&rsquo;ve come to appreciate the importance of good culture at work.
+I&rsquo;ve thought about it quite a lot, and in this post, I&rsquo;ll try to digest some of my thoughts.</p>
+<p>First: what <em>is</em> culture?
+Let&rsquo;s run with the following definition:</p>
+<blockquote>
+<p>Culture is the shared set of values, beliefs, customs, and creations—both physical and intangible—that a group learns and hands down over time.</p>
+</blockquote>
+<p>Clearly, any workplace <em>has</em> a culture.
+But:</p>
+<ul>
+<li><em>What does it mean to have a <strong>good</strong> culture</em>?</li>
+<li><em>How can we influence and ensure that we work in an environment <strong>characterized</strong> by good culture</em>?</li>
+</ul>
+<p>I&rsquo;ll discuss both of those questions in the following.
+But first, <a href="/posts/researcher-to-developer/#culture">based on my last three years’ experience</a>, here are some direct benefits of good culture that I&rsquo;ve witnessed:</p>
+<blockquote>
+<ul>
+<li>I feel safe — I can express my thoughts more or less unfiltered.</li>
+<li>I can be curious and spend time on investigating ideas.
+This has made it much easier for me to fill skill gaps, for instance.</li>
+<li>I receive honest feedback on my actions and work.</li>
+<li>We&rsquo;re allowed to have fun.</li>
+<li>We are open and share our thoughts and ideas.</li>
+<li>We respect each other&rsquo;s time and minimize unnecessary lengthy meetings.</li>
+<li>When things are unclear or frustrating, we are good at being constructive.
+Instead of staying in a frustrated state, we start investigating how we can best proceed.</li>
+</ul>
+</blockquote>
+<h2 id="establishing-and-maintaining-good-culture">Establishing and maintaining good culture</h2>
+<p>I believe there are a couple of important prerequisites to establishing good culture:</p>
+<ul>
+<li>We must have a clear understanding of what good culture is!</li>
+<li>We must have the ability to self-reflect:
+<ul>
+<li>What is our culture today?</li>
+<li>Which values and practices do we demonstrate?</li>
+<li>How are these values and practices passed on?</li>
+</ul>
+</li>
+</ul>
+<p>In my opinion, establishing good culture is a major leadership and management responsibility!
+This obviously includes the higher-ups, but also senior staff in general—anyone who has any formal report or mentorship role will influence co-workers &ldquo;down the line&rdquo;.
+I therefore think leaders at all levels should engage in the above-mentioned self-reflection.
+Essentially, &ldquo;we need to know who we are to change who we are&rdquo;.</p>
+<p>Now, to establish and maintain good culture, I think we need to do the following:</p>
+<ul>
+<li>Set out values and describe how we want to work together.</li>
+<li>Demonstrate the values in action.</li>
+<li>Give attention and support to those who embody the desired good culture.</li>
+</ul>
+<p>As should be evident, I strongly believe that leaders are the main carriers of our working culture.
+There’s a downside to this, though: leaders also have an opportunity to create bad culture.
+The heritage they demonstrate spreads quickly!
+This can be especially harmful if, on one hand, leaders &ldquo;demand&rdquo; good culture, but on the other hand, fail to live up to it themselves.</p>
+<h2 id="the-characteristics-of-good-culture">The characteristics of good culture</h2>
+<p>Now, what are the characteristics of good culture?
+I believe we can consider characteristics along three dimensions:</p>
+<ol>
+<li>leadership</li>
+<li>communication</li>
+<li>work habits</li>
+</ol>
+<p>In the following, I&rsquo;ll highlight values, practices or habits that I think are crucial parts of a good working culture.</p>
+<h3 id="leadership">Leadership</h3>
+<ul>
+<li>Lead openly and transparently!
+<ul>
+<li>Processes must be transparent.
+That usually means they’re well documented in a way that makes it easy for stakeholders to find information.</li>
+<li>Make it clear who’s involved in each process.</li>
+<li>If decisions are made, be explicit about how and by whom.</li>
+</ul>
+</li>
+<li>Lead clearly, with well-defined processes!</li>
+<li>Lead with trust, delegate authority and decision-making downward.</li>
+<li>Use criticism and critical feedback to get better.
+<ul>
+<li>Ask questions about the feedback before you dismiss it! Listen (don’t just hear)!</li>
+<li>Treat criticism as an opportunity to improve and to include others.</li>
+</ul>
+</li>
+</ul>
+<h3 id="communication">Communication</h3>
+<ul>
+<li>Assume that what others say comes from good intentions.</li>
+<li>Give praise when it’s deserved.</li>
+<li>Offer feedback—including critical feedback.</li>
+<li>Strive to deliver criticism in a factual and friendly manner.</li>
+</ul>
+<figure>
+    <img loading="lazy" src="https://imgs.xkcd.com/comics/ten_thousand.png"
+         alt="We should strive to admit our ignorance. Source: XKCD."/> <figcaption>
+            <p>We should strive to admit our ignorance. Source: <a href="https://xkcd.com/1053/">XKCD</a>.</p>
+        </figcaption>
+</figure>
+
+<h3 id="work-habits">Work habits</h3>
+<ul>
+<li>Work openly and transparently.
+<ul>
+<li>When we’re working on something, we should make our work visible from the start.
+Code should be shared in branches that are available to our colleagues.
+Text should also be shared.</li>
+</ul>
+</li>
+<li>Trust that everyone is doing their best.</li>
+<li>Actively collaborate to achieve good results.
+<ul>
+<li>I&rsquo;ve found both pair programming and &ldquo;pair writing&rdquo; to be very useful.
+It is a good arena for mentoring and makes collaboration very natural.</li>
+</ul>
+</li>
+<li>Use structured documentation and writing as a tool for productivity<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</li>
+</ul>
+<h2 id="final-remarks">Final remarks</h2>
+<p>In case you’ve read this far, here are three parting thoughts:</p>
+<ul>
+<li>Be mindful of the culture you’re already in.
+Notice its values, habits, and unwritten rules.</li>
+<li>Decide what kind of culture you want to help create.
+Pin down the values and behaviors you care about.</li>
+<li>Own your influence: Every choice you make either strengthens or reshapes the culture around you.</li>
+</ul>
+<p>Finally, here are some other posts on this topic that I&rsquo;ve found interesting and inspirational:</p>
+<ul>
+<li><a href="https://kaveland.no/posts/2025-04-26-no-idea/">It&rsquo;s okay to have no idea what you&rsquo;re doing and try anyway</a></li>
+<li><a href="https://danluu.com/culture/">Culture matters</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>I believe text and documentation is a very powerful tool.
+I&rsquo;ve found <a href="https://handbook.gitlab.com/handbook/about/">The GitLab Handbook</a> to be a good source of inspiration.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>The tools that I love: Tailscale</title><link>/posts/tailscale/</link><pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate><guid>/posts/tailscale/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I often have to traverse networks with e.g. SSH to work on something on some server or on a different computer.
+This could be simply reaching a computer at work from a home computer.
+To do this, I would traditionally need to use a VPN service or establish a reverse ssh tunnel from my work computer.
+Or something similar.
+Since 2022, I&amp;rsquo;ve been using &lt;a href="https://tailscale.com/"&gt;Tailscale&lt;/a&gt;.
+Tailscale is like a simple VPN service&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; that makes it easy to achieve secure connections between computers in my private network.
+For instance, if I install and configure Tailscale both on a server I host somewhere and on my home computer, then I can immediately &lt;code&gt;ssh myserver&lt;/code&gt; from my home computer.
+It just works, almost like magic&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.</p>
+</blockquote>
+<p>I often have to traverse networks with e.g. SSH to work on something on some server or on a different computer.
+This could be simply reaching a computer at work from a home computer.
+To do this, I would traditionally need to use a VPN service or establish a reverse ssh tunnel from my work computer.
+Or something similar.
+Since 2022, I&rsquo;ve been using <a href="https://tailscale.com/">Tailscale</a>.
+Tailscale is like a simple VPN service<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> that makes it easy to achieve secure connections between computers in my private network.
+For instance, if I install and configure Tailscale both on a server I host somewhere and on my home computer, then I can immediately <code>ssh myserver</code> from my home computer.
+It just works, almost like magic<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>:</p>
+<figure>
+    <img loading="lazy" src="/static/tailscale-1.png"
+         alt="tailscale status"/> <figcaption>
+            <p>Easily see hosts and their status with <code>tailscale status</code> - here I&rsquo;ve used <code>grep</code> to filter out hosts that were not purely mine. Yes, I am naming my hosts after composers 🎼 🎵.</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img loading="lazy" src="/static/tailscale-3.png"
+         alt="ping tallis"/> <figcaption>
+            <p>Pinging shows that network traffic is passing through the tailnet.</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img loading="lazy" src="/static/tailscale-2.png"
+         alt="ssh tallis"/> <figcaption>
+            <p><code>ssh</code> just works<sup>™️</sup>!</p>
+        </figcaption>
+</figure>
+
+<p>Now, Tailscale <em>is</em> a commercial product<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.
+However, everything in Tailscale is open source, except the GUI clients for Windows and MacOS and the control server.
+One may use <a href="https://github.com/juanfont/headscale">Headscale</a>, which is an open source alternative to the Tailscale control server.
+I might consider running my own control server in the future, but for now, I&rsquo;m happy to rely on the free service.
+The Tailscale free tier for personal usage is very generous and provides all the features I need.</p>
+<p>Some of the features I&rsquo;ve found useful in addition to the general networking capabilities:</p>
+<ul>
+<li><a href="https://tailscale.com/kb/1193/tailscale-ssh">Tailscale SSH</a>
+<ul>
+<li>I&rsquo;ve set up Tailscale on a test server for one of our applications at work and enabled Tailscale SSH for that server.
+This allows me (and other specified colleagues) to connect to that server without creating and sharing keys - the authentication is entirely done through the Tailscale service.</li>
+<li>I can also imagine that this may be useful to e.g. connect to a server from my phone, where it is harder to create ssh keys.</li>
+</ul>
+</li>
+<li><a href="https://tailscale.com/kb/1223/funnel">Tailscale Funnel</a> and <a href="https://tailscale.com/kb/1312/serve">Tailscale Serve</a>
+<ul>
+<li>Funnel and Serve lets me route traffic from my computer either to the broader internet (Funnel) or to the limited private network (Serve).</li>
+<li>This makes it essentially very easy to provide access to something I&rsquo;m working on/developing locally on my computer to anyone.</li>
+</ul>
+</li>
+</ul>
+<p>Tailscale has also been very good at providing top notch documentation.
+The <a href="https://tailscale.com/kb/1017/install">Tailscale Quickstart</a> is a very good place to begin.
+I also found the recent blog post <a href="https://chameth.com/how-i-use-tailscale/">How I use Tailscale</a> by Chris Smith (2025-06-25) interesting.
+You may too!</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>It uses <a href="https://www.wireguard.com/quickstart/">Wireguard</a> behind the scenes, if I&rsquo;ve understood correctly.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Clearly, it&rsquo;s not magic - David Anderson at Tailscale wrote a very interesting blog post about how Tailscale works and how it can provide direct connections across NATs: <a href="https://tailscale.com/blog/how-nat-traversal-works/">How NAT traversal works</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>I don&rsquo;t know anyone at Tailscale and I&rsquo;m not being paid by anyone to write this post.
+I just like the product and find it very useful!&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>The first time I upgraded a PostgresSQL database</title><link>/posts/db-first-upgrade/</link><pubDate>Mon, 18 Aug 2025 01:00:00 +0000</pubDate><guid>/posts/db-first-upgrade/</guid><description>&lt;p&gt;Upgrading a live PostgreSQL database in a Kubernetes environment can be a daunting task.
+Earlier this year, I faced this exact challenge: migrating an important PostgreSQL 15 database to version 16.
+As this was the first time I tackled an upgrade of this nature, I realized I would gain more from the experience by documenting it.
+Additionally, I hope to share insights that might help others navigate similar upgrades.&lt;/p&gt;
+&lt;p&gt;Fortunately, I collaborated with a knowledgeable colleague who was already well-versed in both PostgreSQL database maintenance and Kubernetes.
+His support was invaluable—thanks &lt;a href="https://kaveland.no/"&gt;Robin&lt;/a&gt;!&lt;/p&gt;</description><content:encoded><![CDATA[<p>Upgrading a live PostgreSQL database in a Kubernetes environment can be a daunting task.
+Earlier this year, I faced this exact challenge: migrating an important PostgreSQL 15 database to version 16.
+As this was the first time I tackled an upgrade of this nature, I realized I would gain more from the experience by documenting it.
+Additionally, I hope to share insights that might help others navigate similar upgrades.</p>
+<p>Fortunately, I collaborated with a knowledgeable colleague who was already well-versed in both PostgreSQL database maintenance and Kubernetes.
+His support was invaluable—thanks <a href="https://kaveland.no/">Robin</a>!</p>
+<p>Now, the plan was simple:</p>
+<ol>
+<li>Take a dump of the old database from the Kubernetes pod.</li>
+<li>Perform the upgrade locally.</li>
+<li>Upload the upgraded files to the Kubernetes pod.</li>
+<li>Update our deployment scripts to run with the upgraded database files.</li>
+</ol>
+<h2 id="preliminary-work">Preliminary Work</h2>
+<p>To do this job, I needed both PostgreSQL 15, PostgreSQL 16, and <a href="https://kubernetes.io/docs/reference/kubectl/"><code>kubectl</code></a> installed on my system.
+Thus, having a tool like <a href="https://mise.jdx.dev/"><code>mise</code></a> really comes in handy, as it makes it very easy to retrieve tools on demand<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+For instance, to do some very quick initial testing, I did:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">mise shell postgres@15.5
+</span></span><span class="line"><span class="cl">initdb -D tmp
+</span></span><span class="line"><span class="cl">pg_ctl start -D tmp
+</span></span><span class="line"><span class="cl">pg_ctl stop -D tmp
+</span></span></code></pre></div><h2 id="first-try">First try</h2>
+<p>Spoiler alert: I needed two tries.</p>
+<h3 id="dump-of-the-old-database">Dump of the old database</h3>
+<p>I first tried performing a <a href="https://www.postgresql.org/docs/current/app-pgbasebackup.html"><code>pg_basebackup</code></a> against the old PostgreSQL server via port forwarding:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Port forward between local 5432 and remote</span>
+</span></span><span class="line"><span class="cl">kubectl port-forward service/my-db <span class="m">5432</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Test that it works</span>
+</span></span><span class="line"><span class="cl">psql --host localhost --port <span class="m">5432</span> --user postgres postgres
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Take backup</span>
+</span></span><span class="line"><span class="cl">pg_basebackup --host localhost --port <span class="m">5432</span> --user postgres -D dump -Fp -Xs -P --checkpoint fast
+</span></span></code></pre></div><p>As the docs explain, <code>pg_basebackup</code> is used to take a base backup of a running PostgreSQL database cluster.
+The backup is taken without affecting other clients of the database.
+It really feels like the natural tool here.</p>
+<p>However, the process failed with a &ldquo;connection reset&rdquo;-type error.
+It must be some issue with networking or buffering – it&rsquo;s a bit unclear.
+I don&rsquo;t remember the specifics of this failure, since I figured I could just copy the files manually.
+So, I next tried to copy the old database files with <code>kubectl</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">kubectl cp my-service-db/my-db-pg15-0:/var/lib/postgresql/data/pgdata -c postgres db-old
+</span></span></code></pre></div><p>I tested that I could start a server with the dumped files locally:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">mise shell postgres@15.5
+</span></span><span class="line"><span class="cl">pg_ctl start -D db-old <span class="c1"># failed first time!</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rm db-old/postmaster.pid
+</span></span><span class="line"><span class="cl">pg_ctl start -D db-old <span class="c1"># now it worked</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">pg_ctl stop -D db-old
+</span></span></code></pre></div><p>It worked, except that I found I had to remove the <code>postmaster.pid</code> file before running <code>pg_ctl start</code>.
+This was necessary because I had copied the files from a running database server in which the <code>postmaster.pid</code> is present, and PostgreSQL won&rsquo;t start if it is present.</p>
+<h3 id="upgrading-the-database-locally">Upgrading the database locally</h3>
+<p>To upgrade the database locally, I used <a href="https://www.postgresql.org/docs/current/pgupgrade.html"><code>pg_upgrade</code></a>, like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Create a new DB that we will upgrade into</span>
+</span></span><span class="line"><span class="cl">mise use postgres@16.6
+</span></span><span class="line"><span class="cl">initdb -D db-new -U postgres
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Upgrade</span>
+</span></span><span class="line"><span class="cl">pg_upgrade -d db-old -D db-new <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -b /home/lervag/.local/share/mise/installs/postgres/15.5/bin <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -B /home/lervag/.local/share/mise/installs/postgres/16.6/bin
+</span></span></code></pre></div><p>Then I copied the upgrade files back onto the Kubernetes pod:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">kubectl cp db-new my-service-db/my-db-pg15-0:/var/lib/postgresql/data/pgdata-new -c postgres
+</span></span></code></pre></div><h3 id="upgrading-the-deployment-scripts">Upgrading the deployment scripts</h3>
+<p>Once the new files were in place, I went in and updated our <code>deployment.yml</code>.
+I upgraded to 16.6 and instructed it to start from <code>pgdata-new</code>.</p>
+<p>This seemingly worked fine.
+However, I observed two things that were not working as expected:</p>
+<ol>
+<li>
+<p>When I look in the logs, I saw messages like</p>
+<pre tabindex="0"><code>WARNING:  database &#34;postgres&#34; has no actual collation version, but
+          a version was recorded
+</code></pre><p>This happened because I performed the upgrade on a computer with <code>glibc</code>.
+The PostgreSQL server runs in Kubernetes on an Alpine Linux pod with <code>musl libc</code>.</p>
+</li>
+<li>
+<p>When I tried to test by deploying to an environment in our project, I encountered a connection error.
+This turned out to be due to settings in both <code>pg_hba.conf</code> and <code>postgresql.conf</code> in the old version that were not carried over during the upgrade.
+The problem was resolved by fixing the configuration.</p>
+</li>
+</ol>
+<p>Still, it was not satisfying to have the warnings in our logs.
+And we decided to try again with a clean slate.</p>
+<h2 id="second-attempt">Second attempt</h2>
+<h3 id="now-with-pg_dump">Now with pg_dump</h3>
+<p>The next idea was based on <a href="https://www.postgresql.org/docs/current/app-pgdump.html"><code>pg_dump</code></a>, which is another utility for backing up a PostgreSQL database.
+According to the docs, it makes consistent backups even if the database is being used concurrently and it does not block other users.
+The main difference is that <code>pg_dump</code> only dumps a single database and it does not include global objects such as roles.
+Further, <code>pg_dump</code> extracts the database into an SQL script file, possible compressed and archived, while <code>pg_basebackup</code> creates a physical byte-for-byte backup of the entire database cluster&rsquo;s files.</p>
+<p>So, we created a new plan:</p>
+<ol>
+<li>
+<p>Use <code>pg_dump</code> to obtain a logical backup.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">kubectl port-forward service/my-db <span class="m">5432</span>
+</span></span><span class="line"><span class="cl">pg_dump -C -U postgres -h localhost -p <span class="m">5432</span> -Zgzip:9 --if-exists -c mydbname &gt; db15.sql.gz
+</span></span></code></pre></div></li>
+<li>
+<p>Create a new fresh <code>StatefulSet</code> with PostgreSQL 16.</p>
+</li>
+<li>
+<p>Add missing users with correct passwords, as well as grants:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">user1</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">&#39;user1&#39;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">user2</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">&#39;user2&#39;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">GRANT</span><span class="w"> </span><span class="k">CONNECT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">mydbname</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">user1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">GRANT</span><span class="w"> </span><span class="k">CONNECT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">mydbname</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">user2</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>This is necessary, because as mentioned above, <code>pg_dump</code> does not include global objects such as roles.</p>
+</li>
+<li>
+<p>Restore from the dump.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">kubectl port-forward service/my-db <span class="m">5432</span>
+</span></span><span class="line"><span class="cl">mise shell postgres@16.6
+</span></span><span class="line"><span class="cl">zcat db15.sql.gz <span class="p">|</span> psql -U postgres -h localhost -p <span class="m">5432</span> postgres -v <span class="nv">ON_ERROR_STOP</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div></li>
+</ol>
+<p>I followed the plan, except I used <code>kubectl cp</code> to copy the dump into Kubernetes and then ran the <code>psql</code> command locally in the shell there.
+It worked fine!</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>All in all, I found this work to be interesting and I learned a lot from doing it.
+The main things I want to remember:</p>
+<ul>
+<li>I should not create the new, updated database on a <em>different</em> system from where it will be running.
+Understanding the environment, such as library differences between systems, is crucial!</li>
+<li><code>pg_dump</code> proved more reliable in our scenario compared to <code>pg_basebackup</code>, especially when dealing with different system architectures.</li>
+<li>Working alongside a knowledgeable colleague accelerated the learning process and helped navigate unexpected challenges.</li>
+</ul>
+<p>Overall, these insights not only facilitated a successful upgrade but also equipped me with strategies for future infrastructure challenges.</p>
+<p>As a final remark, I should mention I just noticed <a href="https://github.com/pgautoupgrade/docker-pgautoupgrade">docker-pgautoupgrade</a>.
+It looks awesome, and I&rsquo;ll definitely look into it the next time I need to do a PostgreSQL upgrade!</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>See also <a href="/posts/mise">The tools that I love: mise-en-place</a> for more reasons why I like <code>mise</code>!&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>A first look at Claude Code</title><link>/posts/claude-code/</link><pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate><guid>/posts/claude-code/</guid><description>&lt;p&gt;I recently got access to &lt;a href="https://docs.anthropic.com/en/docs/claude-code/overview"&gt;Claude Code&lt;/a&gt;.
+So, I installed it and decided to test it on one of my hobby projects, &lt;a href="https://github.com/lervag/vimtex/"&gt;VimTeX&lt;/a&gt;.
+Specifically, I wanted to do two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Have it analyze the project and let me know what it thinks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Have it help me resolve an issue.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is a short writeup of my experience.
+First, for reference, VimTeX is a Vim and Neovim plugin.
+It consists mostly of Vimscript, but also a few other things, as is shown in the output of &lt;code&gt;tokei&lt;/code&gt;:&lt;/p&gt;</description><content:encoded><![CDATA[<p>I recently got access to <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a>.
+So, I installed it and decided to test it on one of my hobby projects, <a href="https://github.com/lervag/vimtex/">VimTeX</a>.
+Specifically, I wanted to do two things:</p>
+<ol>
+<li>
+<p>Have it analyze the project and let me know what it thinks.</p>
+</li>
+<li>
+<p>Have it help me resolve an issue.</p>
+</li>
+</ol>
+<p>This is a short writeup of my experience.
+First, for reference, VimTeX is a Vim and Neovim plugin.
+It consists mostly of Vimscript, but also a few other things, as is shown in the output of <code>tokei</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">===============================================================================</span>
+</span></span><span class="line"><span class="cl"> Language            Files        Lines         Code     Comments       <span class="nv">Blanks</span>
+</span></span><span class="line"><span class="cl"><span class="o">===============================================================================</span>
+</span></span><span class="line"><span class="cl"> Dockerfile              <span class="m">1</span>           <span class="m">36</span>           <span class="m">17</span>           <span class="m">13</span>            <span class="m">6</span>
+</span></span><span class="line"><span class="cl"> JSON                    <span class="m">3</span>         <span class="m">1463</span>         <span class="m">1463</span>            <span class="m">0</span>            <span class="m">0</span>
+</span></span><span class="line"><span class="cl"> Lua                    <span class="m">10</span>         <span class="m">1482</span>         <span class="m">1004</span>          <span class="m">276</span>          <span class="m">202</span>
+</span></span><span class="line"><span class="cl"> Makefile               <span class="m">63</span>          <span class="m">906</span>          <span class="m">608</span>            <span class="m">3</span>          <span class="m">295</span>
+</span></span><span class="line"><span class="cl"> Python                  <span class="m">4</span>          <span class="m">141</span>          <span class="m">108</span>            <span class="m">3</span>           <span class="m">30</span>
+</span></span><span class="line"><span class="cl"> TeX                   <span class="m">370</span>        <span class="m">38981</span>        <span class="m">34515</span>          <span class="m">548</span>         <span class="m">3918</span>
+</span></span><span class="line"><span class="cl"> Plain Text              <span class="m">1</span>         <span class="m">7326</span>            <span class="m">0</span>         <span class="m">5878</span>         <span class="m">1448</span>
+</span></span><span class="line"><span class="cl"> TOML                    <span class="m">2</span>           <span class="m">35</span>           <span class="m">34</span>            <span class="m">0</span>            <span class="m">1</span>
+</span></span><span class="line"><span class="cl"> VB6                     <span class="m">4</span>          <span class="m">111</span>           <span class="m">91</span>            <span class="m">0</span>           <span class="m">20</span>
+</span></span><span class="line"><span class="cl"> Vim script            <span class="m">395</span>        <span class="m">31385</span>        <span class="m">27083</span>         <span class="m">1244</span>         <span class="m">3058</span>
+</span></span><span class="line"><span class="cl">-------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl"> Markdown                <span class="m">7</span>         <span class="m">1274</span>            <span class="m">0</span>          <span class="m">991</span>          <span class="m">283</span>
+</span></span><span class="line"><span class="cl"> <span class="p">|</span>- Lua                  <span class="m">1</span>            <span class="m">9</span>            <span class="m">7</span>            <span class="m">2</span>            <span class="m">0</span>
+</span></span><span class="line"><span class="cl"> <span class="p">|</span>- TeX                  <span class="m">1</span>            <span class="m">3</span>            <span class="m">3</span>            <span class="m">0</span>            <span class="m">0</span>
+</span></span><span class="line"><span class="cl"> <span class="o">(</span>Total<span class="o">)</span>                           <span class="m">1286</span>           <span class="m">10</span>          <span class="m">993</span>          <span class="nv">283</span>
+</span></span><span class="line"><span class="cl"><span class="o">===============================================================================</span>
+</span></span><span class="line"><span class="cl"> Total                 <span class="m">860</span>        <span class="m">83140</span>        <span class="m">64923</span>         <span class="m">8956</span>         <span class="nv">9261</span>
+</span></span><span class="line"><span class="cl"><span class="o">===============================================================================</span>
+</span></span></code></pre></div><h2 id="part-1-analysis-and-initial-thoughts">Part 1: Analysis and initial thoughts</h2>
+<p>I run <code>claude</code> at the root of my project.
+Then I run <code>/init</code>, which analyses the codebase and generates a <code>CLAUDE.md</code> file that is used by new conversations.
+I think the conversation mode works well.
+That is, the interactions feel quite good.
+Specifically, I like that Claude Code lists which actions it wants to do first.
+And I like that it asks for permission for every local action.
+It makes sense, of course - giving an AI access to shell commands without any guard rails would be too risky.</p>
+<p>Now, my first real question was &ldquo;What is your critical take on the quality of this project?&rdquo;.
+It spent some time thinking, then gave a seemingly high quality answer.
+It was very positive, and I&rsquo;m too biased to know if it is <em>overly</em> positive.
+It definitely might be; here&rsquo;s an example excerpt from the output:</p>
+<blockquote>
+<p><strong>Overall Assessment</strong></p>
+<p>This is a remarkably high-quality project that demonstrates exceptional
+software engineering practices within the constraints of the Vim plugin
+ecosystem. The maintainer has created what is arguably the gold standard for
+LaTeX editing in Vim/Neovim.</p>
+</blockquote>
+<p>Now, it did lift some concerns, such as that the project is written mostly in Vimscript.
+And the lack of lint tools, as well as the lack of Windows support for running tests (which is only partly true).</p>
+<h2 id="part-2-help-with-an-issue">Part 2: Help with an issue</h2>
+<p>Next, I asked it to help me with an issue.
+It immediately wanted to browse my Github issues with <a href="https://cli.github.com/"><code>gh</code></a>.
+I gave it permission, and it listed the top ten open issues.
+Cool!</p>
+<p>I then asked it to help me with a specific issue: <a href="https://github.com/lervag/vimtex/issues/2976">#2976</a>.
+That was a relatively old issue from August last year.
+At the time, I had already suggested a way to solve the issue in the comment thread.
+Claude used <code>gh</code> to view the comments and considered my solution.
+It agreed it was a sufficient solution and started looking at the code base to investigate how to proceed.</p>
+<p>Here&rsquo;s what it says:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">● Perfect! Now I understand the current implementation. The <span class="sb">`s:completer_ref`</span>
+</span></span><span class="line"><span class="cl">  on line 236 of <span class="sb">`complete.vim`</span> calls <span class="sb">`vimtex#parser#auxiliary#labels()`</span> on
+</span></span><span class="line"><span class="cl">  line 267, which parses <span class="sb">`.aux`</span> files to get labels with rich metadata.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  Let me create a solution that implements your suggestion (option 3): combine
+</span></span><span class="line"><span class="cl">  both approaches. I&#39;ll need to:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">1.</span> Create a manual label parser that scans <span class="sb">`.tex`</span> files for <span class="sb">`\label{}`</span>
+</span></span><span class="line"><span class="cl">     commands
+</span></span><span class="line"><span class="cl">  <span class="k">2.</span> Modify the reference completer to merge results from both sources
+</span></span><span class="line"><span class="cl">  <span class="k">3.</span> Ensure no duplicates and that the aux-based labels take precedence when
+</span></span><span class="line"><span class="cl">     available
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  Let me start implementing:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">● Update Todos
+</span></span><span class="line"><span class="cl">  ⎿  ☐ Create manual label parser function
+</span></span><span class="line"><span class="cl">     ☐ Modify reference completer to merge aux and manual parsing
+</span></span><span class="line"><span class="cl">     ☐ Test the implementation
+</span></span><span class="line"><span class="cl">     ☐ Create test case for the feature
+</span></span></code></pre></div><p>At this point, I&rsquo;m quite impressed!
+The workflow really does feel quite good.
+And the list of actions feels quite right, so I let it continue.</p>
+<p>At first, I accept the code it suggests without much input.
+It suggests one part at the time.
+It doesn&rsquo;t look too bad.
+Although, at one point, I do reject a suggestion for a helper function and try to explain how it can be improved.
+Claude is very &ldquo;polite&rdquo; and understands my suggestion and makes the improvement.
+But it&rsquo;s still not good enough.
+After some back and forth, we end up going from the original suggestion:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="k">function</span><span class="p">!</span> <span class="nx">s</span>:<span class="nx">merge_label_candidates</span><span class="p">(</span><span class="nx">aux_labels</span><span class="p">,</span> <span class="nx">manual_labels</span><span class="p">)</span> <span class="nx">abort</span>
+</span></span><span class="line"><span class="cl"><span class="c">  &#34; Merge aux-based and manual label candidates</span>
+</span></span><span class="line"><span class="cl"><span class="c">  &#34; aux_labels take precedence (have rich metadata)</span>
+</span></span><span class="line"><span class="cl"><span class="c">  &#34; manual_labels supplement with labels not found in aux files</span>
+</span></span><span class="line"><span class="cl"><span class="c">  &#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">let</span> <span class="nx">l</span>:<span class="nx">aux_words</span> <span class="p">=</span> {}
+</span></span><span class="line"><span class="cl">  <span class="nx">for</span> <span class="nx">l</span>:<span class="nx">label</span> <span class="nx">in</span> <span class="nx">a</span>:<span class="nx">aux_labels</span>
+</span></span><span class="line"><span class="cl">    <span class="k">let</span> <span class="nx">l</span>:<span class="nx">aux_words</span>[<span class="nx">l</span>:<span class="nx">label</span>.<span class="nx">word</span>] <span class="p">=</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">endfor</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">let</span> <span class="nx">l</span>:<span class="nx">result</span> <span class="p">=</span> <span class="nx">copy</span><span class="p">(</span><span class="nx">a</span>:<span class="nx">aux_labels</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c">
+</span></span></span><span class="line"><span class="cl"><span class="c">  &#34; Add manual labels that aren&#39;t already in aux labels</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">for</span> <span class="nx">l</span>:<span class="nx">label</span> <span class="nx">in</span> <span class="nx">a</span>:<span class="nx">manual_labels</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">!</span><span class="nx">has_key</span><span class="p">(</span><span class="nx">l</span>:<span class="nx">aux_words</span><span class="p">,</span> <span class="nx">l</span>:<span class="nx">label</span>.<span class="nx">word</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">call</span> <span class="nx">add</span><span class="p">(</span><span class="nx">l</span>:<span class="nx">result</span><span class="p">,</span> <span class="nx">l</span>:<span class="nx">label</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">endif</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">endfor</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">return</span> <span class="nx">l</span>:<span class="nx">result</span>
+</span></span><span class="line"><span class="cl"><span class="k">endfunction</span>
+</span></span></code></pre></div><p>To this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim" data-lang="vim"><span class="line"><span class="cl"><span class="k">function</span><span class="p">!</span> <span class="nx">s</span>:<span class="nx">merge_label_candidates</span><span class="p">(</span><span class="nx">aux_labels</span><span class="p">,</span> <span class="nx">manual_labels</span><span class="p">)</span> <span class="nx">abort</span>
+</span></span><span class="line"><span class="cl"><span class="c">  &#34; Merge aux-based and manual label candidates</span>
+</span></span><span class="line"><span class="cl"><span class="c">  &#34; aux_labels take precedence (have rich metadata)</span>
+</span></span><span class="line"><span class="cl"><span class="c">  &#34; manual_labels supplement with labels not found in aux files</span>
+</span></span><span class="line"><span class="cl"><span class="c">  &#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">let</span> <span class="nx">l</span>:<span class="nx">result</span> <span class="p">=</span> <span class="nx">copy</span><span class="p">(</span><span class="nx">a</span>:<span class="nx">aux_labels</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">let</span> <span class="nx">l</span>:<span class="nx">aux_words</span> <span class="p">=</span> <span class="k">map</span><span class="p">(</span><span class="nx">copy</span><span class="p">(</span><span class="nx">a</span>:<span class="nx">aux_labels</span><span class="p">),</span> <span class="s1">&#39;v:val.word&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c">
+</span></span></span><span class="line"><span class="cl"><span class="c">  &#34; Add manual labels that aren&#39;t already in aux labels</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">call</span> <span class="nx">extend</span><span class="p">(</span><span class="nx">l</span>:<span class="nx">result</span><span class="p">,</span> <span class="nx">filter</span><span class="p">(</span><span class="nx">a</span>:<span class="nx">manual_labels</span><span class="p">,</span> <span class="s1">&#39;index(l:aux_wor ds, v:val.word) &lt; 0&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">return</span> <span class="nx">l</span>:<span class="nx">result</span>
+</span></span><span class="line"><span class="cl"><span class="k">endfunction</span>
+</span></span></code></pre></div><p>The last version is good enough for me.
+(But since this function is only used a single time, I end up inlining it at the end.)</p>
+<p>As for the tests, I needed to help Claude with additional input.
+E.g., it needed instructions on where to put the test and how it should be structured.
+That&rsquo;s not surprising, though, and with my guide I think Claude made a good test.
+It was more or less kept unchanged, which is impressive.</p>
+<p>After writing the code, Claude Code wants to run the tests.
+It didn&rsquo;t need much help here, it seems Claude had understood the instructions from my <code>CONTRIBUTING.md</code> file.
+I allow it, and it parses the first error.
+It only partly understands the problem.
+Until this point, I think Claude has been helpful.
+We only spent about 15 minutes so far, I think.
+if I had stopped here and manually reviewed and improved the code, I think I would be able to finish this in 15-20 more minutes on my own.</p>
+<p>Instead, I now tried guiding Claude Code to fixing the errors.
+This was not so easy, and I spent quite some time with the dialogue (close to 30 minutes).
+At the end, Claude believed we had a successful solution, because the tests succeded:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">  Our implementation is complete and working correctly. The manual label
+</span></span><span class="line"><span class="cl">  parsing feature successfully:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">1.</span> ✅ Finds labels that aren&#39;t in aux files (e.g., with autonum package)
+</span></span><span class="line"><span class="cl">  <span class="k">2.</span> ✅ Merges aux-based and manual labels efficiently
+</span></span><span class="line"><span class="cl">  <span class="k">3.</span> ✅ Maintains aux label precedence for rich metadata
+</span></span><span class="line"><span class="cl">  <span class="k">4.</span> ✅ Passes all relevant tests
+</span></span><span class="line"><span class="cl">  <span class="k">5.</span> ✅ Doesn&#39;t break other completion functionality
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  The solution is ready for the issue <span class="ni">#2976</span>!
+</span></span></code></pre></div><p>At this point, I start doing a closer review.
+I ask some questions, and I find that the actual new code that was seemingly good is actually <em>not</em> good.
+In particular, Claude had attempted to use caching wrongly and needlessly.
+We discussed it, and the discussion ended up like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">No, you are still doing it wrong in `...#labels_manual`. The caching is still
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">at the outer and wrong. Let me know if you want me to fix this myself.
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">● You&#39;re absolutely right, I&#39;m still doing the caching wrong. I&#39;m caching at
+</span></span><span class="line"><span class="cl">  the outer level based on file modification time, but the actual expensive
+</span></span><span class="line"><span class="cl">  work (iterating through all the parsed files) is happening inside, and
+</span></span><span class="line"><span class="cl">  that&#39;s where the caching should be.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  The current structure caches the entire operation based on the main file&#39;s
+</span></span><span class="line"><span class="cl">  modification time, but if the project has many included files, we should be
+</span></span><span class="line"><span class="cl">  caching based on the collective state of all those files, similar to how the
+</span></span><span class="line"><span class="cl">  aux-based parsing works.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  Please go ahead and fix it - I think I&#39;m not seeing the right structure
+</span></span><span class="line"><span class="cl">  clearly, and it would be better for you to implement it correctly rather
+</span></span><span class="line"><span class="cl">  than me continuing to get it wrong.
+</span></span></code></pre></div><p>At this point, I fixed the code myself — there were several improvements to be made.
+I ask Claude to assess the final version.
+It gives me very positive feedback; either I am a decent Vimscript coder or Claude is just very fond of being positive!
+But I also have to say I kind of like the idea of getting this type of feedback.
+Especially since the project is a solo project.
+I don&rsquo;t get much feedback on the code, only on the product itself.</p>
+<p>My final version was quite far from what Claude suggested at first.
+Except for the tests — they were really quite spot on.
+The final commit of this case study is here: <a href="https://github.com/lervag/vimtex/commit/9a10883ddf7bd15cd22c08b083bc9a1453d2293a">9a10883d</a>.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>At the end of the session, Claude let&rsquo;s me know that we spent 1 hour 12 minutes, and that it had cost USD 5.41.
+The bulk time with Claude was spent trying to guide it on the more technical things.
+I believe this issue would take me about an hour to solve alone.
+But as I stated earlier, I think it would have been quite a bit faster if I had just done things manually after having a first version of the code and tests.
+And I guess it didn&rsquo;t help that this is a Vimscript project — it is probably quite a niche.</p>
+<p>It was fun doing this test, and I will definitely continue to try both Claude Code and similar AI tools more in the future.
+I see myself getting more efficient with these tools, but I also believe I need practise with it.</p>
+]]></content:encoded></item><item><title>The tools that I love: web feeds</title><link>/posts/rss/</link><pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate><guid>/posts/rss/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How do you follow and consume web content?
+Are you manually checking news sites, blogs, and similar sources for updates regularly?
+If so, you might be interested in learning about news aggregators and web feeds like RSS and Atom!&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.</p>
+</blockquote>
+<p>How do you follow and consume web content?
+Are you manually checking news sites, blogs, and similar sources for updates regularly?
+If so, you might be interested in learning about news aggregators and web feeds like RSS and Atom!</p>
+<p><a href="https://en.wikipedia.org/wiki/RSS">RSS</a> stands for &ldquo;RDF Site Summary&rdquo; or &ldquo;Really Simple Syndication.&rdquo;
+It’s a format for creating web feeds that you can subscribe to.
+<a href="https://en.wikipedia.org/wiki/Atom_(web_standard)">Atom</a> is a similar standard for web feeds.</p>
+<p>A news aggregator lets you manage and consume various web feeds.
+There are <a href="https://en.wikipedia.org/wiki/Comparison_of_feed_aggregators">many options available</a> available!, and most support multiple platforms.
+For example, you can browse your feeds and mark items for later on your phone, then read the content in detail on your desktop.</p>
+<figure>
+    <img loading="lazy" src="/static/feedly.png"
+         alt="Screenshot of Feedly"/> <figcaption>
+            <p>A screenshot from Feedly, the news aggregator I use.</p>
+        </figcaption>
+</figure>
+
+<p>I’ve been using news aggregators and web feeds for a long time—they’ve become essential for how I consume web content.
+Currently, I use <a href="https://feedly.com/news-reader">Feedly</a> as my reader application.
+It works well on both my phone and as a web app, and it offers a robust free tier.</p>
+<p>With Feedly, I follow <a href="https://news.ycombinator.com/">Hacker News</a>, several blogs, some Reddit sites, and various news outlets.
+I quickly browse new content a few times a day, read the interesting articles, and save others for later if I don’t have time to read them immediately.</p>
+]]></content:encoded></item><item><title>My transition from researcher to developer</title><link>/posts/researcher-to-developer/</link><pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate><guid>/posts/researcher-to-developer/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;Disclaimer: This post is also published &lt;a href="https://blogg.sikt.no/my-transition-from-researcher-to-developer-337f83853f79"&gt;at the Sikt blog&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I began my research career at &lt;a href="https://www.sintef.no/en/sintef-energy/"&gt;SINTEF Energy Research&lt;/a&gt; after finishing my Master&amp;rsquo;s in numerical mathematics in 2008.
+My main area of research throughout my career was computational fluid dynamics (CFD)&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+I finished my PhD in 2013, and I stayed at SINTEF working as a research scientist until March 2022.
+In April 2022, I started working as a senior backend developer at &lt;a href="https://sikt.no/en/home"&gt;Sikt&lt;/a&gt; — this is where I&amp;rsquo;m currently still working.
+In this post, I want to express some thoughts about what I&amp;rsquo;ve learned after my transition from being a researcher to being a developer.&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>Disclaimer: This post is also published <a href="https://blogg.sikt.no/my-transition-from-researcher-to-developer-337f83853f79">at the Sikt blog</a>.</p>
+</blockquote>
+<p>I began my research career at <a href="https://www.sintef.no/en/sintef-energy/">SINTEF Energy Research</a> after finishing my Master&rsquo;s in numerical mathematics in 2008.
+My main area of research throughout my career was computational fluid dynamics (CFD)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+I finished my PhD in 2013, and I stayed at SINTEF working as a research scientist until March 2022.
+In April 2022, I started working as a senior backend developer at <a href="https://sikt.no/en/home">Sikt</a> — this is where I&rsquo;m currently still working.
+In this post, I want to express some thoughts about what I&rsquo;ve learned after my transition from being a researcher to being a developer.</p>
+<p>I didn&rsquo;t have a formal background in software development.
+However, as a CFD researcher, I was accustomed to programming and designing models to solve complex problems.
+I was also personally interested in software development.
+I dedicated much of my free time to learning new programming languages and honing related skills.
+As an example, I built and maintained <a href="https://github.com/lervag/vimtex/">VimTeX</a>, which is a relatively popular Vim and Neovim plugin for writing LaTeX.</p>
+<p>Now, I clearly lacked some skills when I started working as a developer.
+A few that come to mind:</p>
+<ol>
+<li>I didn&rsquo;t know the languages I started working with: Kotlin, Java, and Scala.</li>
+<li>I didn&rsquo;t really know web development <em>at all</em>.</li>
+<li>I knew little about infrastructure technologies such as Kubernetes.</li>
+<li>I did not have much experience with SQL and databases.</li>
+<li>I lacked a lot of the vocabulary, including things like &ldquo;agile&rdquo;, &ldquo;CDN&rdquo;, and &ldquo;trunk-based development&rdquo;.</li>
+</ol>
+<p>Over the past three years, I&rsquo;ve acquired substantial knowledge in these areas.
+Of course, there are still gaps where I both need to and want to learn more.
+I enjoy learning new things, so I both believe and hope this will be true until I retire!</p>
+<p>The above are all very concrete, technical skills.
+And though they are important, I would also claim that they are easy to learn under the right conditions<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+Instead, I&rsquo;d like to highlight two key insights I&rsquo;ve gained that I find particularly compelling:
+The <em>value of good problem solving skills</em> and the <em>importance of a good working culture</em>.</p>
+<h3 id="problem-solving-skills">Problem solving skills</h3>
+<p>I&rsquo;ve discovered that I can be productive and valuable even without knowing everything.
+As a researcher, I learned to be thorough, structured, and analytical in how I solve problems.
+Essentially, I find I am good at asking the right questions.
+This is useful, because it can help me and my team to reach good solutions for our problems.</p>
+<p>Further: In research, we are trained at reporting our findings.
+We write papers that describe our problem.
+In a paper, we refer to related work, describe how we propose to solve the problem, show results, discuss the results and draw conclusions.
+While writing papers, I often realized I made mistakes in how I understood the original problem.
+And writing about the problem also helped me think about solutions.
+The process of writing is useful both for communicating our work, <em>but also as a means for <strong>doing</strong> good work</em>!</p>
+<p>In my experience, I have found that this structured method of writing is useful also as a developer.
+Researchers are used to this, but in my experience, developers are often not trained at this method of problem solving<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<h3 id="culture">Culture</h3>
+<p>At SINTEF, I worked in a highly skilled team with clever and kind co-workers.
+After the transition, I still have the pleasure of working in such a team.
+However, in the new team, we have developed a very good and positive culture.
+It&rsquo;s hard to put it in words how much value this brings to me.
+But in short, these are all traits that characterizes the culture of my current team:</p>
+<ul>
+<li>I feel safe — I can express my thoughts more or less unfiltered.</li>
+<li>I can be curious and spend time on investigating ideas.
+This has made it much easier for me to fill skill gaps, for instance.</li>
+<li>I receive honest feedback on my actions and work.</li>
+<li>We&rsquo;re allowed to have fun.</li>
+<li>We are open and share our thoughts and ideas.</li>
+<li>We respect each other&rsquo;s time and minimize unnecessary lengthy meetings.</li>
+<li>When things are unclear or frustrating, we are good at being constructive.
+Instead of staying in a frustrated state, we start investigating how we can best proceed.</li>
+</ul>
+<p>I think I&rsquo;ll have to elaborate more about my thoughts on culture <a href="/posts/culture">in a later blog post</a>.
+Now, to conclude this post, I&rsquo;ll just summarize and say I&rsquo;ve found the transition to be a positive experience.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>You can find my list of publications <a href="/publications">here</a> if you are interested.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Such as a healthy work culture!&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Clearly, I&rsquo;m generalizing.
+Not all researchers are very good at writing or this type of problem solving.
+And not all developers are bad at it!&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>The tools that I love: My personal wiki</title><link>/posts/wiki.vim/</link><pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate><guid>/posts/wiki.vim/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;People who know me know that I am very fond of using text both as a help for thinking clearly and for communication.
+I take a lot of notes.
+Most of these are in my own personal wiki.
+In this blog post, I&amp;rsquo;ll explain how I write and maintain my personal wiki.
+I&amp;rsquo;m not going in depth, instead I&amp;rsquo;ll highlight some of the essential parts of my workflow.
+I might write some in-depth posts about certain parts at a later time.&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.</p>
+</blockquote>
+<p>People who know me know that I am very fond of using text both as a help for thinking clearly and for communication.
+I take a lot of notes.
+Most of these are in my own personal wiki.
+In this blog post, I&rsquo;ll explain how I write and maintain my personal wiki.
+I&rsquo;m not going in depth, instead I&rsquo;ll highlight some of the essential parts of my workflow.
+I might write some in-depth posts about certain parts at a later time.</p>
+<p>For those in a rush, here&rsquo;s a few key takeaways:</p>
+<ul>
+<li>Speed is key - make sure you have a <em>fast</em> workflow:
+<ul>
+<li>Use keyboard shortcuts to open whichever tool you use for taking notes. Your tool should open fast!</li>
+<li>Ensure you have a way to very quickly search your notes.</li>
+</ul>
+</li>
+<li>Write short pages and use links between related pages.</li>
+<li>Don&rsquo;t obsess about the wiki structure.</li>
+</ul>
+<p>In my experience, the last point is really quite important!
+I like how <a href="https://github.com/lervag/wiki.vim/issues/101#issuecomment-718284921">@mgoral phrased it</a> (some people may enjoy reading the entire thread from which this quote is captured):</p>
+<blockquote>
+<p>I think that the most important thing is to not overthink things and just keep writing stuff down.</p>
+</blockquote>
+<h2 id="context-and-tooling">Context and tooling</h2>
+<p>I first started taking digital notes in 2007, which is about 18 years ago now.
+Today, my personal wiki consists of a large amount of simple text files.
+As of 2025-04-05 I have about 15 megabytes worth of text in 3365 files.
+The files span a total of 112 033 lines of text.</p>
+<p>I use <a href="https://syncthing.net/">Syncthing</a> to keep my files synchronized across my computers, phones, and tablets.
+I use <a href="https://neovim.io/">Neovim</a> with <a href="https://github.com/lervag/wiki.vim">wiki.vim</a> to view, search, navigate and write my notes.
+<code>wiki.vim</code> has most of the main features I need, especially concerning links.
+Neovim combined with a few other plugins fill in the rest.</p>
+<p>Note, though, that I strongly believe that one may adopt a similar workflow with a lot of different tools.
+Some alternatives are listed <a href="https://en.wikipedia.org/wiki/List_of_wiki_software#Personal_wiki_software">on Wikipedia</a>.
+I think this blog post may be interesting even if you use different tools.</p>
+<h2 id="why-write-a-personal-wiki">Why write a personal wiki?</h2>
+<p>From my point of view, writing notes is a good way to extend my memory.
+And writing the notes is itself a useful process for several reasons:</p>
+<ul>
+<li>It helps me remember.</li>
+<li>It helps me to <em>think</em> about the thing I&rsquo;m writing about and thus to learn.
+If I can&rsquo;t find a good way to put something, it is usually because of a lack of understanding.
+This is related to the <a href="https://en.wikipedia.org/wiki/Learning_by_teaching#Plastic_platypus_learning">Feynman technique</a>, so I&rsquo;m obviously doing things that greater minds than mine found useful. That&rsquo;s cool!</li>
+</ul>
+<p>The idea of linking the notes and creating <em>a personal wiki</em> has strongly increased the power of my notes.
+Without links, the notes were already useful.
+I could search them and I benefited from writing them.
+But having the links allow me to <em>connect related concepts</em> in a very flexible manner.
+It makes it easier to keep my notes short and to the point, with links to related or more in-depth notes.
+Adding the connections also seems to help me <em>realize</em> and <em>recognize</em> these connections.
+The personal wiki essentially becomes a tool for <a href="https://en.wikipedia.org/wiki/Personal_knowledge_management">personal knowledge management</a>.</p>
+<h2 id="key-aspects-of-my-workflow">Key aspects of my workflow</h2>
+<p>In the remaining part I&rsquo;ll briefly outline what I think are the key aspects of my workflow:</p>
+<ul>
+<li>Speed</li>
+<li>The wiki index</li>
+<li>How I write (a few remarks on writing and structure)</li>
+</ul>
+<p>These are things that I find import for successfully maintaining my personal wiki.
+I believe some of this should be relevant for most people.</p>
+<h3 id="speed">Speed</h3>
+<p>In my opinion, speed is very important.
+That is, the tools should start fast, navigation should be fast, searching should be fast.
+It should be fast, because I don&rsquo;t want to break my current flow of thought when I lookup a note or if I want to write something quickly.
+If I know I&rsquo;ve written about something, I should be able to find it in a matter of seconds.</p>
+<p>I don&rsquo;t think it matters much <em>how</em> one achieves speed.
+For me, the following things work very well:</p>
+<ul>
+<li>
+<p>I have a system shortcut <code>&lt;alt-n&gt;</code> that opens my personal wiki in Neovim <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+This mapping ensures that it takes less than a second from the moment I have a thought until I can start to add it to my wiki for later processing.
+The allows me to write down a thought and then continue with the current work without being disrupted.</p>
+</li>
+<li>
+<p>I have a global mapping in Neovim (<code>&lt;leader&gt;ow</code>) that starts a search for a file in my wiki.
+It usually takes no more than a couple of seconds from the moment I think of something until I have opened the relevant note.</p>
+</li>
+<li>
+<p>I use <a href="https://github.com/dyng/ctrlsf.vim">ctrlsf.vim</a> to search for content within my wiki pages.
+This plugin uses the very fast <a href="https://github.com/BurntSushi/ripgrep">ripgrep</a> as a search backend.
+This makes it very easy and fast to search the contents of the wiki.
+If my search has too many hits, I can either narrow it down by changing the search pattern, or I can search within the result buffer of <code>ctrlsf.vim</code>.
+This has generally not failed me in finding information I&rsquo;m looking for.</p>
+</li>
+</ul>
+<h3 id="the-wiki-index">The wiki index</h3>
+<p>Sometimes I want to write down stuff that I don&rsquo;t know where to put.
+This includes a lot of different things:</p>
+<ul>
+<li>Links to things I want to read at some time.</li>
+<li>Ideas or thoughts I want to pursue at a later time.</li>
+<li>Link to pages in my wiki that need attention.</li>
+<li>Things that I want to memorize <a href="/posts/anki/">with Anki</a>.</li>
+</ul>
+<p>All of the above are things that I put in my wiki index.
+This is the page I reach with my <code>&lt;alt-n&gt;</code> shortcut mentioned above.
+Essentially, anything I want to write down that does not have a dedicated page goes here.
+And with time, often slowly, I work through the index and process the content.
+This may result in new pages to hold new content, or that I just remove things that are no longer relevant.</p>
+<h3 id="how-i-write">How I write</h3>
+<p>I make sure to write down what I feel like at the moment.
+I clean it up and rinse/repeat as something is developing.
+I add links to relevant external and internal pages/resources.
+I often add examples, for instance tools I discover or libraries I learn about.</p>
+<p>With time, I&rsquo;ve started to adopt an unstructured approach where I avoid complicated structure and subdirectories.
+I try to use the proper names of things as the name of a page.
+I don&rsquo;t worry about using spaces in my wiki file names.
+This simple structure makes it easy to convert text to the correct links and it makes it easy to remember the relevant page names.</p>
+<p>I don&rsquo;t worry about having many pages.
+I don&rsquo;t worry about almost empty pages.
+I don&rsquo;t worry about keeping my pages in a hierarchy.
+I&rsquo;ve found it can be useful to split information into separate pages, as it makes it easier to link things.</p>
+<p>For some topics, I may write a wiki page about stuff where I have links to data files in which I can append new data and to scripts I can run to visualize the data.
+Thus, I don&rsquo;t keep everything in the wiki, instead, I may write the &ldquo;metadata&rdquo; and general overview in the wiki, and then keep the real data and relevant tools as a &ldquo;third party&rdquo;.</p>
+<h2 id="closing-remarks">Closing remarks</h2>
+<p>The idea with this post was to give an overview.
+I will be glad to go more in depth on parts of this stuff.
+Feel free to reach out if there is something in particular that you think I should share more details on.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Specifically, I map <code>&lt;alt-n&gt;</code> to the shell command <code>wezterm-gui start -- nvim +WikiIndex</code>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>Load testing of "Søkerportalen"</title><link>/posts/loadtest/</link><pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate><guid>/posts/loadtest/</guid><description>&lt;figure class="so-logo"&gt;&lt;a href="https://www.samordnaopptak.no/"&gt;
+&lt;img loading="lazy" src="https://www.samordnaopptak.no/vrtx/dist/resources/images/logo.svg"
+alt="Samordna opptak"/&gt; &lt;/a&gt;
+&lt;/figure&gt;
+&lt;p&gt;The last couple of years I&amp;rsquo;ve been working in a team &lt;a href="https://sikt.no/en/home"&gt;at Sikt&lt;/a&gt; on the admission services for Norwegian universities and colleges&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;.
+As part of this work, we&amp;rsquo;ve been performing load tests of &lt;a href="https://sok.samordnaopptak.no/"&gt;the applicant portal&lt;/a&gt;.
+The first times my team and I did this, we followed a well-defined manual procedure that were executed two times each year.
+We figured it would be relatively easy to automate this and have the load tests run daily in our pipelines.&lt;/p&gt;</description><content:encoded><![CDATA[<figure class="so-logo"><a href="https://www.samordnaopptak.no/">
+    <img loading="lazy" src="https://www.samordnaopptak.no/vrtx/dist/resources/images/logo.svg"
+         alt="Samordna opptak"/> </a>
+</figure>
+
+<p>The last couple of years I&rsquo;ve been working in a team <a href="https://sikt.no/en/home">at Sikt</a> on the admission services for Norwegian universities and colleges<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+As part of this work, we&rsquo;ve been performing load tests of <a href="https://sok.samordnaopptak.no/">the applicant portal</a>.
+The first times my team and I did this, we followed a well-defined manual procedure that were executed two times each year.
+We figured it would be relatively easy to automate this and have the load tests run daily in our pipelines.</p>
+<p>So, last year, <a href="https://2024.javazone.no/program/16de8fc2-4e54-4432-977a-e4400de271b1">I gave a talk at JavaZone 2024 in Oslo</a> where I presented our journey from doing manual load tests twice a year to having them automated.
+I highlighted the main obstacles and talked about our experiences.
+The talk was recorded and is freely available on the JavaZone websites.
+I was very happy to see so many people attending the talk, and <a href="https://www.kode24.no/artikkel/samordna-opptak-automatiserte-lasttesting-veldig-deilig/81904967">Kode24 even wrote a short story about it afterwards</a> — thanks!
+However, the talk is in Norwegian, and I figured it would be nice to share the highlights in this short blog post.</p>
+<blockquote>
+<h3 id="-load-test">💡 Load test</h3>
+<p>Load testing is the process of putting demand on a structure or system and measuring its response.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+</blockquote>
+<h2 id="the-journey">The journey</h2>
+<p>The journey started when we first performed the mentioned manual load-test process.
+This was a process that had usually been performed twice a year up until and including 2023.
+We had a test suite written with <a href="https://gatling.io">Gatling</a> in Scala that simulated load on our system.
+Essentially, our load testing procedure looked like this:</p>
+<ul>
+<li>We booked time with our operations staff and ensured that our test environment was ready and available at a given date a week or two in advance.</li>
+<li>We ensured that the tests ran as expected locally.
+Since it might be 4-8 months since the last time anyone had run the tests, it was to be expected that we needed to fix a few things.</li>
+<li>During and after the load testing we wrote a report of our findings.</li>
+<li>The main data sources were the reports generated by Gatling and some observability metrics provided by our operations staff.</li>
+</ul>
+<figure>
+    <img loading="lazy" src="/static/lasttest-gatling-report.png"
+         alt="Gatling report"/> <figcaption>
+            <p>An example of a Gatling report.</p>
+        </figcaption>
+</figure>
+
+<p>One of the main findings in my teams first report from June 2023 was that it should be relatively straightforward to automating the entire thing.
+This was particularly true due to a parallel effort in which we had gotten much more control of our own pipelines and runtime environments.
+In this parallel effort we had also established an observability platform with OpenTelemetry and Grafana.
+This allowed us to measure the load on our environment by considering metrics such as response times for the APIs.</p>
+<p>So, to make true on my promise of keeping it short: We automated the thing.</p>
+<ul>
+<li>We created a pipeline to run the load tests on a schedule - every day.</li>
+<li>The pipeline creates an ephemeral Kubernetes environment in which we ran our load tests.</li>
+<li>The test results are then readily available in our Grafana dashboards.
+The main data source is from Prometheus, which gives us metrics on the response times for our APIs.</li>
+</ul>
+<figure>
+    <img loading="lazy" src="/static/grafana-aggregated.png"
+         alt="Grafana"/> <figcaption>
+            <p>Grafana plot of response times</p>
+        </figcaption>
+</figure>
+
+<h2 id="experiences">Experiences</h2>
+<p>The main question after doing something like this:</p>
+<figure>
+    <img loading="lazy" src="https://imgs.xkcd.com/comics/is_it_worth_the_time_2x.png"
+         alt="Is it worth the time"/> <figcaption>
+            <p>Is it worth the time (XKCD 1205)</p>
+        </figcaption>
+</figure>
+
+<p>Well, I think it definitely was!
+In our case, a lot of relevant work was already being done in parallel.
+Thus the costs were kept relatively small.
+And the savings are real: I estimate that the manual load tests required a week or perhaps even two each year.
+But there are also other important benefits:</p>
+<ul>
+<li>We now have daily results of the load tests.</li>
+<li>Thus it becomes much easier to react and fix problems that occur during the regular development cycle.</li>
+<li>And having both the daily results, the Grafana dashboards, and the Gatling reports, we now have more and better tools for debugging in case we do observe regressions.</li>
+</ul>
+<p>Finally, a couple of closing remarks:</p>
+<ul>
+<li>Working with Kubernetes environments and gitlab pipelines can be a hazzle.
+It was very useful to setup a local Kubernetes environment with <a href="https://minikube.sigs.k8s.io/docs/">minikube</a> - this provided a much faster feedback loop.</li>
+<li>Doing this work would have been hard without having access to relevant competence.
+I would like to make an honourable mention of <a href="https://kaveland.no/">Robin Kåveland</a>, who made this possible!
+I&rsquo;ve learned a lot from working with you; thanks!</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://sikt.no/tiltak/fremtidens-opptak">https://sikt.no/tiltak/fremtidens-opptak</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.samordnaopptak.no/info/english/">https://www.samordnaopptak.no/info/english/</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://en.wikipedia.org/wiki/Load_testing">https://en.wikipedia.org/wiki/Load_testing</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>About</title><link>/about/</link><pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;p&gt;Hi!
+I am Karl.
+This is my blog where I write about things that cross my mind.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m the main developer of &lt;a href="https://github.com/lervag/vimtex/"&gt;VimTeX&lt;/a&gt;, a Vim and Neovim plugin for writing LaTeX documents.
+I&amp;rsquo;ve also published a few other open source projects, all of them available &lt;a href="https://github.com/lervag"&gt;on GitHub&lt;/a&gt;.
+The most notable ones are probably these:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/lervag/wiki.vim/"&gt;wiki.vim&lt;/a&gt;, a Vim and Neovim plugin for writing and maintaining a personal wiki.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lervag/apy"&gt;apy&lt;/a&gt;, a CLI tool for interacting with your local Anki database.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I currently work as a senior developer and tech lead at &lt;a href="https://www.sikt.no"&gt;Sikt&lt;/a&gt;.
+I&amp;rsquo;ve previously worked at &lt;a href="https://www.sintef.no/en/sintef-energy/"&gt;SINTEF Energy Research&lt;/a&gt; as a researcher.
+As a researcher I worked with computational fluid dynamics.
+My main publications &lt;a href="./publications"&gt;are listed here&lt;/a&gt;.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Hi!
+I am Karl.
+This is my blog where I write about things that cross my mind.</p>
+<p>I&rsquo;m the main developer of <a href="https://github.com/lervag/vimtex/">VimTeX</a>, a Vim and Neovim plugin for writing LaTeX documents.
+I&rsquo;ve also published a few other open source projects, all of them available <a href="https://github.com/lervag">on GitHub</a>.
+The most notable ones are probably these:</p>
+<ul>
+<li><a href="https://github.com/lervag/wiki.vim/">wiki.vim</a>, a Vim and Neovim plugin for writing and maintaining a personal wiki.</li>
+<li><a href="https://github.com/lervag/apy">apy</a>, a CLI tool for interacting with your local Anki database.</li>
+</ul>
+<p>I currently work as a senior developer and tech lead at <a href="https://www.sikt.no">Sikt</a>.
+I&rsquo;ve previously worked at <a href="https://www.sintef.no/en/sintef-energy/">SINTEF Energy Research</a> as a researcher.
+As a researcher I worked with computational fluid dynamics.
+My main publications <a href="/publications">are listed here</a>.</p>
+]]></content:encoded></item><item><title>The tools that I love: Anki</title><link>/posts/anki/</link><pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate><guid>/posts/anki/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://apps.ankiweb.net/"&gt;Anki&lt;/a&gt; is a flash card tool to help with remembering things.
+In their own words:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anki is a program which makes remembering things easy.
+Because it&amp;rsquo;s a lot more efficient than traditional study methods, you can either greatly decrease your time spent studying, or greatly increase the amount you learn.&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.</p>
+</blockquote>
+<p><a href="https://apps.ankiweb.net/">Anki</a> is a flash card tool to help with remembering things.
+In their own words:</p>
+<blockquote>
+<p>Anki is a program which makes remembering things easy.
+Because it&rsquo;s a lot more efficient than traditional study methods, you can either greatly decrease your time spent studying, or greatly increase the amount you learn.</p>
+<p>Anyone who needs to remember things in their daily life can benefit from Anki.
+Since it is content-agnostic and supports images, audio, videos and scientific markup (via LaTeX), the possibilities are endless.
+For example:</p>
+<ul>
+<li>Learning a language</li>
+<li>Studying for medical and law exams</li>
+<li>Memorizing people&rsquo;s names and faces</li>
+<li>Brushing up on geography</li>
+<li>Mastering long poems</li>
+<li>Even practicing guitar chords!</li>
+</ul>
+</blockquote>
+<p><img alt="Anki" loading="lazy" src="https://ankiweb.net/logo.png#center"></p>
+<p>In my experience, Anki works wonders!
+I&rsquo;ve used it to both learn and memorize geography, math, physics, programming languages, frivolous details about people, quotes, various laws of life, and a lot more.
+As a small example: Before I used Anki, I could not name or list many of the countries in the world.
+Today, I know a few facts for more or less every country in the world.
+This includes silly things like the dialling codes or a rough estimate of populations.</p>
+<p>It is a little bit hard to explain how much I like Anki.
+Before I started using it, I didn&rsquo;t really have a good method for memorizing things.
+I was already good at remembering things that I could understand, but other things usually slipped my mind fast.
+I now have about 11850 cards in my Anki deck.
+My retention is about 90 %, so I would likely remember the answer to around 10665 of my cards.
+This means I am now able to remember things more or less <em>at will</em>.</p>
+<p>The main value for me came when I started to use it for things more relevant to my work and hobbies.
+Today, if I work on something new, I always make sure to write a few Anki cards for the main concepts.
+This can be everything from new programming languages, new tools, or the domain that I work with.
+Doing this, I am able to keep a much more livid memory of the topics even years after I worked on them.
+And this makes it much easier to make new connections between different topics as well.</p>
+<p>Anki really feels like one of the <em>real</em> life hacks in this world.
+I can strongly recommend it!</p>
+<h2 id="apy">apy</h2>
+<p>Anki comes with a very nice graphical user interface on the desktop.
+It also has very good applications for your phone.
+However, as a long-term fan of the command-line interface, I&rsquo;ve ended up writing my own little tool for interacting with my Anki cards:
+<a href="https://github.com/lervag/apy"><code>apy</code></a>.</p>
+<p>With <code>apy</code>, I can easily add new cards with <code>apy add</code> or <code>apy add-from-file</code>.
+And when I do my daily reviews, I will mark cards that I find need adjustments.
+Then I do <code>apy review [query]</code>, which allows me to quickly edit the marked cards in a simple, but efficient terminal user interface.</p>
+<h2 id="continue-reading">Continue reading</h2>
+<p>There are a lot of very good blog posts and essays on Anki and on spaced repetition learning.
+Here are a few of the ones that had an impact on me:</p>
+<ul>
+<li><a href="https://supermemo.guru/wiki/20_rules_of_knowledge_formulation">20 rules of knowledge formulation</a> - this is a wiki article written by Piotr Wozniak.
+Wozniak is the author of the first computer algorithm for spaced repetition.
+I&rsquo;ve found that his list of rules is very on point, although I&rsquo;ve not incorporated the <em>incremental reading</em> part.</li>
+<li><a href="http://augmentingcognition.com/ltm.html">Augmenting Long-term Memory</a> (2018) - this is a long, but <em>very</em> good essay by Michael Nielsen.
+I can heartily recommended reading it if you are already starting to get invested in Anki.</li>
+<li><a href="https://gwern.net/spaced-repetition">Spaced Repetition for Efficient Learning</a> - another relatively lengthy post about spaced repetition.
+Although Gwern uses another tool, his writing is still relevant to Anki users.
+Gwen also refers to a lot of interesting research literature on the topic.</li>
+</ul>
+]]></content:encoded></item><item><title>The tools that I love: mise-en-place</title><link>/posts/mise/</link><pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate><guid>/posts/mise/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="https://mise.jdx.dev/"&gt;mise-en-place&lt;/a&gt;, or &lt;code&gt;mise&lt;/code&gt; for short, is a tool for setting up well-defined development environments.
+To use it, I simply specify which tools or dependencies I want in a file named &lt;code&gt;mise.toml&lt;/code&gt; inside a project.
+Then, when I work on that project, &lt;code&gt;mise&lt;/code&gt; automatically ensures that I have the specified tools at the specified versions available.&lt;/p&gt;</description><content:encoded><![CDATA[<blockquote>
+<p>In this series, I will briefly talk about tools that I love and that I use often.
+I will keep things brief, as there is already a lot of good content that goes into more depth.</p>
+</blockquote>
+<p><a href="https://mise.jdx.dev/">mise-en-place</a>, or <code>mise</code> for short, is a tool for setting up well-defined development environments.
+To use it, I simply specify which tools or dependencies I want in a file named <code>mise.toml</code> inside a project.
+Then, when I work on that project, <code>mise</code> automatically ensures that I have the specified tools at the specified versions available.</p>
+<p>For example, let&rsquo;s say I am working on a project where I want Python 3.12, Java 21, Neovim 0.5<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and <a href="https://hurl.dev">Hurl</a>.
+I could define <code>mise.toml</code> at the root directory of my project with this content:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tools</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">java</span> <span class="p">=</span> <span class="s1">&#39;21.0&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">python</span> <span class="p">=</span> <span class="s1">&#39;3.12&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">neovim</span> <span class="p">=</span> <span class="s1">&#39;0.5&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hurl</span> <span class="p">=</span> <span class="s1">&#39;latest&#39;</span>
+</span></span></code></pre></div><p><code>mise</code> will now ensure that I have these exact versions on my <code>PATH</code> whenever I work on that project.
+In my experience, it is beautiful in its simplicity, and it just works™!</p>
+<p>Here&rsquo;s a short list of reasons why it&rsquo;s on my &ldquo;love&rdquo; list:</p>
+<ul>
+<li>The <em>&ldquo;it just works&rdquo;</em> factor is very high!</li>
+<li>The <a href="https://mise.jdx.dev/getting-started.html">documentation</a> is great!</li>
+<li>The <a href="https://mise.jdx.dev/ide-integration.html">IDE and editor integration</a> is great!</li>
+<li>It is very easy to on-board friends and colleagues, as long as they use Linux or MacOS<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+I only need about 5-10 minutes to get people started.
+And the good documentation is really helpful in this regard!</li>
+<li>It is <a href="https://mise.jdx.dev/continuous-integration.html">easy and convenient to use <code>mise</code> in pipelines</a> in both GitLab and Github.</li>
+</ul>
+<h2 id="addendum">Addendum</h2>
+<p>Before <code>mise</code> (and <code>rtx</code> as it was named in the early days), I used <a href="https://asdf-vm.com/"><code>asdf</code></a>, &ldquo;the Multiple Runtime Version Manager&rdquo;.
+I combined <code>asdf</code> with <a href="https://direnv.net/">direnv</a>, and the two worked excellent together.
+To my knowledge, <code>mise</code> started out as a sort of &ldquo;rewrite&rdquo; of <code>asdf</code>.
+It is compatible with the <code>.tool-versions</code> specification files used by <code>asdf</code>.</p>
+<p>Today, I think <code>mise</code> has grown into something much better and more robust.
+It easily replaces both <code>asdf</code> and <code>direnv</code>.</p>
+<p>I should also mention that I am aware of and quite intrigued by both <a href="https://nix.dev/">Nix</a> and <a href="https://guix.gnu.org/">Guix</a>.
+However, both of these require me to learn much more before they become useful.
+I believe it would also be much harder to on-board colleagues and friends.
+As such, I find <code>mise</code> really hits the sweet spot with regard to its simplicity and convenience!</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>For no sane reason. Clearly, we want the <a href="https://github.com/neovim/neovim/releases">Neovim nightly release</a>!&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><code>mise</code> <a href="https://mise.jdx.dev/faq.html#windows-support">does have some Windows support</a>, but it&rsquo;s not as smooth.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded></item><item><title>Publications</title><link>/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/publications/</guid><description>&lt;p&gt;Between 2008 and 2022 I worked as a researcher at &lt;a href="https://www.sintef.no/en/sintef-energy/"&gt;SINTEF Energy Research&lt;/a&gt;.
+I did my PhD between 2010 and 2013 at &lt;a href="https://www.ntnu.edu/"&gt;NTNU&lt;/a&gt;.
+This is a list of publications from my career as a researcher.
+Most of the publications are also listed on my &lt;a href="https://orcid.org/0000-0002-2554-0893"&gt;ORCID&lt;/a&gt;, on &lt;a href="https://www.researchgate.net/profile/Karl_Yngve_Lervag"&gt;ResearchGate&lt;/a&gt;, and at my &lt;a href="https://scholar.google.com/citations?user=phAfEmsAAAAJ"&gt;Google scholar account&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id="journal-papers"&gt;Journal papers&lt;/h1&gt;
+&lt;p&gt;E. A. C. Panduro, F. Finotti, G. Largiller, K. Y. Lervåg,
+&lt;em&gt;A review of the use of nanofluids as heat-transfer fluids for use in parabolic-trough collectors&lt;/em&gt;,
+Applied Thermal Engineering, Volume 211, 2022.
+&lt;a href="https://dx.doi.org/10.1016/j.applthermaleng.2022.118346"&gt;Journal version&lt;/a&gt;.&lt;/p&gt;</description><content:encoded><![CDATA[<p>Between 2008 and 2022 I worked as a researcher at <a href="https://www.sintef.no/en/sintef-energy/">SINTEF Energy Research</a>.
+I did my PhD between 2010 and 2013 at <a href="https://www.ntnu.edu/">NTNU</a>.
+This is a list of publications from my career as a researcher.
+Most of the publications are also listed on my <a href="https://orcid.org/0000-0002-2554-0893">ORCID</a>, on <a href="https://www.researchgate.net/profile/Karl_Yngve_Lervag">ResearchGate</a>, and at my <a href="https://scholar.google.com/citations?user=phAfEmsAAAAJ">Google scholar account</a>.</p>
+<h1 id="journal-papers">Journal papers</h1>
+<p>E. A. C. Panduro, F. Finotti, G. Largiller, K. Y. Lervåg,
+<em>A review of the use of nanofluids as heat-transfer fluids for use in parabolic-trough collectors</em>,
+Applied Thermal Engineering, Volume 211, 2022.
+<a href="https://dx.doi.org/10.1016/j.applthermaleng.2022.118346">Journal version</a>.</p>
+<p>O. A. Hjelkrem, K. Y. Lervåg, S. B., C. Lu, C.-J. Södersten,
+<em>A battery electric bus energy consumption model for strategic purposes</em>,
+Transportation Research Part D: Transport and Environment, Volume 94, 2021.
+<a href="https://doi.org/10.1016/j.trd.2021.102804">Journal version</a>.</p>
+<p>O. H. H. Meyer, K. Y. Lervåg, Å. Ervik,
+<em>A multiscale porous&ndash;resolved methodology for efficient simulation of heat and fluid transport in complex geometries, with application to electric power transformers</em>,
+Applied Thermal Engineering, Volume 183, Part 1, 2021.
+<a href="https://doi.org/10.1016/j.applthermaleng.2020.116133">Journal version</a>.
+<a href="https://arxiv.org/abs/2006.02497">arXiv</a>.</p>
+<p>K. Y. Lervåg, H. L. Skarsvåg, E. Aursand, J. A. Ouassou, M. Hammer, G. Reigstad, Å. Ervik, E. H. Fyhn, M. Aa. Gjennestad, P. Aursand, Ø. Wilhelmsen,
+<em>A combined fluid-dynamic and thermodynamic model to predict the onset of rapid phase transitions in LNG spills</em>,
+Journal of Loss Prevention in the Process Industries, Volume 69, 2021.
+<a href="https://doi.org/10.1016/j.jlp.2020.104354">Journal version</a>.
+<a href="https://arxiv.org/abs/2002.08220">arXiv</a>.</p>
+<p>E. H. Fyhn, K. Y. Lervåg, Å. Ervik, Ø. Wilhelmsen,
+<em>A consistent reduction of the two-layer shallow-water equations to an accurate one-layer spreading model</em>,
+Physics of Fluids 31, 122103 (2019).
+<a href="https://dx.doi.org/10.1063/1.5126168">Journal version</a>.
+<a href="https://arxiv.org/abs/1902.04648">arXiv</a>.</p>
+<p>M. Aa. Gjennestad, A. Gruber, K. Y. Lervåg, Ø. Johansen, Å. Ervik, M. Hammer, S. T. Munkejord,
+<em>Computation of three-dimensional three-phase flow of carbon dioxide using a high-order WENO scheme</em>,
+Journal of Computational Physics, Volume 348, 2017.
+<a href="https://dx.doi.org/10.1016/j.jcp.2017.07.016">Journal version</a>.
+<a href="https://arxiv.org/abs/1707.09772">arXiv</a>.</p>
+<p>E. Aursand, M. Aa. Gjennestad, K. Y. Lervåg, H. Lund,
+<em>Potential of enhancing a natural convection loop with a thermomagnetically pumped ferrofluid</em>,
+Journal of Magnetism and Magnetic Materials, Volume 417, 2016.
+<a href="https://doi.org/10.1016/j.jmmm.2016.05.029">Journal version</a>.
+<a href="https://arxiv.org/abs/1605.09554">arXiv</a>.</p>
+<p>E. Aursanda, M. Aa. Gjennestad, K. Y. Lervåg, H. Lund,
+<em>A multi-phase ferrofluid flow model with equation of state for thermomagnetic pumping and heat transfer</em>,
+Journal of Magnetism and Magnetic Materials, Volume 402, 2016.
+<a href="https://dx.doi.org/10.1016/j.jmmm.2015.11.042">Journal version</a>.
+<a href="https://arxiv.org/abs/1605.09573">arXiv</a>.</p>
+<p>K. Y. Lervåg and J. Lowengrub,
+<em>Analysis of the diffuse-domain method for solving PDEs in complex geometries</em>,
+Communications in Mathematical Sciences, 13, Issue 6 (2015).
+<a href="https://dx.doi.org/10.4310/CMS.2015.v13.n6.a6">Journal version</a>.
+<a href="https://arxiv.org/abs/1407.7480">arXiv</a>.</p>
+<p>Å. Ervik, K. Y. Lervåg, and S. T. Munkejord,
+<em>A robust method for calculating interface curvature and normal vectors using an extracted local level set</em>,
+Journal of Computational Physics, 257, Part A (2014).
+<a href="https://dx.doi.org/10.1016/j.jcp.2013.09.053">Journal version</a>.
+<a href="https://arxiv.org/abs/1405.0829">arXiv</a>.</p>
+<p>K. Y. Lervåg, B. Müller, and S. T. Munkejord,
+<em>Calculation of the interface curvature and normal vector with the level-set method</em>,
+Computers and Fluids, 84 (2013).
+<a href="https://dx.doi.org/10.1016/j.compfluid.2013.06.004">Journal version</a>.</p>
+<h1 id="conference-papers">Conference papers</h1>
+<p>S. W. Løvseth, I. Snustad, A. L. Brunsvold, G. Skaugen, P. E. Wahl, K. Y. Lervåg,
+<em>From droplets to process: Multilevel research approach to reduce emissions from LNG processes</em>,
+in <a href="http://www.sintef.no/Projectweb/TGTC2014/">3rd Trondheim Gas Technology Conference</a>.
+Energy Procedia, Volume 63, 2014.
+<a href="https://dx.doi.org/10.1016/j.egypro.2015.01.003">Conference version</a>.</p>
+<p>M. Hammer, P. E. Wahl, R. Anantharamana, D. Berstad, K. Y. Lervåg,
+<em>CO2 Capture from Off-shore Gas Turbines Using Supersonic Gas Separation</em>,
+in 12th International Conference on Greenhouse Gas Control Technologies.
+Energy Procedia, Volume 63, 2014.
+<a href="https://dx.doi.org/10.1016/j.egypro.2014.11.026">Conference version</a>.</p>
+<p>K. Y. Lervåg and Å. Ervik,
+<em>Curvature calculations for the level-set method</em>,
+in <a href="https://goo.gl/PcZrT">ENUMATH 2011 proceedings volume</a>,
+<a href="https://dx.doi.org/10.1007/978-3-642-33134-3_23">Conference version</a>.
+<a href="https://www.researchgate.net/publication/265326815_Curvature_calculations_for_the_level-set_method">ResearchGate</a>.</p>
+<p>K. Y. Lervåg,
+<em>Calculation of interface curvature with the level-set method</em>,
+in <a href="https://www.ntnu.no/mekit/mekit-11">MekIT'11 - 6th National Conference on Computational Mechanics</a>.
+<a href="http://arxiv.org/abs/1407.7340">arXiv</a>.</p>
+<p>K. E. Teigen, K. Y. Lervåg and S. T. Munkejord,
+<em>Sharp interface simulations of surfactant-covered drops in electric fields</em>,
+in <a href="https://www.eccomas-cfd2010.org/">Fifth European Conference on Computational Fluid Dynamics, ECCOMAS CFD 2010</a>.
+<a href="https://www.researchgate.net/publication/228427723">ResearchGate</a>.</p>
+<h1 id="theses">Theses</h1>
+<p>K. Y. Lervåg,
+&ldquo;<em>Calculation of interface curvatures with the level-set method for two-phase
+flow simulations and a second-order diffuse-domain method for elliptic
+problems in complex geometries</em>&rdquo;.
+<a href="https://dx.doi.org/10.13140/RG.2.1.4528.5283">PhD thesis</a>.
+Department of Energy and Process Engineering,
+Faculty of Engineering Science and Technology,
+Norwegian University of Science and Technology (NTNU),
+Trondheim, September 2013.</p>
+<p>K. Y. Lervåg,
+&ldquo;<em>Simulation of two-phase flows with varying surface tension</em>&rdquo;,
+<a href="https://dx.doi.org/10.13140/RG.2.1.4397.4569">Master&rsquo;s thesis</a>,
+Department of Mathematical Sciences,
+Norwegian University of Science and Technology (NTNU),
+Trondheim, June 2008.</p>
+]]></content:encoded></item></channel></rss>

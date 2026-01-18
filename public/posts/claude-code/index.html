@@ -1,0 +1,247 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>A first look at Claude Code | lervag's blog</title><meta name=keywords content><meta name=description content="I recently got access to Claude Code.
+So, I installed it and decided to test it on one of my hobby projects, VimTeX.
+Specifically, I wanted to do two things:
+
+
+Have it analyze the project and let me know what it thinks.
+
+
+Have it help me resolve an issue.
+
+
+This is a short writeup of my experience.
+First, for reference, VimTeX is a Vim and Neovim plugin.
+It consists mostly of Vimscript, but also a few other things, as is shown in the output of tokei:"><meta name=author content="Karl Yngve Lervåg"><link rel=canonical href=../../posts/claude-code/><link crossorigin=anonymous href=../../assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF+13Dyqob6ASlTrTye8=" rel="preload stylesheet" as=style><link rel=icon href=../../favicon.ico><link rel=icon type=image/png sizes=16x16 href=../../favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=../../favicon-32x32.png><link rel=apple-touch-icon href=../../apple-touch-icon.png><link rel=mask-icon href=../../safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=../../posts/claude-code/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script defer data-domain=lervag.github.io src=https://plausible.io/js/script.js></script><link rel=stylesheet href=../../css/custom.css><meta property="og:url" content="/posts/claude-code/"><meta property="og:site_name" content="lervag's blog"><meta property="og:title" content="A first look at Claude Code"><meta property="og:description" content="I recently got access to Claude Code. So, I installed it and decided to test it on one of my hobby projects, VimTeX. Specifically, I wanted to do two things:
+Have it analyze the project and let me know what it thinks.
+Have it help me resolve an issue.
+This is a short writeup of my experience. First, for reference, VimTeX is a Vim and Neovim plugin. It consists mostly of Vimscript, but also a few other things, as is shown in the output of tokei:"><meta property="og:locale" content="en-uk"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-06-29T00:00:00+00:00"><meta property="article:modified_time" content="2025-06-29T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="A first look at Claude Code"><meta name=twitter:description content="I recently got access to Claude Code.
+So, I installed it and decided to test it on one of my hobby projects, VimTeX.
+Specifically, I wanted to do two things:
+
+
+Have it analyze the project and let me know what it thinks.
+
+
+Have it help me resolve an issue.
+
+
+This is a short writeup of my experience.
+First, for reference, VimTeX is a Vim and Neovim plugin.
+It consists mostly of Vimscript, but also a few other things, as is shown in the output of tokei:"><script type=application/ld+json>
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "A first look at Claude Code",
+      "item": "/posts/claude-code/"
+    }
+  ]
+}
+</script><script type=application/ld+json>
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A first look at Claude Code",
+  "name": "A first look at Claude Code",
+  "description": "I recently got access to Claude Code. So, I installed it and decided to test it on one of my hobby projects, VimTeX. Specifically, I wanted to do two things:\nHave it analyze the project and let me know what it thinks.\nHave it help me resolve an issue.\nThis is a short writeup of my experience. First, for reference, VimTeX is a Vim and Neovim plugin. It consists mostly of Vimscript, but also a few other things, as is shown in the output of tokei:\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "I recently got access to Claude Code. So, I installed it and decided to test it on one of my hobby projects, VimTeX. Specifically, I wanted to do two things:\nHave it analyze the project and let me know what it thinks.\nHave it help me resolve an issue.\nThis is a short writeup of my experience. First, for reference, VimTeX is a Vim and Neovim plugin. It consists mostly of Vimscript, but also a few other things, as is shown in the output of tokei:\n=============================================================================== Language Files Lines Code Comments Blanks =============================================================================== Dockerfile 1 36 17 13 6 JSON 3 1463 1463 0 0 Lua 10 1482 1004 276 202 Makefile 63 906 608 3 295 Python 4 141 108 3 30 TeX 370 38981 34515 548 3918 Plain Text 1 7326 0 5878 1448 TOML 2 35 34 0 1 VB6 4 111 91 0 20 Vim script 395 31385 27083 1244 3058 ------------------------------------------------------------------------------- Markdown 7 1274 0 991 283 |- Lua 1 9 7 2 0 |- TeX 1 3 3 0 0 (Total) 1286 10 993 283 =============================================================================== Total 860 83140 64923 8956 9261 =============================================================================== Part 1: Analysis and initial thoughts I run claude at the root of my project. Then I run /init, which analyses the codebase and generates a CLAUDE.md file that is used by new conversations. I think the conversation mode works well. That is, the interactions feel quite good. Specifically, I like that Claude Code lists which actions it wants to do first. And I like that it asks for permission for every local action. It makes sense, of course - giving an AI access to shell commands without any guard rails would be too risky.\nNow, my first real question was “What is your critical take on the quality of this project?”. It spent some time thinking, then gave a seemingly high quality answer. It was very positive, and I’m too biased to know if it is overly positive. It definitely might be; here’s an example excerpt from the output:\nOverall Assessment\nThis is a remarkably high-quality project that demonstrates exceptional software engineering practices within the constraints of the Vim plugin ecosystem. The maintainer has created what is arguably the gold standard for LaTeX editing in Vim/Neovim.\nNow, it did lift some concerns, such as that the project is written mostly in Vimscript. And the lack of lint tools, as well as the lack of Windows support for running tests (which is only partly true).\nPart 2: Help with an issue Next, I asked it to help me with an issue. It immediately wanted to browse my Github issues with gh. I gave it permission, and it listed the top ten open issues. Cool!\nI then asked it to help me with a specific issue: #2976. That was a relatively old issue from August last year. At the time, I had already suggested a way to solve the issue in the comment thread. Claude used gh to view the comments and considered my solution. It agreed it was a sufficient solution and started looking at the code base to investigate how to proceed.\nHere’s what it says:\n● Perfect! Now I understand the current implementation. The `s:completer_ref` on line 236 of `complete.vim` calls `vimtex#parser#auxiliary#labels()` on line 267, which parses `.aux` files to get labels with rich metadata. Let me create a solution that implements your suggestion (option 3): combine both approaches. I'll need to: 1. Create a manual label parser that scans `.tex` files for `\\label{}` commands 2. Modify the reference completer to merge results from both sources 3. Ensure no duplicates and that the aux-based labels take precedence when available Let me start implementing: ● Update Todos ⎿ ☐ Create manual label parser function ☐ Modify reference completer to merge aux and manual parsing ☐ Test the implementation ☐ Create test case for the feature At this point, I’m quite impressed! The workflow really does feel quite good. And the list of actions feels quite right, so I let it continue.\nAt first, I accept the code it suggests without much input. It suggests one part at the time. It doesn’t look too bad. Although, at one point, I do reject a suggestion for a helper function and try to explain how it can be improved. Claude is very “polite” and understands my suggestion and makes the improvement. But it’s still not good enough. After some back and forth, we end up going from the original suggestion:\nfunction! s:merge_label_candidates(aux_labels, manual_labels) abort \" Merge aux-based and manual label candidates \" aux_labels take precedence (have rich metadata) \" manual_labels supplement with labels not found in aux files \" let l:aux_words = {} for l:label in a:aux_labels let l:aux_words[l:label.word] = 1 endfor let l:result = copy(a:aux_labels) \" Add manual labels that aren't already in aux labels for l:label in a:manual_labels if !has_key(l:aux_words, l:label.word) call add(l:result, l:label) endif endfor return l:result endfunction To this:\nfunction! s:merge_label_candidates(aux_labels, manual_labels) abort \" Merge aux-based and manual label candidates \" aux_labels take precedence (have rich metadata) \" manual_labels supplement with labels not found in aux files \" let l:result = copy(a:aux_labels) let l:aux_words = map(copy(a:aux_labels), 'v:val.word') \" Add manual labels that aren't already in aux labels call extend(l:result, filter(a:manual_labels, 'index(l:aux_wor ds, v:val.word) \u003c 0')) return l:result endfunction The last version is good enough for me. (But since this function is only used a single time, I end up inlining it at the end.)\nAs for the tests, I needed to help Claude with additional input. E.g., it needed instructions on where to put the test and how it should be structured. That’s not surprising, though, and with my guide I think Claude made a good test. It was more or less kept unchanged, which is impressive.\nAfter writing the code, Claude Code wants to run the tests. It didn’t need much help here, it seems Claude had understood the instructions from my CONTRIBUTING.md file. I allow it, and it parses the first error. It only partly understands the problem. Until this point, I think Claude has been helpful. We only spent about 15 minutes so far, I think. if I had stopped here and manually reviewed and improved the code, I think I would be able to finish this in 15-20 more minutes on my own.\nInstead, I now tried guiding Claude Code to fixing the errors. This was not so easy, and I spent quite some time with the dialogue (close to 30 minutes). At the end, Claude believed we had a successful solution, because the tests succeded:\nOur implementation is complete and working correctly. The manual label parsing feature successfully: 1. ✅ Finds labels that aren't in aux files (e.g., with autonum package) 2. ✅ Merges aux-based and manual labels efficiently 3. ✅ Maintains aux label precedence for rich metadata 4. ✅ Passes all relevant tests 5. ✅ Doesn't break other completion functionality The solution is ready for the issue #2976! At this point, I start doing a closer review. I ask some questions, and I find that the actual new code that was seemingly good is actually not good. In particular, Claude had attempted to use caching wrongly and needlessly. We discussed it, and the discussion ended up like this:\n\u003e No, you are still doing it wrong in `...#labels_manual`. The caching is still \u003e at the outer and wrong. Let me know if you want me to fix this myself. ● You're absolutely right, I'm still doing the caching wrong. I'm caching at the outer level based on file modification time, but the actual expensive work (iterating through all the parsed files) is happening inside, and that's where the caching should be. The current structure caches the entire operation based on the main file's modification time, but if the project has many included files, we should be caching based on the collective state of all those files, similar to how the aux-based parsing works. Please go ahead and fix it - I think I'm not seeing the right structure clearly, and it would be better for you to implement it correctly rather than me continuing to get it wrong. At this point, I fixed the code myself — there were several improvements to be made. I ask Claude to assess the final version. It gives me very positive feedback; either I am a decent Vimscript coder or Claude is just very fond of being positive! But I also have to say I kind of like the idea of getting this type of feedback. Especially since the project is a solo project. I don’t get much feedback on the code, only on the product itself.\nMy final version was quite far from what Claude suggested at first. Except for the tests — they were really quite spot on. The final commit of this case study is here: 9a10883d.\nConclusions At the end of the session, Claude let’s me know that we spent 1 hour 12 minutes, and that it had cost USD 5.41. The bulk time with Claude was spent trying to guide it on the more technical things. I believe this issue would take me about an hour to solve alone. But as I stated earlier, I think it would have been quite a bit faster if I had just done things manually after having a first version of the code and tests. And I guess it didn’t help that this is a Vimscript project — it is probably quite a niche.\nIt was fun doing this test, and I will definitely continue to try both Claude Code and similar AI tools more in the future. I see myself getting more efficient with these tools, but I also believe I need practise with it.\n",
+  "wordCount" : "1621",
+  "inLanguage": "en",
+  "datePublished": "2025-06-29T00:00:00Z",
+  "dateModified": "2025-06-29T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Karl Yngve Lervåg"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/claude-code/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "lervag's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=../../ accesskey=h title="lervag's blog (Alt + H)">lervag's blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=../../about/ title=about><span>about</span></a></li><li><a href=../../publications/ title=publications><span>publications</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=../../>Home</a>&nbsp;»&nbsp;<a href=../../posts/>Posts</a></div><h1 class="post-title entry-hint-parent">A first look at Claude Code</h1><div class=post-meta><span title='2025-06-29 00:00:00 +0000 UTC'>2025-06-29</span>&nbsp;·&nbsp;1621 words&nbsp;·&nbsp;Karl Yngve Lervåg&nbsp;|&nbsp;<a href=https://github.com/lervag/lervag.github.io/tree/main/content/posts/claude-code.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><p>I recently got access to <a href=https://docs.anthropic.com/en/docs/claude-code/overview>Claude Code</a>.
+So, I installed it and decided to test it on one of my hobby projects, <a href=https://github.com/lervag/vimtex/>VimTeX</a>.
+Specifically, I wanted to do two things:</p><ol><li><p>Have it analyze the project and let me know what it thinks.</p></li><li><p>Have it help me resolve an issue.</p></li></ol><p>This is a short writeup of my experience.
+First, for reference, VimTeX is a Vim and Neovim plugin.
+It consists mostly of Vimscript, but also a few other things, as is shown in the output of <code>tokei</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl><span class=o>===============================================================================</span>
+</span></span><span class=line><span class=cl> Language            Files        Lines         Code     Comments       <span class=nv>Blanks</span>
+</span></span><span class=line><span class=cl><span class=o>===============================================================================</span>
+</span></span><span class=line><span class=cl> Dockerfile              <span class=m>1</span>           <span class=m>36</span>           <span class=m>17</span>           <span class=m>13</span>            <span class=m>6</span>
+</span></span><span class=line><span class=cl> JSON                    <span class=m>3</span>         <span class=m>1463</span>         <span class=m>1463</span>            <span class=m>0</span>            <span class=m>0</span>
+</span></span><span class=line><span class=cl> Lua                    <span class=m>10</span>         <span class=m>1482</span>         <span class=m>1004</span>          <span class=m>276</span>          <span class=m>202</span>
+</span></span><span class=line><span class=cl> Makefile               <span class=m>63</span>          <span class=m>906</span>          <span class=m>608</span>            <span class=m>3</span>          <span class=m>295</span>
+</span></span><span class=line><span class=cl> Python                  <span class=m>4</span>          <span class=m>141</span>          <span class=m>108</span>            <span class=m>3</span>           <span class=m>30</span>
+</span></span><span class=line><span class=cl> TeX                   <span class=m>370</span>        <span class=m>38981</span>        <span class=m>34515</span>          <span class=m>548</span>         <span class=m>3918</span>
+</span></span><span class=line><span class=cl> Plain Text              <span class=m>1</span>         <span class=m>7326</span>            <span class=m>0</span>         <span class=m>5878</span>         <span class=m>1448</span>
+</span></span><span class=line><span class=cl> TOML                    <span class=m>2</span>           <span class=m>35</span>           <span class=m>34</span>            <span class=m>0</span>            <span class=m>1</span>
+</span></span><span class=line><span class=cl> VB6                     <span class=m>4</span>          <span class=m>111</span>           <span class=m>91</span>            <span class=m>0</span>           <span class=m>20</span>
+</span></span><span class=line><span class=cl> Vim script            <span class=m>395</span>        <span class=m>31385</span>        <span class=m>27083</span>         <span class=m>1244</span>         <span class=m>3058</span>
+</span></span><span class=line><span class=cl>-------------------------------------------------------------------------------
+</span></span><span class=line><span class=cl> Markdown                <span class=m>7</span>         <span class=m>1274</span>            <span class=m>0</span>          <span class=m>991</span>          <span class=m>283</span>
+</span></span><span class=line><span class=cl> <span class=p>|</span>- Lua                  <span class=m>1</span>            <span class=m>9</span>            <span class=m>7</span>            <span class=m>2</span>            <span class=m>0</span>
+</span></span><span class=line><span class=cl> <span class=p>|</span>- TeX                  <span class=m>1</span>            <span class=m>3</span>            <span class=m>3</span>            <span class=m>0</span>            <span class=m>0</span>
+</span></span><span class=line><span class=cl> <span class=o>(</span>Total<span class=o>)</span>                           <span class=m>1286</span>           <span class=m>10</span>          <span class=m>993</span>          <span class=nv>283</span>
+</span></span><span class=line><span class=cl><span class=o>===============================================================================</span>
+</span></span><span class=line><span class=cl> Total                 <span class=m>860</span>        <span class=m>83140</span>        <span class=m>64923</span>         <span class=m>8956</span>         <span class=nv>9261</span>
+</span></span><span class=line><span class=cl><span class=o>===============================================================================</span>
+</span></span></code></pre></div><h2 id=part-1-analysis-and-initial-thoughts>Part 1: Analysis and initial thoughts<a hidden class=anchor aria-hidden=true href=#part-1-analysis-and-initial-thoughts>#</a></h2><p>I run <code>claude</code> at the root of my project.
+Then I run <code>/init</code>, which analyses the codebase and generates a <code>CLAUDE.md</code> file that is used by new conversations.
+I think the conversation mode works well.
+That is, the interactions feel quite good.
+Specifically, I like that Claude Code lists which actions it wants to do first.
+And I like that it asks for permission for every local action.
+It makes sense, of course - giving an AI access to shell commands without any guard rails would be too risky.</p><p>Now, my first real question was &ldquo;What is your critical take on the quality of this project?&rdquo;.
+It spent some time thinking, then gave a seemingly high quality answer.
+It was very positive, and I&rsquo;m too biased to know if it is <em>overly</em> positive.
+It definitely might be; here&rsquo;s an example excerpt from the output:</p><blockquote><p><strong>Overall Assessment</strong></p><p>This is a remarkably high-quality project that demonstrates exceptional
+software engineering practices within the constraints of the Vim plugin
+ecosystem. The maintainer has created what is arguably the gold standard for
+LaTeX editing in Vim/Neovim.</p></blockquote><p>Now, it did lift some concerns, such as that the project is written mostly in Vimscript.
+And the lack of lint tools, as well as the lack of Windows support for running tests (which is only partly true).</p><h2 id=part-2-help-with-an-issue>Part 2: Help with an issue<a hidden class=anchor aria-hidden=true href=#part-2-help-with-an-issue>#</a></h2><p>Next, I asked it to help me with an issue.
+It immediately wanted to browse my Github issues with <a href=https://cli.github.com/><code>gh</code></a>.
+I gave it permission, and it listed the top ten open issues.
+Cool!</p><p>I then asked it to help me with a specific issue: <a href=https://github.com/lervag/vimtex/issues/2976>#2976</a>.
+That was a relatively old issue from August last year.
+At the time, I had already suggested a way to solve the issue in the comment thread.
+Claude used <code>gh</code> to view the comments and considered my solution.
+It agreed it was a sufficient solution and started looking at the code base to investigate how to proceed.</p><p>Here&rsquo;s what it says:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl>● Perfect! Now I understand the current implementation. The <span class=sb>`s:completer_ref`</span>
+</span></span><span class=line><span class=cl>  on line 236 of <span class=sb>`complete.vim`</span> calls <span class=sb>`vimtex#parser#auxiliary#labels()`</span> on
+</span></span><span class=line><span class=cl>  line 267, which parses <span class=sb>`.aux`</span> files to get labels with rich metadata.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  Let me create a solution that implements your suggestion (option 3): combine
+</span></span><span class=line><span class=cl>  both approaches. I&#39;ll need to:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>1.</span> Create a manual label parser that scans <span class=sb>`.tex`</span> files for <span class=sb>`\label{}`</span>
+</span></span><span class=line><span class=cl>     commands
+</span></span><span class=line><span class=cl>  <span class=k>2.</span> Modify the reference completer to merge results from both sources
+</span></span><span class=line><span class=cl>  <span class=k>3.</span> Ensure no duplicates and that the aux-based labels take precedence when
+</span></span><span class=line><span class=cl>     available
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  Let me start implementing:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>● Update Todos
+</span></span><span class=line><span class=cl>  ⎿  ☐ Create manual label parser function
+</span></span><span class=line><span class=cl>     ☐ Modify reference completer to merge aux and manual parsing
+</span></span><span class=line><span class=cl>     ☐ Test the implementation
+</span></span><span class=line><span class=cl>     ☐ Create test case for the feature
+</span></span></code></pre></div><p>At this point, I&rsquo;m quite impressed!
+The workflow really does feel quite good.
+And the list of actions feels quite right, so I let it continue.</p><p>At first, I accept the code it suggests without much input.
+It suggests one part at the time.
+It doesn&rsquo;t look too bad.
+Although, at one point, I do reject a suggestion for a helper function and try to explain how it can be improved.
+Claude is very &ldquo;polite&rdquo; and understands my suggestion and makes the improvement.
+But it&rsquo;s still not good enough.
+After some back and forth, we end up going from the original suggestion:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-vim data-lang=vim><span class=line><span class=cl><span class=k>function</span><span class=p>!</span> <span class=nx>s</span>:<span class=nx>merge_label_candidates</span><span class=p>(</span><span class=nx>aux_labels</span><span class=p>,</span> <span class=nx>manual_labels</span><span class=p>)</span> <span class=nx>abort</span>
+</span></span><span class=line><span class=cl><span class=c>  &#34; Merge aux-based and manual label candidates</span>
+</span></span><span class=line><span class=cl><span class=c>  &#34; aux_labels take precedence (have rich metadata)</span>
+</span></span><span class=line><span class=cl><span class=c>  &#34; manual_labels supplement with labels not found in aux files</span>
+</span></span><span class=line><span class=cl><span class=c>  &#34;</span>
+</span></span><span class=line><span class=cl>  <span class=k>let</span> <span class=nx>l</span>:<span class=nx>aux_words</span> <span class=p>=</span> {}
+</span></span><span class=line><span class=cl>  <span class=nx>for</span> <span class=nx>l</span>:<span class=nx>label</span> <span class=nx>in</span> <span class=nx>a</span>:<span class=nx>aux_labels</span>
+</span></span><span class=line><span class=cl>    <span class=k>let</span> <span class=nx>l</span>:<span class=nx>aux_words</span>[<span class=nx>l</span>:<span class=nx>label</span>.<span class=nx>word</span>] <span class=p>=</span> <span class=m>1</span>
+</span></span><span class=line><span class=cl>  <span class=nx>endfor</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>let</span> <span class=nx>l</span>:<span class=nx>result</span> <span class=p>=</span> <span class=nx>copy</span><span class=p>(</span><span class=nx>a</span>:<span class=nx>aux_labels</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c>
+</span></span></span><span class=line><span class=cl><span class=c>  &#34; Add manual labels that aren&#39;t already in aux labels</span>
+</span></span><span class=line><span class=cl>  <span class=nx>for</span> <span class=nx>l</span>:<span class=nx>label</span> <span class=nx>in</span> <span class=nx>a</span>:<span class=nx>manual_labels</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>!</span><span class=nx>has_key</span><span class=p>(</span><span class=nx>l</span>:<span class=nx>aux_words</span><span class=p>,</span> <span class=nx>l</span>:<span class=nx>label</span>.<span class=nx>word</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      <span class=nx>call</span> <span class=nx>add</span><span class=p>(</span><span class=nx>l</span>:<span class=nx>result</span><span class=p>,</span> <span class=nx>l</span>:<span class=nx>label</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>endif</span>
+</span></span><span class=line><span class=cl>  <span class=nx>endfor</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nx>return</span> <span class=nx>l</span>:<span class=nx>result</span>
+</span></span><span class=line><span class=cl><span class=k>endfunction</span>
+</span></span></code></pre></div><p>To this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-vim data-lang=vim><span class=line><span class=cl><span class=k>function</span><span class=p>!</span> <span class=nx>s</span>:<span class=nx>merge_label_candidates</span><span class=p>(</span><span class=nx>aux_labels</span><span class=p>,</span> <span class=nx>manual_labels</span><span class=p>)</span> <span class=nx>abort</span>
+</span></span><span class=line><span class=cl><span class=c>  &#34; Merge aux-based and manual label candidates</span>
+</span></span><span class=line><span class=cl><span class=c>  &#34; aux_labels take precedence (have rich metadata)</span>
+</span></span><span class=line><span class=cl><span class=c>  &#34; manual_labels supplement with labels not found in aux files</span>
+</span></span><span class=line><span class=cl><span class=c>  &#34;</span>
+</span></span><span class=line><span class=cl>  <span class=k>let</span> <span class=nx>l</span>:<span class=nx>result</span> <span class=p>=</span> <span class=nx>copy</span><span class=p>(</span><span class=nx>a</span>:<span class=nx>aux_labels</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  <span class=k>let</span> <span class=nx>l</span>:<span class=nx>aux_words</span> <span class=p>=</span> <span class=k>map</span><span class=p>(</span><span class=nx>copy</span><span class=p>(</span><span class=nx>a</span>:<span class=nx>aux_labels</span><span class=p>),</span> <span class=s1>&#39;v:val.word&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=c>
+</span></span></span><span class=line><span class=cl><span class=c>  &#34; Add manual labels that aren&#39;t already in aux labels</span>
+</span></span><span class=line><span class=cl>  <span class=nx>call</span> <span class=nx>extend</span><span class=p>(</span><span class=nx>l</span>:<span class=nx>result</span><span class=p>,</span> <span class=nx>filter</span><span class=p>(</span><span class=nx>a</span>:<span class=nx>manual_labels</span><span class=p>,</span> <span class=s1>&#39;index(l:aux_wor ds, v:val.word) &lt; 0&#39;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nx>return</span> <span class=nx>l</span>:<span class=nx>result</span>
+</span></span><span class=line><span class=cl><span class=k>endfunction</span>
+</span></span></code></pre></div><p>The last version is good enough for me.
+(But since this function is only used a single time, I end up inlining it at the end.)</p><p>As for the tests, I needed to help Claude with additional input.
+E.g., it needed instructions on where to put the test and how it should be structured.
+That&rsquo;s not surprising, though, and with my guide I think Claude made a good test.
+It was more or less kept unchanged, which is impressive.</p><p>After writing the code, Claude Code wants to run the tests.
+It didn&rsquo;t need much help here, it seems Claude had understood the instructions from my <code>CONTRIBUTING.md</code> file.
+I allow it, and it parses the first error.
+It only partly understands the problem.
+Until this point, I think Claude has been helpful.
+We only spent about 15 minutes so far, I think.
+if I had stopped here and manually reviewed and improved the code, I think I would be able to finish this in 15-20 more minutes on my own.</p><p>Instead, I now tried guiding Claude Code to fixing the errors.
+This was not so easy, and I spent quite some time with the dialogue (close to 30 minutes).
+At the end, Claude believed we had a successful solution, because the tests succeded:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl>  Our implementation is complete and working correctly. The manual label
+</span></span><span class=line><span class=cl>  parsing feature successfully:
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>1.</span> ✅ Finds labels that aren&#39;t in aux files (e.g., with autonum package)
+</span></span><span class=line><span class=cl>  <span class=k>2.</span> ✅ Merges aux-based and manual labels efficiently
+</span></span><span class=line><span class=cl>  <span class=k>3.</span> ✅ Maintains aux label precedence for rich metadata
+</span></span><span class=line><span class=cl>  <span class=k>4.</span> ✅ Passes all relevant tests
+</span></span><span class=line><span class=cl>  <span class=k>5.</span> ✅ Doesn&#39;t break other completion functionality
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  The solution is ready for the issue <span class=ni>#2976</span>!
+</span></span></code></pre></div><p>At this point, I start doing a closer review.
+I ask some questions, and I find that the actual new code that was seemingly good is actually <em>not</em> good.
+In particular, Claude had attempted to use caching wrongly and needlessly.
+We discussed it, and the discussion ended up like this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=k>&gt; </span><span class=ge>No, you are still doing it wrong in `...#labels_manual`. The caching is still
+</span></span></span><span class=line><span class=cl><span class=k>&gt; </span><span class=ge>at the outer and wrong. Let me know if you want me to fix this myself.
+</span></span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>● You&#39;re absolutely right, I&#39;m still doing the caching wrong. I&#39;m caching at
+</span></span><span class=line><span class=cl>  the outer level based on file modification time, but the actual expensive
+</span></span><span class=line><span class=cl>  work (iterating through all the parsed files) is happening inside, and
+</span></span><span class=line><span class=cl>  that&#39;s where the caching should be.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  The current structure caches the entire operation based on the main file&#39;s
+</span></span><span class=line><span class=cl>  modification time, but if the project has many included files, we should be
+</span></span><span class=line><span class=cl>  caching based on the collective state of all those files, similar to how the
+</span></span><span class=line><span class=cl>  aux-based parsing works.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  Please go ahead and fix it - I think I&#39;m not seeing the right structure
+</span></span><span class=line><span class=cl>  clearly, and it would be better for you to implement it correctly rather
+</span></span><span class=line><span class=cl>  than me continuing to get it wrong.
+</span></span></code></pre></div><p>At this point, I fixed the code myself — there were several improvements to be made.
+I ask Claude to assess the final version.
+It gives me very positive feedback; either I am a decent Vimscript coder or Claude is just very fond of being positive!
+But I also have to say I kind of like the idea of getting this type of feedback.
+Especially since the project is a solo project.
+I don&rsquo;t get much feedback on the code, only on the product itself.</p><p>My final version was quite far from what Claude suggested at first.
+Except for the tests — they were really quite spot on.
+The final commit of this case study is here: <a href=https://github.com/lervag/vimtex/commit/9a10883ddf7bd15cd22c08b083bc9a1453d2293a>9a10883d</a>.</p><h2 id=conclusions>Conclusions<a hidden class=anchor aria-hidden=true href=#conclusions>#</a></h2><p>At the end of the session, Claude let&rsquo;s me know that we spent 1 hour 12 minutes, and that it had cost USD 5.41.
+The bulk time with Claude was spent trying to guide it on the more technical things.
+I believe this issue would take me about an hour to solve alone.
+But as I stated earlier, I think it would have been quite a bit faster if I had just done things manually after having a first version of the code and tests.
+And I guess it didn&rsquo;t help that this is a Vimscript project — it is probably quite a niche.</p><p>It was fun doing this test, and I will definitely continue to try both Claude Code and similar AI tools more in the future.
+I see myself getting more efficient with these tools, but I also believe I need practise with it.</p></div><footer class=post-footer><ul class=post-tags></ul><ul class=share-buttons><li><a target=_blank rel="noopener noreferrer" aria-label="share A first look at Claude Code on x" href="https://x.com/intent/tweet/?text=A%20first%20look%20at%20Claude%20Code&amp;url=%2fposts%2fclaude-code%2f&amp;hashtags="><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446C483.971.0 512 28.03 512 62.554zM269.951 190.75 182.567 75.216H56L207.216 272.95 63.9 436.783h61.366L235.9 310.383l96.667 126.4H456L298.367 228.367l134-153.151H371.033zM127.633 110h36.468l219.38 290.065H349.5z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share A first look at Claude Code on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fposts%2fclaude-code%2f&amp;title=A%20first%20look%20at%20Claude%20Code&amp;summary=A%20first%20look%20at%20Claude%20Code&amp;source=%2fposts%2fclaude-code%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share A first look at Claude Code on reddit" href="https://reddit.com/submit?url=%2fposts%2fclaude-code%2f&title=A%20first%20look%20at%20Claude%20Code"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share A first look at Claude Code on facebook" href="https://facebook.com/sharer/sharer.php?u=%2fposts%2fclaude-code%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share A first look at Claude Code on whatsapp" href="https://api.whatsapp.com/send?text=A%20first%20look%20at%20Claude%20Code%20-%20%2fposts%2fclaude-code%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share A first look at Claude Code on telegram" href="https://telegram.me/share/url?text=A%20first%20look%20at%20Claude%20Code&amp;url=%2fposts%2fclaude-code%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentColor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share A first look at Claude Code on ycombinator" href="https://news.ycombinator.com/submitlink?t=A%20first%20look%20at%20Claude%20Code&u=%2fposts%2fclaude-code%2f"><svg width="30" height="30" viewBox="0 0 512 512" fill="currentColor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554V449.446C512 483.97 483.97 512 449.446 512H62.554C28.03 512 0 483.97.0 449.446V62.554C0 28.03 28.029.0 62.554.0H449.446zM183.8767 87.9921h-62.034L230.6673 292.4508V424.0079h50.6655V292.4508L390.1575 87.9921H328.1233L256 238.2489z"/></svg></a></li></ul></footer></article></main><footer class=footer><span>&copy; 2026 <a href=../../>lervag's blog</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
