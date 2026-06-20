@@ -96,7 +96,7 @@ And since I'm very happy with my career change, it also makes me very grateful f
 
 Regarding the future of VimTeX, I don't quite know what it brings.
 I believe the plugin today serves most users well.
-And based on the star history on GitHub, it seems there are still new people using 
+And based on the star history on GitHub, it seems there are still new people using it.
 
 {{< figure
   src="https://api.star-history.com/svg?repos=lervag/vimtex&type=Date"
