@@ -1,4 +1,5 @@
 name: deploy to pages
+
 on:
   push:
     branches:
@@ -11,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 defaults:
@@ -22,14 +23,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.0
         with:
           submodules: recursive
-      - uses: jdx/mise-action@v2
+
+      - name: Set up mise
+        uses: jdx/mise-action@v4.2.1
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -46,11 +51,14 @@ jobs:
           git config user.email "karl.yngve@gmail.com"
           git commit -m 'Build static pages'
           git push --force origin static-pages
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: ./public
+
   deploy:
+    name: Deploy to Pages
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -59,4 +67,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.0

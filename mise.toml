@@ -1,5 +1,5 @@
 [tools]
-hugo = "latest"
+hugo = "0.164.0"
 
 [tasks.dev]
 run = """
