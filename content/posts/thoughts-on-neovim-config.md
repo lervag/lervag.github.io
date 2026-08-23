@@ -13,7 +13,7 @@ One of the things I really like about Neovim is that it embraces new ideas and i
 When I stay on Neovim nightly and follow the work and progress of the development, I get to test these new features as they arrive.
 In the early stages, they are experimental and tend to change somewhat until they land in a versioned release.
 
-For instance, during the last few months, Neovim has adopted and implemented the `:restart` Ex command [0].
+For instance, during the last few months, Neovim has adopted and implemented the [`:restart` Ex command](https://neovim.io/doc/user/gui/#%3Arestart).
 Before this, restarting meant actually quitting the editor and restarting it from the terminal.
 I do restart Neovim frequently e.g. when I am configuring the editor itself, because it is sometimes the best or only way to reload configuration.
 
@@ -44,7 +44,7 @@ And this is only _one_ of many improvements made to Neovim since v0.12 was relea
 All the main changes are documented, see [news](https://neovim.io/doc/user/news/#news).
 In addition to the `:restart` command, I've also embraced the new package manager [vim.pack](https://neovim.io/doc/user/pack/#_plugin-manager) (early April as well).
 
-These days I'm very much looking forward to testing the new feature where Lua functions/closures can be assigned to "func" and "expr" options [1].
+These days I'm very much looking forward to testing the new feature where Lua functions/closures can be assigned to "func" and "expr" options (see e.g. [expr-option-function](https://neovim.io/doc/user/options/#expr-option-function)).
 This means I can rewrite expressions like
 
 ```lua
@@ -59,6 +59,3 @@ vim.wo.foldexpr = function() return vim.v.lnum == 1 and '>1' or '1' end
 
 I do maintain a few custom `foldexpr` functions and similar, so this will allow me to improve and clean up my config.
 Cool stuff!
-
-[0]: https://neovim.io/doc/user/gui/#%3Arestart
-[1]: https://neovim.io/doc/user/options/#expr-option-function
