@@ -30,6 +30,7 @@ Finally, I want to highlight some of the _phases_ I've been through as a Vim use
   link="https://en.wikipedia.org/wiki/Bram_Moolenaar"
   caption="Bram Moolenaar — an actual legend!"
   class="img-flow-right"
+  width="288px"
 >}}
 
 [Vim](https://www.vim.org/) is a text editor, that is, a program we use to write and edit text.
