@@ -26,7 +26,7 @@ I really like the Arktekk slogan: «Hva prøver du egentlig å løse?» — _wha
 In my career, both as a researcher and as a developer, I've often thought about this very question.
 I've personally dived deep into things just to realize later that my excellent solution was solving the wrong problem.
 And I have observed that a lot of people make this mistake.
-I've found that Arktekk are people who are not afraid to ask these questions.
+I've found that Arktekk are people who are not afraid to ask this question.
 
 ---
 
@@ -40,7 +40,7 @@ And now I'm aiming to fill a role as a senior consultant among several people wi
 That's intimidating!
 But it is also motivating.
 I find I have strengths and experiences from my research background that complement my lack of dev experience[^2].
-And although I still have a lot to learn, I now have talented and experienced colleagues in Arktekk from whom I can learn.
+And I now have talented and experienced colleagues at Arktekk to help close my remaining knowledge gaps.
 
 And then there's AI, which is changing how people are doing all sorts of things, including software development.
 It seems like AI enables us to build software at a much higher pace.
@@ -60,10 +60,10 @@ Thus, I believe that there will be a demand for high-competence and skilled cons
 But I am still worried that it may be hard to get clients and that this journey does not go as well as I wish.
 
 The unknown is scary.
-Even so, I have found I would rather risk regretting something I did than spend years regretting that I never tried.
+Even so, I have found I would rather risk regretting something I did something I didn't.
 I may fail, spectacularly, which will be both humiliating and painful.
-But it may also end up working out just fine!
-And even if I fail, I will still come out with valuable experiences.
+But it may also work out just fine!
+And even if I fail, I’ll still come away with valuable experience.
 
 {{< figure
   src="https://thermophys.com/wp-content/uploads/2026/02/Mask-group-1-300x65.png"
