@@ -1,3 +1,5 @@
+/* Image layout helpers used by the `figure` shortcode in posts. */
+
 .so-logo {
   display: flex;
   justify-content: right;
@@ -13,7 +15,7 @@
   margin: 0;
 }
 
-.dark .so-logo img {
+[data-theme="dark"] .so-logo img {
   background-color: var(--primary);
 }
 

@@ -1,12 +1,5 @@
-name: "Personal blog"
-description: "Personal blog"
-url: "lervag.github.io"
-markdown: rdiscount
-permalink: pretty
-highlighter: pygments
-
-relativeURLs: true
-languageCode: en-uk
+baseURL: "https://lervag.github.io/"
+locale: en-gb
 title: lervag's blog
 theme: PaperMod
 enableEmoji: true
@@ -14,6 +7,7 @@ enableRobotsTXT: true
 
 params:
   title: lervag's blog
+  description: "Personal blog"
   author: Karl Yngve Lervåg
   DateFormat: "2006-01-02"
   defaultTheme: auto
@@ -67,9 +61,10 @@ menu:
       url: /publications/
       weight: 20
 
-pygmentsUseClasses: true
 markup:
   goldmark:
     renderer:
       # This is in order to allow `<div>` in some markdown posts
       unsafe: true
+  highlight:
+    noClasses: false

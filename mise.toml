@@ -13,4 +13,4 @@ git submodule update --init --recursive
 """
 
 [tasks.updatePaperMod]
-run = "git submodule update --remote --merge"
+run = "git submodule update --remote"

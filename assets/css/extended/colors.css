@@ -1,0 +1,42 @@
+:root {
+  --theme: rgb(253, 251, 244);      /* page background            */
+  --entry: rgb(253, 251, 244);      /* post-card background       */
+  --primary: rgb(33, 31, 27);       /* headings, links, strong    */
+  --secondary: rgb(109, 104, 90);   /* meta lines, muted text     */
+  --tertiary: rgb(226, 220, 202);   /* borders, underlines, hr    */
+  --content: rgb(34, 33, 28);       /* body text                  */
+  --border: rgb(246, 241, 230);     /* rules and dividers         */
+  --code-bg: rgb(251, 248, 240);    /* inline code, + list-page bg */
+  --code-block-bg: rgb(33, 32, 28); /* fenced blocks (dark in both modes) */
+
+  --accent: rgb(24, 88, 145);       /* link hover — kept cool     */
+  --quote: rgb(95, 91, 78);         /* blockquote text            */
+}
+
+:root[data-theme="dark"] {
+  --theme: rgb(47, 45, 39);
+  --entry: rgb(67, 64, 56);
+  --primary: rgb(235, 234, 229);
+  --secondary: rgb(181, 177, 166);
+  --tertiary: rgb(91, 87, 77);
+  --content: rgb(220, 217, 209);
+  --border: rgb(72, 69, 61);
+  --code-bg: rgb(77, 74, 66);
+
+  --code-block-bg: rgb(54, 52, 45);
+
+  --accent: rgb(146, 194, 235);
+  --quote: rgb(190, 187, 177);
+}
+
+/* Home and section listings carry `class="list"` on <body> and get their own
+ * background: tinted in light mode, plain in dark. Stock behaviour, restated
+ * so it is visible — otherwise changing --theme appears to do nothing on the
+ * front page. To make listings match single pages, set both to var(--theme). */
+.list {
+  background: var(--code-bg);
+}
+
+[data-theme="dark"] .list {
+  background: var(--theme);
+}

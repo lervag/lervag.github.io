@@ -1,0 +1,81 @@
+.post-content {
+  font-size: 19px;
+  hyphens: auto;
+}
+
+.post-content h1 {
+  margin: 44px auto 20px;
+  font-size: 32px;
+}
+
+.post-content h2 {
+  margin: 40px auto 18px;
+  font-size: 28px;
+}
+
+.post-content h3 {
+  margin: 32px auto 14px;
+  font-size: 23px;
+}
+
+.post-content h4 {
+  margin: 28px auto 12px;
+  font-size: 20px;
+}
+
+.post-content a {
+  box-shadow: 0 1px 0 var(--tertiary);
+  transition: box-shadow 0.15s ease, color 0.15s ease;
+}
+
+.post-content a:hover {
+  color: var(--accent);
+  box-shadow: 0 1px 0 var(--accent);
+}
+
+.post-content a:has(img),
+.post-content a:has(img):hover {
+  box-shadow: none;
+}
+
+.post-content blockquote {
+  margin: 28px 0;
+  padding: 0 0 0 20px;
+  border-inline-start: 2px solid var(--tertiary);
+  color: var(--quote);
+  font-style: italic;
+}
+
+.post-content hr {
+  width: 100px;
+  margin: 44px auto;
+  height: 1px;
+  background: var(--tertiary);
+}
+
+.post-content code {
+  font-size: 0.85em;
+}
+
+.post-content pre code {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.post-content .footnotes {
+  margin-top: 44px;
+  padding-top: 12px;
+  font-size: 16px;
+  color: var(--secondary);
+}
+
+.post-content sup a {
+  box-shadow: none;
+}
+
+.post-content figure figcaption {
+  color: var(--secondary);
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}

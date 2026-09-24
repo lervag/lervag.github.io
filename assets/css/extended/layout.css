@@ -1,0 +1,88 @@
+/* Page furniture — post headers, metadata, the post list, the home intro.
+ *
+ * Post body styling lives in prose.css; the palette lives in colors.css. */
+
+:root {
+  --main-width: 740px;
+  --content-gap: 22px;
+}
+
+/* Titles and metadata are pulled back in size, so the header introduces the
+ * post instead of competing with it. */
+.post-title,
+.page-header h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.post-meta,
+.breadcrumbs {
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.post-header {
+  margin-bottom: 32px;
+}
+
+/* Post list: flattened from cards to a plain list. On an archive of prose the
+ * borders, backgrounds and hover-lift add noise without adding information. */
+.post-entry,
+.first-entry {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 34px;
+}
+
+.first-entry {
+  min-height: auto;
+  margin: var(--gap) 0 calc(var(--gap) * 1.5) 0;
+}
+
+.post-entry:hover,
+.first-entry:hover {
+  background: none;
+  transform: none;
+}
+
+.post-entry .entry-header h2,
+.first-entry .entry-header h1 {
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.post-entry:hover .entry-header h2 {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+  transition: box-shadow 0.15s ease, color 0.15s ease;
+}
+
+.post-entry .entry-content,
+.first-entry .entry-content {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--secondary);
+}
+
+.entry-footer {
+  font-size: 13px;
+  color: var(--secondary);
+}
+
+.home-info .entry-content {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* Nothing separates the intro from the post list below it — no heading, no
+ * rule — so the gap alone has to do that work. Stock PaperMod got it from
+ * `min-height: 320px` on .first-entry, which is flattened above. */
+.first-entry.home-info {
+  margin-bottom: calc(var(--gap) * 3);
+}
