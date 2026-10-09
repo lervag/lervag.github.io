@@ -1,0 +1,19 @@
+{{- if eq .Type "alert" -}}
+  {{- $type := lower .AlertType -}}
+  {{- $title := or .AlertTitle (title $type) -}}
+  {{- if .AlertSign -}}
+    <details class="alert alert-{{ $type }}"{{ if eq .AlertSign "+" }} open{{ end }}>
+      <summary class="alert-heading">{{ $title }}</summary>
+      {{ .Text }}
+    </details>
+  {{- else -}}
+    <blockquote class="alert alert-{{ $type }}">
+      <p class="alert-heading">{{ $title }}</p>
+      {{ .Text }}
+    </blockquote>
+  {{- end -}}
+{{- else -}}
+  <blockquote {{- range $k, $v := .Attributes }} {{ $k }}="{{ $v }}"{{ end }}>
+    {{ .Text }}
+  </blockquote>
+{{- end -}}

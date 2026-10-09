@@ -1,0 +1,51 @@
+/* GitHub-style alerts: > [!NOTE], > [!TIP], > [!IMPORTANT], > [!WARNING],
+ * > [!CAUTION]. Rendered by layouts/_markup/render-blockquote.html. */
+
+:root {
+  --alert-note: rgb(24, 88, 145);
+  --alert-tip: rgb(46, 110, 60);
+  --alert-important: rgb(112, 64, 150);
+  --alert-warning: rgb(150, 100, 10);
+  --alert-caution: rgb(170, 50, 40);
+}
+
+:root[data-theme="dark"] {
+  --alert-note: rgb(146, 194, 235);
+  --alert-tip: rgb(140, 200, 150);
+  --alert-important: rgb(195, 165, 230);
+  --alert-warning: rgb(230, 190, 110);
+  --alert-caution: rgb(240, 140, 125);
+}
+
+.post-content .alert {
+  --alert-color: var(--alert-note);
+  margin: 28px 0;
+  padding: 12px 16px 12px 20px;
+  border-inline-start: 3px solid var(--alert-color);
+  background: var(--code-bg);
+  color: var(--content);
+  font-style: normal;
+}
+
+.post-content .alert-tip       { --alert-color: var(--alert-tip); }
+.post-content .alert-important { --alert-color: var(--alert-important); }
+.post-content .alert-warning   { --alert-color: var(--alert-warning); }
+.post-content .alert-caution   { --alert-color: var(--alert-caution); }
+
+.post-content .alert .alert-heading {
+  margin-bottom: 6px;
+  color: var(--alert-color);
+  font-weight: 600;
+}
+
+.post-content .alert > :last-child {
+  margin-bottom: 0;
+}
+
+.post-content details.alert > summary {
+  cursor: pointer;
+}
+
+.post-content details.alert:not([open]) > summary {
+  margin-bottom: 0;
+}
