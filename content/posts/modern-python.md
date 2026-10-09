@@ -11,7 +11,7 @@ I've spent a lot of time writing Python code during my career.
 I think the first time I wrote Python may have been around 2007, so almost 20 years now.
 It is an opinionated language, although I think it is hard to argue that it is a simple language to learn.
 
-In this post, I want to share my current project setup for writing modern Python with strong, static typing and good tooling.
+In this post, I want to share my current project setup for writing modern Python with static typing and good tooling.
 The setup is basically:
 
 - `uv` for the project and dependency management.
@@ -53,9 +53,6 @@ dependencies = [
   "pydantic==2.13.5",
 ]
 
-[project.urls]
-Repository = "https://github.com/thermophys/tp-api"
-
 [dependency-groups]
 dev = [
   # development dependencies go here, e.g.:
@@ -68,15 +65,19 @@ add-bounds = "exact"
 ```
 
 The `add-bounds = "exact"` ensures that `uv add ...` will use an explicit version bound.
-I recommend that for most project, as that makes things more reproducible across environments.
+I recommend including that option for applications, as it makes things more reproducible across environments.
+For libraries, you should remove that and use less strict specifications.
+
+When you do `uv sync`, `uv` will create a `uv.lock` file.
+This file should also be committed to your repository.
 
 ## mise
 
 [`mise`](https://mise.jdx.dev/) is a tool for setting up well-defined development environments.
-I wrote a short post about it [here](/posts/mise).
+I wrote a short post about `mise`, [see it here](/posts/mise).
 For Python projects, I mainly use `mise` to install `uv` and to ensure that the virtual environment is activated when I work in a project.
 
-I use the following setup in most of my Python projects these days.
+I use the following `mise.toml` file in most of my Python projects these days.
 
 ```toml
 [tools]
@@ -113,10 +114,11 @@ I'll show an example of how to run this in CI at the end of the post.
 
 Python already has a well established style guide, see [PEP 8](https://peps.python.org/pep-0008/) and [PEP 257](https://peps.python.org/pep-0257/#multi-line-docstrings).
 So, let's not spend time arguing, let's just enforce the styles and use an autoformatter.
-There are plenty of formatters, and tools like `black` and `flake8` work well.
+There are plenty of formatters, and tools like `black` and `isort` work well.
 But I've found [`ruff`](https://docs.astral.sh/ruff/) to be great here.
 It's really fast and it is easy to integrate in your editor/IDE.
-It also acts as a linter, and so replaces e.g. `pylint`.
+It also acts as a linter, and so replaces e.g. `flake8` and `pylint`.
+It should be mentioned that `pylint` has more rules, but the list of rules supported by `ruff` is large and increasing.
 
 When `ruff` is installed, you can format or check the formatting like this:
 
@@ -184,19 +186,19 @@ If you are introducing `ruff` as a formatter and linter to a project, you should
    Thus, I tend to add to the `ignore` list in `pyproject.toml`, or I use the `# noqa: ...` comment to disable rules in the code.
 
 I recommend reading the [Ruff tutorial](https://docs.astral.sh/ruff/tutorial) if you are new to it.
-It'll cost you about 15-30 minutes, and it will go into a lot more detail that I'm doing here.
+It'll cost you about 15-30 minutes, and it will go into a lot more detail than I'm doing here.
 
 ## Type checking in Python
 
-The last 10 years or so, the development community has started to embrace static typing and strong type systems.
-Strong type systems help us avoid a lot of trivial mistakes without needing tests.
+The last 10 years or so, the development community has started to embrace the value of static type systems.
+Static types help us avoid a lot of trivial mistakes without needing tests.
 Yes, it does add some verbosity, but in my opinion, it also adds _readability_, because it forces us to be more explicit about the intent of our code.
-And with a strong type system with good type inferencing, it doesn't need to be overly verbose either.
+And with a good type system with type inferencing, it doesn't need to be overly verbose either.
 
 Modern Python is still a dynamically typed interpreted language.
 However, since [PEP 484](https://peps.python.org/pep-0484/) and Python 3.5, Python supports the use of type annotations.
 These annotations are ignored at runtime, but they allow a type checker like the original [`mypy`](https://mypy-lang.org/) to do static type checking.
-Things like this becomes possible:
+Things like this become possible:
 
 ```python
 # untyped
@@ -209,8 +211,9 @@ def greeting(name: str) -> str:
 ```
 
 The untyped variant can not guarantee that `'Hello ' + name` is going to be safe at runtime.
-The typed variant does, in the sense that it allows tools like `mypy` to do static analysis that will complain if our typed code is e.g. used in a way that breaks the type specifications.
+The typed variant helps here, in the sense that it allows tools like `mypy` to do static analysis that will complain if our typed code is e.g. used in a way that breaks the type specifications.
 So, for this to be useful, you need to consistently use the type annotations correctly.
+In a fully typed project, the type checker will catch the large majority of type-related errors before they reach runtime.
 
 Python also supports generic types, that is, types that can be left unspecified.
 For example:
@@ -318,9 +321,9 @@ So, with `pyrefly`, I recommend doing it like this:
 4. Then, as future work, you can run `uv run pyrefly check` and start fixing the issues one by one.
    Every once in a while, you should also update the baseline file with `uv run pyrefly check --baseline pyrefly-baseline.json --update-baseline`.
 
-I used this exact process and spent about ~6-8 months to fully add proper typing to a project.
-I started out with > 2000 issues.
-Fixing them was usually simple and consted of adding the correct type annotations.
+I used this exact process and spent about 6-8 months to fully add proper typing to a project.
+I started out with over 2,000 issues.
+Fixing them was usually simple and consisted of adding the correct type annotations.
 And I'm sure I fixed a whole bunch of bugs in the process!
 
 ## CI
@@ -349,6 +352,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7.0.1
 
+      # We could let `mise` install `uv`, but with the setup-uv action we get
+      # caching, which is very convenient
       - name: Install uv
         uses: astral-sh/setup-uv@v10.0.1
         with:
@@ -356,6 +361,9 @@ jobs:
 
       - name: Set up mise
         uses: jdx/mise-action@v4.3.0
+        # `uv` is already installed above - we only want to run the mise task here
+        with:
+          install: false
 
       - name: Install the project
         run: uv sync --locked --all-extras --dev
@@ -378,9 +386,6 @@ jobs:
         uses: astral-sh/setup-uv@v10.0.1
         with:
           enable-cache: true
-
-      - name: Set up mise
-        uses: jdx/mise-action@v4.3.0
 
       - name: Install the project
         run: uv sync --locked --all-extras --dev
