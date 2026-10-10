@@ -1,7 +1,7 @@
 ---
 title: On modern Python development
 author: Karl Yngve Lervåg
-date: 2026-10-11
+date: 2026-10-10
 ---
 
 In this post, I want to share my current project setup for writing modern Python with static typing and good tooling.
