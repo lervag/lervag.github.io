@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://lervag.github.io/sitemap.xml
