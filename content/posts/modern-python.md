@@ -238,16 +238,16 @@ from typing import TypeVar
 
 T = TypeVar("T")
 
-def first(items: list[T]) -> T:
+def first(items: list[T]) -> T | None:
     ...
 ```
 
-Here `first` takes a list of some type `T` and is guaranteed to return a `T`.
-For instance, pass it a `list[str]` and the type checker knows the result is a `str`.
+Here `first` takes a list of some type `T` and is guaranteed to return a `T` or `None` (e.g. if the list is empty).
+For instance, pass it a `list[str]` and the type checker knows the result is a `str` or `None`.
 Since [PEP 695](https://peps.python.org/pep-0695/) and Python 3.12, Python supports type parameter syntax, which allows us to instead write:
 
 ```python
-def first[T](items: list[T]) -> T:
+def first[T](items: list[T]) -> T | None:
     ...
 ```
 
